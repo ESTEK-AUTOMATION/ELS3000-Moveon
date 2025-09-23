@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Estek Library C++/x64
+/Estek Library
+*.force
+/Product/obj/Release/Product.csprojAssemblyReference.cache
+/RtxApp/x64/Release/RtxApp.tlog
+/RtxLibrary/x64/Release/RtxLibrary.tlog
