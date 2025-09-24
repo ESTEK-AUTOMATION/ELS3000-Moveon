@@ -1,0 +1,794 @@
+﻿namespace Product
+{
+    partial class tabpagePickUpHead
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.numericUpDownPickUpHead1Force = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHead1Pressure = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHead1FlowRate = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.numericUpDownPickUpHead2Force = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHead2Pressure = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHead2FlowRate = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxRecipePickUpHead = new System.Windows.Forms.ComboBox();
+            this.buttonApplyAndSaveRecipePickUpHead = new System.Windows.Forms.Button();
+            this.buttonDeleteRecipePickUpHead = new System.Windows.Forms.Button();
+            this.richTextBoxMessageRecipePickUpHead = new System.Windows.Forms.RichTextBox();
+            this.labelRecipeCassette = new System.Windows.Forms.Label();
+            this.buttonSaveAsRecipePickUpHead = new System.Windows.Forms.Button();
+            this.labelMessageRecipeCassette = new System.Windows.Forms.Label();
+            this.panelCassetteRecipeManagement = new System.Windows.Forms.Panel();
+            this.buttonLoadRecipePickUpHead = new System.Windows.Forms.Button();
+            this.tabPagePick = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBoxEnableSoftLanding = new System.Windows.Forms.CheckBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.numericUpDownPickUpHeadPlace1Force = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHeadPlace1Pressure = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHeadPlace1FlowRate = new System.Windows.Forms.NumericUpDown();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.numericUpDownPickUpHeadPlace2Force = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHeadPlace2Pressure = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPickUpHeadPlace2FlowRate = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1Force)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1Pressure)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1FlowRate)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2Force)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2Pressure)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2FlowRate)).BeginInit();
+            this.panelCassetteRecipeManagement.SuspendLayout();
+            this.tabPagePick.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1Force)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1Pressure)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1FlowRate)).BeginInit();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2Force)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2Pressure)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2FlowRate)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.label38);
+            this.groupBox2.Controls.Add(this.label42);
+            this.groupBox2.Controls.Add(this.numericUpDownPickUpHead1Force);
+            this.groupBox2.Controls.Add(this.numericUpDownPickUpHead1Pressure);
+            this.groupBox2.Controls.Add(this.numericUpDownPickUpHead1FlowRate);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.groupBox2.Location = new System.Drawing.Point(22, 15);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(358, 150);
+            this.groupBox2.TabIndex = 57;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Pick Up Head 1";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(290, 107);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(72, 29);
+            this.label39.TabIndex = 61;
+            this.label39.Text = "L/min";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(293, 39);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(31, 29);
+            this.label38.TabIndex = 60;
+            this.label38.Text = "N";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(293, 72);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(56, 29);
+            this.label42.TabIndex = 62;
+            this.label42.Text = "kPA";
+            // 
+            // numericUpDownPickUpHead1Force
+            // 
+            this.numericUpDownPickUpHead1Force.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead1Force.Location = new System.Drawing.Point(121, 34);
+            this.numericUpDownPickUpHead1Force.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead1Force.Name = "numericUpDownPickUpHead1Force";
+            this.numericUpDownPickUpHead1Force.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead1Force.TabIndex = 5;
+            // 
+            // numericUpDownPickUpHead1Pressure
+            // 
+            this.numericUpDownPickUpHead1Pressure.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead1Pressure.Location = new System.Drawing.Point(121, 70);
+            this.numericUpDownPickUpHead1Pressure.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead1Pressure.Name = "numericUpDownPickUpHead1Pressure";
+            this.numericUpDownPickUpHead1Pressure.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead1Pressure.TabIndex = 4;
+            // 
+            // numericUpDownPickUpHead1FlowRate
+            // 
+            this.numericUpDownPickUpHead1FlowRate.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead1FlowRate.Location = new System.Drawing.Point(121, 105);
+            this.numericUpDownPickUpHead1FlowRate.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead1FlowRate.Name = "numericUpDownPickUpHead1FlowRate";
+            this.numericUpDownPickUpHead1FlowRate.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead1FlowRate.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Flow Rate:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Pressure:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Force:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label46);
+            this.groupBox1.Controls.Add(this.label47);
+            this.groupBox1.Controls.Add(this.label48);
+            this.groupBox1.Controls.Add(this.numericUpDownPickUpHead2Force);
+            this.groupBox1.Controls.Add(this.numericUpDownPickUpHead2Pressure);
+            this.groupBox1.Controls.Add(this.numericUpDownPickUpHead2FlowRate);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(403, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(354, 150);
+            this.groupBox1.TabIndex = 58;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Pick Up Head 2";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(293, 107);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(72, 29);
+            this.label46.TabIndex = 64;
+            this.label46.Text = "L/min";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(293, 36);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(31, 29);
+            this.label47.TabIndex = 63;
+            this.label47.Text = "N";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(293, 72);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(56, 29);
+            this.label48.TabIndex = 62;
+            this.label48.Text = "kPA";
+            // 
+            // numericUpDownPickUpHead2Force
+            // 
+            this.numericUpDownPickUpHead2Force.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead2Force.Location = new System.Drawing.Point(121, 34);
+            this.numericUpDownPickUpHead2Force.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead2Force.Name = "numericUpDownPickUpHead2Force";
+            this.numericUpDownPickUpHead2Force.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead2Force.TabIndex = 5;
+            // 
+            // numericUpDownPickUpHead2Pressure
+            // 
+            this.numericUpDownPickUpHead2Pressure.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead2Pressure.Location = new System.Drawing.Point(121, 70);
+            this.numericUpDownPickUpHead2Pressure.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead2Pressure.Name = "numericUpDownPickUpHead2Pressure";
+            this.numericUpDownPickUpHead2Pressure.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead2Pressure.TabIndex = 4;
+            // 
+            // numericUpDownPickUpHead2FlowRate
+            // 
+            this.numericUpDownPickUpHead2FlowRate.DecimalPlaces = 2;
+            this.numericUpDownPickUpHead2FlowRate.Location = new System.Drawing.Point(121, 105);
+            this.numericUpDownPickUpHead2FlowRate.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHead2FlowRate.Name = "numericUpDownPickUpHead2FlowRate";
+            this.numericUpDownPickUpHead2FlowRate.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHead2FlowRate.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 29);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Flow Rate:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(116, 29);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Pressure:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 29);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Force:";
+            // 
+            // comboBoxRecipePickUpHead
+            // 
+            this.comboBoxRecipePickUpHead.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRecipePickUpHead.FormattingEnabled = true;
+            this.comboBoxRecipePickUpHead.Location = new System.Drawing.Point(87, 98);
+            this.comboBoxRecipePickUpHead.Name = "comboBoxRecipePickUpHead";
+            this.comboBoxRecipePickUpHead.Size = new System.Drawing.Size(817, 37);
+            this.comboBoxRecipePickUpHead.TabIndex = 2;
+            // 
+            // buttonApplyAndSaveRecipePickUpHead
+            // 
+            this.buttonApplyAndSaveRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyAndSaveRecipePickUpHead.Location = new System.Drawing.Point(568, 136);
+            this.buttonApplyAndSaveRecipePickUpHead.Name = "buttonApplyAndSaveRecipePickUpHead";
+            this.buttonApplyAndSaveRecipePickUpHead.Size = new System.Drawing.Size(100, 70);
+            this.buttonApplyAndSaveRecipePickUpHead.TabIndex = 17;
+            this.buttonApplyAndSaveRecipePickUpHead.Text = "Apply and Save";
+            this.buttonApplyAndSaveRecipePickUpHead.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteRecipePickUpHead
+            // 
+            this.buttonDeleteRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteRecipePickUpHead.Location = new System.Drawing.Point(804, 136);
+            this.buttonDeleteRecipePickUpHead.Name = "buttonDeleteRecipePickUpHead";
+            this.buttonDeleteRecipePickUpHead.Size = new System.Drawing.Size(100, 70);
+            this.buttonDeleteRecipePickUpHead.TabIndex = 15;
+            this.buttonDeleteRecipePickUpHead.Text = "Delete";
+            this.buttonDeleteRecipePickUpHead.UseVisualStyleBackColor = true;
+            // 
+            // richTextBoxMessageRecipePickUpHead
+            // 
+            this.richTextBoxMessageRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxMessageRecipePickUpHead.Location = new System.Drawing.Point(4, 27);
+            this.richTextBoxMessageRecipePickUpHead.Name = "richTextBoxMessageRecipePickUpHead";
+            this.richTextBoxMessageRecipePickUpHead.ReadOnly = true;
+            this.richTextBoxMessageRecipePickUpHead.Size = new System.Drawing.Size(900, 65);
+            this.richTextBoxMessageRecipePickUpHead.TabIndex = 1;
+            this.richTextBoxMessageRecipePickUpHead.Text = "";
+            // 
+            // labelRecipeCassette
+            // 
+            this.labelRecipeCassette.AutoSize = true;
+            this.labelRecipeCassette.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRecipeCassette.Location = new System.Drawing.Point(1, 101);
+            this.labelRecipeCassette.Name = "labelRecipeCassette";
+            this.labelRecipeCassette.Size = new System.Drawing.Size(102, 29);
+            this.labelRecipeCassette.TabIndex = 3;
+            this.labelRecipeCassette.Text = "Recipe :";
+            // 
+            // buttonSaveAsRecipePickUpHead
+            // 
+            this.buttonSaveAsRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaveAsRecipePickUpHead.Location = new System.Drawing.Point(686, 136);
+            this.buttonSaveAsRecipePickUpHead.Name = "buttonSaveAsRecipePickUpHead";
+            this.buttonSaveAsRecipePickUpHead.Size = new System.Drawing.Size(100, 70);
+            this.buttonSaveAsRecipePickUpHead.TabIndex = 14;
+            this.buttonSaveAsRecipePickUpHead.Text = "Save As";
+            this.buttonSaveAsRecipePickUpHead.UseVisualStyleBackColor = true;
+            // 
+            // labelMessageRecipeCassette
+            // 
+            this.labelMessageRecipeCassette.AutoSize = true;
+            this.labelMessageRecipeCassette.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessageRecipeCassette.Location = new System.Drawing.Point(0, 0);
+            this.labelMessageRecipeCassette.Name = "labelMessageRecipeCassette";
+            this.labelMessageRecipeCassette.Size = new System.Drawing.Size(124, 29);
+            this.labelMessageRecipeCassette.TabIndex = 0;
+            this.labelMessageRecipeCassette.Text = "Message :";
+            // 
+            // panelCassetteRecipeManagement
+            // 
+            this.panelCassetteRecipeManagement.Controls.Add(this.labelMessageRecipeCassette);
+            this.panelCassetteRecipeManagement.Controls.Add(this.buttonSaveAsRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Controls.Add(this.labelRecipeCassette);
+            this.panelCassetteRecipeManagement.Controls.Add(this.richTextBoxMessageRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Controls.Add(this.buttonDeleteRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Controls.Add(this.buttonApplyAndSaveRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Controls.Add(this.comboBoxRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Controls.Add(this.buttonLoadRecipePickUpHead);
+            this.panelCassetteRecipeManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCassetteRecipeManagement.Location = new System.Drawing.Point(0, 0);
+            this.panelCassetteRecipeManagement.Name = "panelCassetteRecipeManagement";
+            this.panelCassetteRecipeManagement.Size = new System.Drawing.Size(1040, 214);
+            this.panelCassetteRecipeManagement.TabIndex = 55;
+            // 
+            // buttonLoadRecipePickUpHead
+            // 
+            this.buttonLoadRecipePickUpHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoadRecipePickUpHead.Location = new System.Drawing.Point(453, 136);
+            this.buttonLoadRecipePickUpHead.Name = "buttonLoadRecipePickUpHead";
+            this.buttonLoadRecipePickUpHead.Size = new System.Drawing.Size(100, 70);
+            this.buttonLoadRecipePickUpHead.TabIndex = 16;
+            this.buttonLoadRecipePickUpHead.Text = "Load";
+            this.buttonLoadRecipePickUpHead.UseVisualStyleBackColor = true;
+            // 
+            // tabPagePick
+            // 
+            this.tabPagePick.Controls.Add(this.tabPage1);
+            this.tabPagePick.Controls.Add(this.tabPage2);
+            this.tabPagePick.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tabPagePick.Location = new System.Drawing.Point(0, 220);
+            this.tabPagePick.Name = "tabPagePick";
+            this.tabPagePick.SelectedIndex = 0;
+            this.tabPagePick.Size = new System.Drawing.Size(1040, 585);
+            this.tabPagePick.TabIndex = 59;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage1.Controls.Add(this.checkBoxEnableSoftLanding);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1032, 543);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Pick Setting";
+            // 
+            // checkBoxEnableSoftLanding
+            // 
+            this.checkBoxEnableSoftLanding.AutoSize = true;
+            this.checkBoxEnableSoftLanding.Location = new System.Drawing.Point(775, 15);
+            this.checkBoxEnableSoftLanding.Name = "checkBoxEnableSoftLanding";
+            this.checkBoxEnableSoftLanding.Size = new System.Drawing.Size(251, 33);
+            this.checkBoxEnableSoftLanding.TabIndex = 59;
+            this.checkBoxEnableSoftLanding.Text = "Enable Soft Landing";
+            this.checkBoxEnableSoftLanding.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage2.Controls.Add(this.groupBox7);
+            this.tabPage2.Controls.Add(this.groupBox9);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1032, 543);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Place Setting";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.label57);
+            this.groupBox7.Controls.Add(this.label59);
+            this.groupBox7.Controls.Add(this.numericUpDownPickUpHeadPlace1Force);
+            this.groupBox7.Controls.Add(this.numericUpDownPickUpHeadPlace1Pressure);
+            this.groupBox7.Controls.Add(this.numericUpDownPickUpHeadPlace1FlowRate);
+            this.groupBox7.Controls.Add(this.label19);
+            this.groupBox7.Controls.Add(this.label20);
+            this.groupBox7.Controls.Add(this.label21);
+            this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.groupBox7.Location = new System.Drawing.Point(21, 19);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(355, 150);
+            this.groupBox7.TabIndex = 59;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Pick Up Head 1";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(293, 107);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(72, 29);
+            this.label55.TabIndex = 64;
+            this.label55.Text = "L/min";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(293, 72);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(56, 29);
+            this.label57.TabIndex = 62;
+            this.label57.Text = "kPA";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(293, 39);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(31, 29);
+            this.label59.TabIndex = 66;
+            this.label59.Text = "N";
+            // 
+            // numericUpDownPickUpHeadPlace1Force
+            // 
+            this.numericUpDownPickUpHeadPlace1Force.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace1Force.Location = new System.Drawing.Point(121, 34);
+            this.numericUpDownPickUpHeadPlace1Force.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace1Force.Name = "numericUpDownPickUpHeadPlace1Force";
+            this.numericUpDownPickUpHeadPlace1Force.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace1Force.TabIndex = 5;
+            // 
+            // numericUpDownPickUpHeadPlace1Pressure
+            // 
+            this.numericUpDownPickUpHeadPlace1Pressure.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace1Pressure.Location = new System.Drawing.Point(121, 70);
+            this.numericUpDownPickUpHeadPlace1Pressure.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace1Pressure.Name = "numericUpDownPickUpHeadPlace1Pressure";
+            this.numericUpDownPickUpHeadPlace1Pressure.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace1Pressure.TabIndex = 4;
+            // 
+            // numericUpDownPickUpHeadPlace1FlowRate
+            // 
+            this.numericUpDownPickUpHeadPlace1FlowRate.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace1FlowRate.Location = new System.Drawing.Point(121, 105);
+            this.numericUpDownPickUpHeadPlace1FlowRate.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace1FlowRate.Name = "numericUpDownPickUpHeadPlace1FlowRate";
+            this.numericUpDownPickUpHeadPlace1FlowRate.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace1FlowRate.TabIndex = 3;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(16, 107);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(128, 29);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Flow Rate:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(16, 72);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(116, 29);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Pressure:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(16, 36);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(82, 29);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Force:";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label64);
+            this.groupBox9.Controls.Add(this.label65);
+            this.groupBox9.Controls.Add(this.label66);
+            this.groupBox9.Controls.Add(this.numericUpDownPickUpHeadPlace2Force);
+            this.groupBox9.Controls.Add(this.numericUpDownPickUpHeadPlace2Pressure);
+            this.groupBox9.Controls.Add(this.numericUpDownPickUpHeadPlace2FlowRate);
+            this.groupBox9.Controls.Add(this.label25);
+            this.groupBox9.Controls.Add(this.label26);
+            this.groupBox9.Controls.Add(this.label27);
+            this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Location = new System.Drawing.Point(402, 19);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(357, 150);
+            this.groupBox9.TabIndex = 61;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Pick Up Head 2";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(293, 107);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(72, 29);
+            this.label64.TabIndex = 64;
+            this.label64.Text = "L/min";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(293, 39);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(31, 29);
+            this.label65.TabIndex = 63;
+            this.label65.Text = "N";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(293, 72);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(56, 29);
+            this.label66.TabIndex = 62;
+            this.label66.Text = "kPA";
+            // 
+            // numericUpDownPickUpHeadPlace2Force
+            // 
+            this.numericUpDownPickUpHeadPlace2Force.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace2Force.Location = new System.Drawing.Point(121, 34);
+            this.numericUpDownPickUpHeadPlace2Force.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace2Force.Name = "numericUpDownPickUpHeadPlace2Force";
+            this.numericUpDownPickUpHeadPlace2Force.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace2Force.TabIndex = 5;
+            // 
+            // numericUpDownPickUpHeadPlace2Pressure
+            // 
+            this.numericUpDownPickUpHeadPlace2Pressure.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace2Pressure.Location = new System.Drawing.Point(121, 70);
+            this.numericUpDownPickUpHeadPlace2Pressure.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace2Pressure.Name = "numericUpDownPickUpHeadPlace2Pressure";
+            this.numericUpDownPickUpHeadPlace2Pressure.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace2Pressure.TabIndex = 4;
+            // 
+            // numericUpDownPickUpHeadPlace2FlowRate
+            // 
+            this.numericUpDownPickUpHeadPlace2FlowRate.DecimalPlaces = 2;
+            this.numericUpDownPickUpHeadPlace2FlowRate.Location = new System.Drawing.Point(121, 105);
+            this.numericUpDownPickUpHeadPlace2FlowRate.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownPickUpHeadPlace2FlowRate.Name = "numericUpDownPickUpHeadPlace2FlowRate";
+            this.numericUpDownPickUpHeadPlace2FlowRate.Size = new System.Drawing.Size(166, 34);
+            this.numericUpDownPickUpHeadPlace2FlowRate.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(16, 107);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(128, 29);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Flow Rate:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(16, 72);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(116, 29);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Pressure:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(16, 36);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(82, 29);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Force:";
+            // 
+            // tabpagePickUpHead
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.tabPagePick);
+            this.Controls.Add(this.panelCassetteRecipeManagement);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Name = "tabpagePickUpHead";
+            this.Size = new System.Drawing.Size(1040, 805);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1Force)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1Pressure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead1FlowRate)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2Force)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2Pressure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHead2FlowRate)).EndInit();
+            this.panelCassetteRecipeManagement.ResumeLayout(false);
+            this.panelCassetteRecipeManagement.PerformLayout();
+            this.tabPagePick.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1Force)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1Pressure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace1FlowRate)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2Force)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2Pressure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPickUpHeadPlace2FlowRate)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead1Force;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead1Pressure;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead1FlowRate;
+        private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead2Force;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead2Pressure;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHead2FlowRate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.ComboBox comboBoxRecipePickUpHead;
+        public System.Windows.Forms.Button buttonApplyAndSaveRecipePickUpHead;
+        public System.Windows.Forms.Button buttonDeleteRecipePickUpHead;
+        public System.Windows.Forms.RichTextBox richTextBoxMessageRecipePickUpHead;
+        public System.Windows.Forms.Label labelRecipeCassette;
+        public System.Windows.Forms.Button buttonSaveAsRecipePickUpHead;
+        public System.Windows.Forms.Label labelMessageRecipeCassette;
+        public System.Windows.Forms.Panel panelCassetteRecipeManagement;
+        public System.Windows.Forms.Button buttonLoadRecipePickUpHead;
+        private System.Windows.Forms.TabControl tabPagePick;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox7;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace1Force;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace1Pressure;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace1FlowRate;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.GroupBox groupBox9;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace2Force;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace2Pressure;
+        public System.Windows.Forms.NumericUpDown numericUpDownPickUpHeadPlace2FlowRate;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label59;
+        public System.Windows.Forms.CheckBox checkBoxEnableSoftLanding;
+    }
+}

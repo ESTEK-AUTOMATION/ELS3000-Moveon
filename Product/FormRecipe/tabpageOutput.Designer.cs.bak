@@ -1,0 +1,780 @@
+﻿namespace Product
+{
+    partial class tabpageOutput
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelOutputRecipeManagement = new System.Windows.Forms.Panel();
+            this.labelMessageRecipeOutput = new System.Windows.Forms.Label();
+            this.buttonSaveAsRecipeOutput = new System.Windows.Forms.Button();
+            this.groupBoxBarcodePrinter = new System.Windows.Forms.GroupBox();
+            this.comboBoxBarcodeLabelSize = new System.Windows.Forms.ComboBox();
+            this.labelBarcodeLabelSize = new System.Windows.Forms.Label();
+            this.labelRecipeOutput = new System.Windows.Forms.Label();
+            this.richTextBoxMessageRecipeOutput = new System.Windows.Forms.RichTextBox();
+            this.buttonDeleteRecipeOutput = new System.Windows.Forms.Button();
+            this.buttonApplyAndSaveRecipeOutput = new System.Windows.Forms.Button();
+            this.comboBoxRecipeOutput = new System.Windows.Forms.ComboBox();
+            this.buttonLoadRecipeOutput = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBoxCheckContinuousDefect = new System.Windows.Forms.GroupBox();
+            this.numericUpDownCheckContinuousDefectCode = new System.Windows.Forms.NumericUpDown();
+            this.labelCheckContinuousDefectCode = new System.Windows.Forms.Label();
+            this.checkBoxCheckContinuousDefectCode = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBoxEnableBarcodeTray = new System.Windows.Forms.CheckBox();
+            this.groupBoxSortingTrayConfiguration = new System.Windows.Forms.GroupBox();
+            this.comboBoxRejectTray = new System.Windows.Forms.ComboBox();
+            this.textBoxDefectCodeName = new System.Windows.Forms.TextBox();
+            this.labelRejectTray = new System.Windows.Forms.Label();
+            this.labelDefectCode = new System.Windows.Forms.Label();
+            this.labelTotalSortingTrayConfiguration = new System.Windows.Forms.Label();
+            this.buttonAddSortingTrayConfiguration = new System.Windows.Forms.Button();
+            this.buttonRemoveSortTrayConfiguration = new System.Windows.Forms.Button();
+            this.listViewSortTrayConfiguration = new System.Windows.Forms.ListView();
+            this.RejectTray = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DefectCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownOutputTrayThickness_um = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownUnitPlacementRotationOffsetOutput = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDownTableYOffsetOutput = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numericUpDownNoOfDeviceInRowOutput = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTableXOffsetOutput = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownNoOfDeviceInColOutput = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.numericUpDownPocketDepthOutput_um = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDeviceYPitchOutput = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDeviceXPitchOutput = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBoxGoodSampling = new System.Windows.Forms.CheckBox();
+            this.panelOutputRecipeManagement.SuspendLayout();
+            this.groupBoxBarcodePrinter.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBoxCheckContinuousDefect.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCheckContinuousDefectCode)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBoxSortingTrayConfiguration.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOutputTrayThickness_um)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUnitPlacementRotationOffsetOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTableYOffsetOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfDeviceInRowOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTableXOffsetOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfDeviceInColOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPocketDepthOutput_um)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDeviceYPitchOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDeviceXPitchOutput)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelOutputRecipeManagement
+            // 
+            this.panelOutputRecipeManagement.Controls.Add(this.labelMessageRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.buttonSaveAsRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.groupBoxBarcodePrinter);
+            this.panelOutputRecipeManagement.Controls.Add(this.labelRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.richTextBoxMessageRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.buttonDeleteRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.buttonApplyAndSaveRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.comboBoxRecipeOutput);
+            this.panelOutputRecipeManagement.Controls.Add(this.buttonLoadRecipeOutput);
+            this.panelOutputRecipeManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelOutputRecipeManagement.Location = new System.Drawing.Point(0, 0);
+            this.panelOutputRecipeManagement.Name = "panelOutputRecipeManagement";
+            this.panelOutputRecipeManagement.Size = new System.Drawing.Size(1900, 214);
+            this.panelOutputRecipeManagement.TabIndex = 45;
+            // 
+            // labelMessageRecipeOutput
+            // 
+            this.labelMessageRecipeOutput.AutoSize = true;
+            this.labelMessageRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessageRecipeOutput.Location = new System.Drawing.Point(0, 0);
+            this.labelMessageRecipeOutput.Name = "labelMessageRecipeOutput";
+            this.labelMessageRecipeOutput.Size = new System.Drawing.Size(97, 24);
+            this.labelMessageRecipeOutput.TabIndex = 0;
+            this.labelMessageRecipeOutput.Text = "Message :";
+            // 
+            // buttonSaveAsRecipeOutput
+            // 
+            this.buttonSaveAsRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaveAsRecipeOutput.Location = new System.Drawing.Point(686, 136);
+            this.buttonSaveAsRecipeOutput.Name = "buttonSaveAsRecipeOutput";
+            this.buttonSaveAsRecipeOutput.Size = new System.Drawing.Size(100, 70);
+            this.buttonSaveAsRecipeOutput.TabIndex = 14;
+            this.buttonSaveAsRecipeOutput.Text = "Save As";
+            this.buttonSaveAsRecipeOutput.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxBarcodePrinter
+            // 
+            this.groupBoxBarcodePrinter.Controls.Add(this.comboBoxBarcodeLabelSize);
+            this.groupBoxBarcodePrinter.Controls.Add(this.labelBarcodeLabelSize);
+            this.groupBoxBarcodePrinter.Location = new System.Drawing.Point(1312, 98);
+            this.groupBoxBarcodePrinter.Name = "groupBoxBarcodePrinter";
+            this.groupBoxBarcodePrinter.Size = new System.Drawing.Size(524, 86);
+            this.groupBoxBarcodePrinter.TabIndex = 169;
+            this.groupBoxBarcodePrinter.TabStop = false;
+            this.groupBoxBarcodePrinter.Text = "Barcode Printer";
+            this.groupBoxBarcodePrinter.Visible = false;
+            // 
+            // comboBoxBarcodeLabelSize
+            // 
+            this.comboBoxBarcodeLabelSize.FormattingEnabled = true;
+            this.comboBoxBarcodeLabelSize.Items.AddRange(new object[] {
+            "70 x 30",
+            "30 x 40"});
+            this.comboBoxBarcodeLabelSize.Location = new System.Drawing.Point(238, 40);
+            this.comboBoxBarcodeLabelSize.Name = "comboBoxBarcodeLabelSize";
+            this.comboBoxBarcodeLabelSize.Size = new System.Drawing.Size(250, 32);
+            this.comboBoxBarcodeLabelSize.TabIndex = 152;
+            // 
+            // labelBarcodeLabelSize
+            // 
+            this.labelBarcodeLabelSize.AutoSize = true;
+            this.labelBarcodeLabelSize.Location = new System.Drawing.Point(6, 40);
+            this.labelBarcodeLabelSize.Name = "labelBarcodeLabelSize";
+            this.labelBarcodeLabelSize.Size = new System.Drawing.Size(102, 24);
+            this.labelBarcodeLabelSize.TabIndex = 165;
+            this.labelBarcodeLabelSize.Text = "Label Size:";
+            // 
+            // labelRecipeOutput
+            // 
+            this.labelRecipeOutput.AutoSize = true;
+            this.labelRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRecipeOutput.Location = new System.Drawing.Point(1, 101);
+            this.labelRecipeOutput.Name = "labelRecipeOutput";
+            this.labelRecipeOutput.Size = new System.Drawing.Size(80, 24);
+            this.labelRecipeOutput.TabIndex = 3;
+            this.labelRecipeOutput.Text = "Recipe :";
+            // 
+            // richTextBoxMessageRecipeOutput
+            // 
+            this.richTextBoxMessageRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxMessageRecipeOutput.Location = new System.Drawing.Point(4, 27);
+            this.richTextBoxMessageRecipeOutput.Name = "richTextBoxMessageRecipeOutput";
+            this.richTextBoxMessageRecipeOutput.ReadOnly = true;
+            this.richTextBoxMessageRecipeOutput.Size = new System.Drawing.Size(900, 65);
+            this.richTextBoxMessageRecipeOutput.TabIndex = 1;
+            this.richTextBoxMessageRecipeOutput.Text = "";
+            // 
+            // buttonDeleteRecipeOutput
+            // 
+            this.buttonDeleteRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteRecipeOutput.Location = new System.Drawing.Point(804, 136);
+            this.buttonDeleteRecipeOutput.Name = "buttonDeleteRecipeOutput";
+            this.buttonDeleteRecipeOutput.Size = new System.Drawing.Size(100, 70);
+            this.buttonDeleteRecipeOutput.TabIndex = 15;
+            this.buttonDeleteRecipeOutput.Text = "Delete";
+            this.buttonDeleteRecipeOutput.UseVisualStyleBackColor = true;
+            // 
+            // buttonApplyAndSaveRecipeOutput
+            // 
+            this.buttonApplyAndSaveRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyAndSaveRecipeOutput.Location = new System.Drawing.Point(568, 136);
+            this.buttonApplyAndSaveRecipeOutput.Name = "buttonApplyAndSaveRecipeOutput";
+            this.buttonApplyAndSaveRecipeOutput.Size = new System.Drawing.Size(100, 70);
+            this.buttonApplyAndSaveRecipeOutput.TabIndex = 17;
+            this.buttonApplyAndSaveRecipeOutput.Text = "Apply and Save";
+            this.buttonApplyAndSaveRecipeOutput.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxRecipeOutput
+            // 
+            this.comboBoxRecipeOutput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRecipeOutput.FormattingEnabled = true;
+            this.comboBoxRecipeOutput.Location = new System.Drawing.Point(87, 98);
+            this.comboBoxRecipeOutput.Name = "comboBoxRecipeOutput";
+            this.comboBoxRecipeOutput.Size = new System.Drawing.Size(817, 32);
+            this.comboBoxRecipeOutput.TabIndex = 2;
+            // 
+            // buttonLoadRecipeOutput
+            // 
+            this.buttonLoadRecipeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoadRecipeOutput.Location = new System.Drawing.Point(453, 136);
+            this.buttonLoadRecipeOutput.Name = "buttonLoadRecipeOutput";
+            this.buttonLoadRecipeOutput.Size = new System.Drawing.Size(100, 70);
+            this.buttonLoadRecipeOutput.TabIndex = 16;
+            this.buttonLoadRecipeOutput.Text = "Load";
+            this.buttonLoadRecipeOutput.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.groupBoxCheckContinuousDefect);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBoxSortingTrayConfiguration);
+            this.panel1.Controls.Add(this.groupBox7);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 214);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1900, 503);
+            this.panel1.TabIndex = 49;
+            // 
+            // groupBoxCheckContinuousDefect
+            // 
+            this.groupBoxCheckContinuousDefect.Controls.Add(this.numericUpDownCheckContinuousDefectCode);
+            this.groupBoxCheckContinuousDefect.Controls.Add(this.labelCheckContinuousDefectCode);
+            this.groupBoxCheckContinuousDefect.Controls.Add(this.checkBoxCheckContinuousDefectCode);
+            this.groupBoxCheckContinuousDefect.Location = new System.Drawing.Point(6, 386);
+            this.groupBoxCheckContinuousDefect.Name = "groupBoxCheckContinuousDefect";
+            this.groupBoxCheckContinuousDefect.Size = new System.Drawing.Size(562, 108);
+            this.groupBoxCheckContinuousDefect.TabIndex = 172;
+            this.groupBoxCheckContinuousDefect.TabStop = false;
+            this.groupBoxCheckContinuousDefect.Text = "Defect Code";
+            // 
+            // numericUpDownCheckContinuousDefectCode
+            // 
+            this.numericUpDownCheckContinuousDefectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCheckContinuousDefectCode.Location = new System.Drawing.Point(361, 61);
+            this.numericUpDownCheckContinuousDefectCode.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDownCheckContinuousDefectCode.Name = "numericUpDownCheckContinuousDefectCode";
+            this.numericUpDownCheckContinuousDefectCode.Size = new System.Drawing.Size(144, 28);
+            this.numericUpDownCheckContinuousDefectCode.TabIndex = 149;
+            // 
+            // labelCheckContinuousDefectCode
+            // 
+            this.labelCheckContinuousDefectCode.AutoSize = true;
+            this.labelCheckContinuousDefectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCheckContinuousDefectCode.Location = new System.Drawing.Point(6, 63);
+            this.labelCheckContinuousDefectCode.Name = "labelCheckContinuousDefectCode";
+            this.labelCheckContinuousDefectCode.Size = new System.Drawing.Size(330, 24);
+            this.labelCheckContinuousDefectCode.TabIndex = 148;
+            this.labelCheckContinuousDefectCode.Text = "Continuous Count Reached To Alarm:";
+            // 
+            // checkBoxCheckContinuousDefectCode
+            // 
+            this.checkBoxCheckContinuousDefectCode.AutoSize = true;
+            this.checkBoxCheckContinuousDefectCode.Location = new System.Drawing.Point(10, 32);
+            this.checkBoxCheckContinuousDefectCode.Name = "checkBoxCheckContinuousDefectCode";
+            this.checkBoxCheckContinuousDefectCode.Size = new System.Drawing.Size(549, 28);
+            this.checkBoxCheckContinuousDefectCode.TabIndex = 1;
+            this.checkBoxCheckContinuousDefectCode.Text = "Enable Alarm When Similar Defect Code Occurs Continuously";
+            this.checkBoxCheckContinuousDefectCode.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.checkBoxEnableBarcodeTray);
+            this.groupBox3.Location = new System.Drawing.Point(6, 289);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(562, 86);
+            this.groupBox3.TabIndex = 171;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Barcode On Output Tray";
+            // 
+            // checkBoxEnableBarcodeTray
+            // 
+            this.checkBoxEnableBarcodeTray.AutoSize = true;
+            this.checkBoxEnableBarcodeTray.Location = new System.Drawing.Point(10, 36);
+            this.checkBoxEnableBarcodeTray.Name = "checkBoxEnableBarcodeTray";
+            this.checkBoxEnableBarcodeTray.Size = new System.Drawing.Size(347, 28);
+            this.checkBoxEnableBarcodeTray.TabIndex = 0;
+            this.checkBoxEnableBarcodeTray.Text = "Enable Scan Barcode On Output Tray";
+            this.checkBoxEnableBarcodeTray.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxSortingTrayConfiguration
+            // 
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.comboBoxRejectTray);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.textBoxDefectCodeName);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.labelRejectTray);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.labelDefectCode);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.labelTotalSortingTrayConfiguration);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.buttonAddSortingTrayConfiguration);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.buttonRemoveSortTrayConfiguration);
+            this.groupBoxSortingTrayConfiguration.Controls.Add(this.listViewSortTrayConfiguration);
+            this.groupBoxSortingTrayConfiguration.Location = new System.Drawing.Point(605, 98);
+            this.groupBoxSortingTrayConfiguration.Name = "groupBoxSortingTrayConfiguration";
+            this.groupBoxSortingTrayConfiguration.Size = new System.Drawing.Size(677, 396);
+            this.groupBoxSortingTrayConfiguration.TabIndex = 167;
+            this.groupBoxSortingTrayConfiguration.TabStop = false;
+            this.groupBoxSortingTrayConfiguration.Text = "Sorting Tray Configuration";
+            // 
+            // comboBoxRejectTray
+            // 
+            this.comboBoxRejectTray.FormattingEnabled = true;
+            this.comboBoxRejectTray.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBoxRejectTray.Location = new System.Drawing.Point(130, 75);
+            this.comboBoxRejectTray.Name = "comboBoxRejectTray";
+            this.comboBoxRejectTray.Size = new System.Drawing.Size(175, 32);
+            this.comboBoxRejectTray.TabIndex = 178;
+            // 
+            // textBoxDefectCodeName
+            // 
+            this.textBoxDefectCodeName.Location = new System.Drawing.Point(130, 35);
+            this.textBoxDefectCodeName.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDefectCodeName.Name = "textBoxDefectCodeName";
+            this.textBoxDefectCodeName.Size = new System.Drawing.Size(175, 29);
+            this.textBoxDefectCodeName.TabIndex = 177;
+            // 
+            // labelRejectTray
+            // 
+            this.labelRejectTray.AutoSize = true;
+            this.labelRejectTray.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRejectTray.Location = new System.Drawing.Point(6, 75);
+            this.labelRejectTray.Name = "labelRejectTray";
+            this.labelRejectTray.Size = new System.Drawing.Size(110, 24);
+            this.labelRejectTray.TabIndex = 176;
+            this.labelRejectTray.Text = "Reject Tray:";
+            // 
+            // labelDefectCode
+            // 
+            this.labelDefectCode.AutoSize = true;
+            this.labelDefectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDefectCode.Location = new System.Drawing.Point(6, 38);
+            this.labelDefectCode.Name = "labelDefectCode";
+            this.labelDefectCode.Size = new System.Drawing.Size(119, 24);
+            this.labelDefectCode.TabIndex = 175;
+            this.labelDefectCode.Text = "Defect Code:";
+            // 
+            // labelTotalSortingTrayConfiguration
+            // 
+            this.labelTotalSortingTrayConfiguration.AutoSize = true;
+            this.labelTotalSortingTrayConfiguration.Location = new System.Drawing.Point(319, 353);
+            this.labelTotalSortingTrayConfiguration.Name = "labelTotalSortingTrayConfiguration";
+            this.labelTotalSortingTrayConfiguration.Size = new System.Drawing.Size(76, 24);
+            this.labelTotalSortingTrayConfiguration.TabIndex = 174;
+            this.labelTotalSortingTrayConfiguration.Text = "Total : 0";
+            // 
+            // buttonAddSortingTrayConfiguration
+            // 
+            this.buttonAddSortingTrayConfiguration.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddSortingTrayConfiguration.Location = new System.Drawing.Point(25, 134);
+            this.buttonAddSortingTrayConfiguration.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddSortingTrayConfiguration.Name = "buttonAddSortingTrayConfiguration";
+            this.buttonAddSortingTrayConfiguration.Size = new System.Drawing.Size(100, 70);
+            this.buttonAddSortingTrayConfiguration.TabIndex = 173;
+            this.buttonAddSortingTrayConfiguration.Text = "Add";
+            this.buttonAddSortingTrayConfiguration.UseVisualStyleBackColor = true;
+            // 
+            // buttonRemoveSortTrayConfiguration
+            // 
+            this.buttonRemoveSortTrayConfiguration.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveSortTrayConfiguration.Location = new System.Drawing.Point(205, 134);
+            this.buttonRemoveSortTrayConfiguration.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemoveSortTrayConfiguration.Name = "buttonRemoveSortTrayConfiguration";
+            this.buttonRemoveSortTrayConfiguration.Size = new System.Drawing.Size(100, 70);
+            this.buttonRemoveSortTrayConfiguration.TabIndex = 172;
+            this.buttonRemoveSortTrayConfiguration.Text = "Remove";
+            this.buttonRemoveSortTrayConfiguration.UseVisualStyleBackColor = true;
+            // 
+            // listViewSortTrayConfiguration
+            // 
+            this.listViewSortTrayConfiguration.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.RejectTray,
+            this.DefectCode});
+            this.listViewSortTrayConfiguration.FullRowSelect = true;
+            this.listViewSortTrayConfiguration.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewSortTrayConfiguration.HideSelection = false;
+            this.listViewSortTrayConfiguration.Location = new System.Drawing.Point(323, 28);
+            this.listViewSortTrayConfiguration.Name = "listViewSortTrayConfiguration";
+            this.listViewSortTrayConfiguration.ShowGroups = false;
+            this.listViewSortTrayConfiguration.Size = new System.Drawing.Size(325, 320);
+            this.listViewSortTrayConfiguration.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listViewSortTrayConfiguration.TabIndex = 171;
+            this.listViewSortTrayConfiguration.UseCompatibleStateImageBehavior = false;
+            this.listViewSortTrayConfiguration.View = System.Windows.Forms.View.Details;
+            // 
+            // RejectTray
+            // 
+            this.RejectTray.Text = "Reject Tray";
+            this.RejectTray.Width = 160;
+            // 
+            // DefectCode
+            // 
+            this.DefectCode.Text = "Defect Code";
+            this.DefectCode.Width = 160;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.numericUpDownOutputTrayThickness_um);
+            this.groupBox7.Controls.Add(this.numericUpDownUnitPlacementRotationOffsetOutput);
+            this.groupBox7.Controls.Add(this.label1);
+            this.groupBox7.Controls.Add(this.numericUpDownTableYOffsetOutput);
+            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.numericUpDownNoOfDeviceInRowOutput);
+            this.groupBox7.Controls.Add(this.numericUpDownTableXOffsetOutput);
+            this.groupBox7.Controls.Add(this.numericUpDownNoOfDeviceInColOutput);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.numericUpDownPocketDepthOutput_um);
+            this.groupBox7.Controls.Add(this.numericUpDownDeviceYPitchOutput);
+            this.groupBox7.Controls.Add(this.numericUpDownDeviceXPitchOutput);
+            this.groupBox7.Controls.Add(this.label14);
+            this.groupBox7.Controls.Add(this.label15);
+            this.groupBox7.Controls.Add(this.label16);
+            this.groupBox7.Controls.Add(this.label17);
+            this.groupBox7.Controls.Add(this.label18);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(6, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(562, 268);
+            this.groupBox7.TabIndex = 145;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "OUTPUT TRAY";
+            // 
+            // numericUpDownOutputTrayThickness_um
+            // 
+            this.numericUpDownOutputTrayThickness_um.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownOutputTrayThickness_um.Location = new System.Drawing.Point(361, 226);
+            this.numericUpDownOutputTrayThickness_um.Maximum = new decimal(new int[] {
+            8000,
+            0,
+            0,
+            0});
+            this.numericUpDownOutputTrayThickness_um.Name = "numericUpDownOutputTrayThickness_um";
+            this.numericUpDownOutputTrayThickness_um.Size = new System.Drawing.Size(144, 28);
+            this.numericUpDownOutputTrayThickness_um.TabIndex = 147;
+            // 
+            // numericUpDownUnitPlacementRotationOffsetOutput
+            // 
+            this.numericUpDownUnitPlacementRotationOffsetOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownUnitPlacementRotationOffsetOutput.Location = new System.Drawing.Point(362, 191);
+            this.numericUpDownUnitPlacementRotationOffsetOutput.Maximum = new decimal(new int[] {
+            360000,
+            0,
+            0,
+            0});
+            this.numericUpDownUnitPlacementRotationOffsetOutput.Name = "numericUpDownUnitPlacementRotationOffsetOutput";
+            this.numericUpDownUnitPlacementRotationOffsetOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownUnitPlacementRotationOffsetOutput.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 228);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 24);
+            this.label1.TabIndex = 146;
+            this.label1.Text = "Tray Thickness (um):";
+            // 
+            // numericUpDownTableYOffsetOutput
+            // 
+            this.numericUpDownTableYOffsetOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTableYOffsetOutput.Location = new System.Drawing.Point(361, 226);
+            this.numericUpDownTableYOffsetOutput.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDownTableYOffsetOutput.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownTableYOffsetOutput.Name = "numericUpDownTableYOffsetOutput";
+            this.numericUpDownTableYOffsetOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownTableYOffsetOutput.TabIndex = 21;
+            this.numericUpDownTableYOffsetOutput.Visible = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(6, 193);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(320, 24);
+            this.label31.TabIndex = 18;
+            this.label31.Text = "Unit Place Rotation Offset (mDegree):";
+            // 
+            // numericUpDownNoOfDeviceInRowOutput
+            // 
+            this.numericUpDownNoOfDeviceInRowOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownNoOfDeviceInRowOutput.Location = new System.Drawing.Point(361, 158);
+            this.numericUpDownNoOfDeviceInRowOutput.Name = "numericUpDownNoOfDeviceInRowOutput";
+            this.numericUpDownNoOfDeviceInRowOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownNoOfDeviceInRowOutput.TabIndex = 9;
+            // 
+            // numericUpDownTableXOffsetOutput
+            // 
+            this.numericUpDownTableXOffsetOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownTableXOffsetOutput.Location = new System.Drawing.Point(361, 191);
+            this.numericUpDownTableXOffsetOutput.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDownTableXOffsetOutput.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numericUpDownTableXOffsetOutput.Name = "numericUpDownTableXOffsetOutput";
+            this.numericUpDownTableXOffsetOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownTableXOffsetOutput.TabIndex = 20;
+            this.numericUpDownTableXOffsetOutput.Visible = false;
+            // 
+            // numericUpDownNoOfDeviceInColOutput
+            // 
+            this.numericUpDownNoOfDeviceInColOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownNoOfDeviceInColOutput.Location = new System.Drawing.Point(361, 125);
+            this.numericUpDownNoOfDeviceInColOutput.Name = "numericUpDownNoOfDeviceInColOutput";
+            this.numericUpDownNoOfDeviceInColOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownNoOfDeviceInColOutput.TabIndex = 8;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(6, 228);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(176, 24);
+            this.label27.TabIndex = 19;
+            this.label27.Text = "Table Y Offset (um):";
+            this.label27.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(6, 193);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(178, 24);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Table X Offset (um):";
+            this.label28.Visible = false;
+            // 
+            // numericUpDownPocketDepthOutput_um
+            // 
+            this.numericUpDownPocketDepthOutput_um.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownPocketDepthOutput_um.Location = new System.Drawing.Point(361, 90);
+            this.numericUpDownPocketDepthOutput_um.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDownPocketDepthOutput_um.Name = "numericUpDownPocketDepthOutput_um";
+            this.numericUpDownPocketDepthOutput_um.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownPocketDepthOutput_um.TabIndex = 7;
+            // 
+            // numericUpDownDeviceYPitchOutput
+            // 
+            this.numericUpDownDeviceYPitchOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDeviceYPitchOutput.Location = new System.Drawing.Point(361, 57);
+            this.numericUpDownDeviceYPitchOutput.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDownDeviceYPitchOutput.Name = "numericUpDownDeviceYPitchOutput";
+            this.numericUpDownDeviceYPitchOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownDeviceYPitchOutput.TabIndex = 6;
+            // 
+            // numericUpDownDeviceXPitchOutput
+            // 
+            this.numericUpDownDeviceXPitchOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownDeviceXPitchOutput.Location = new System.Drawing.Point(361, 20);
+            this.numericUpDownDeviceXPitchOutput.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDownDeviceXPitchOutput.Name = "numericUpDownDeviceXPitchOutput";
+            this.numericUpDownDeviceXPitchOutput.Size = new System.Drawing.Size(144, 29);
+            this.numericUpDownDeviceXPitchOutput.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 161);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(190, 24);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "No Of Device In Row:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 127);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(218, 24);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "No Of Device In Column:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 92);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(171, 24);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Pocket Depth (um):";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(6, 59);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(180, 24);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Device Y Pitch (um):";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(6, 25);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(182, 24);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Device X Pitch (um):";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkBoxGoodSampling);
+            this.groupBox2.Location = new System.Drawing.Point(605, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(363, 86);
+            this.groupBox2.TabIndex = 170;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Good Sampling Tray";
+            this.groupBox2.Visible = false;
+            // 
+            // checkBoxGoodSampling
+            // 
+            this.checkBoxGoodSampling.AutoSize = true;
+            this.checkBoxGoodSampling.Location = new System.Drawing.Point(10, 36);
+            this.checkBoxGoodSampling.Name = "checkBoxGoodSampling";
+            this.checkBoxGoodSampling.Size = new System.Drawing.Size(336, 28);
+            this.checkBoxGoodSampling.TabIndex = 0;
+            this.checkBoxGoodSampling.Text = "Enable Good Sampling Tray (Tray 1)";
+            this.checkBoxGoodSampling.UseVisualStyleBackColor = true;
+            // 
+            // tabpageOutput
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelOutputRecipeManagement);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "tabpageOutput";
+            this.Size = new System.Drawing.Size(1900, 717);
+            this.panelOutputRecipeManagement.ResumeLayout(false);
+            this.panelOutputRecipeManagement.PerformLayout();
+            this.groupBoxBarcodePrinter.ResumeLayout(false);
+            this.groupBoxBarcodePrinter.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.groupBoxCheckContinuousDefect.ResumeLayout(false);
+            this.groupBoxCheckContinuousDefect.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCheckContinuousDefectCode)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBoxSortingTrayConfiguration.ResumeLayout(false);
+            this.groupBoxSortingTrayConfiguration.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOutputTrayThickness_um)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUnitPlacementRotationOffsetOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTableYOffsetOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfDeviceInRowOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTableXOffsetOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNoOfDeviceInColOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPocketDepthOutput_um)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDeviceYPitchOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDeviceXPitchOutput)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        public System.Windows.Forms.Panel panelOutputRecipeManagement;
+        public System.Windows.Forms.Label labelMessageRecipeOutput;
+        public System.Windows.Forms.Button buttonSaveAsRecipeOutput;
+        public System.Windows.Forms.Label labelRecipeOutput;
+        public System.Windows.Forms.RichTextBox richTextBoxMessageRecipeOutput;
+        public System.Windows.Forms.Button buttonDeleteRecipeOutput;
+        public System.Windows.Forms.Button buttonApplyAndSaveRecipeOutput;
+        public System.Windows.Forms.ComboBox comboBoxRecipeOutput;
+        public System.Windows.Forms.Button buttonLoadRecipeOutput;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        public System.Windows.Forms.NumericUpDown numericUpDownUnitPlacementRotationOffsetOutput;
+        public System.Windows.Forms.NumericUpDown numericUpDownTableYOffsetOutput;
+        private System.Windows.Forms.Label label31;
+        public System.Windows.Forms.NumericUpDown numericUpDownNoOfDeviceInRowOutput;
+        public System.Windows.Forms.NumericUpDown numericUpDownTableXOffsetOutput;
+        public System.Windows.Forms.NumericUpDown numericUpDownNoOfDeviceInColOutput;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        public System.Windows.Forms.NumericUpDown numericUpDownPocketDepthOutput_um;
+        public System.Windows.Forms.NumericUpDown numericUpDownDeviceYPitchOutput;
+        public System.Windows.Forms.NumericUpDown numericUpDownDeviceXPitchOutput;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        public System.Windows.Forms.NumericUpDown numericUpDownOutputTrayThickness_um;
+        public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBoxSortingTrayConfiguration;
+        private System.Windows.Forms.GroupBox groupBoxBarcodePrinter;
+        public System.Windows.Forms.ComboBox comboBoxBarcodeLabelSize;
+        private System.Windows.Forms.Label labelBarcodeLabelSize;
+        private System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.CheckBox checkBoxGoodSampling;
+        private System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.CheckBox checkBoxEnableBarcodeTray;
+        private System.Windows.Forms.GroupBox groupBoxCheckContinuousDefect;
+        public System.Windows.Forms.NumericUpDown numericUpDownCheckContinuousDefectCode;
+        public System.Windows.Forms.Label labelCheckContinuousDefectCode;
+        public System.Windows.Forms.CheckBox checkBoxCheckContinuousDefectCode;
+        private System.Windows.Forms.ColumnHeader RejectTray;
+        private System.Windows.Forms.ColumnHeader DefectCode;
+        public System.Windows.Forms.ListView listViewSortTrayConfiguration;
+        public System.Windows.Forms.Button buttonAddSortingTrayConfiguration;
+        public System.Windows.Forms.Button buttonRemoveSortTrayConfiguration;
+        private System.Windows.Forms.Label labelRejectTray;
+        private System.Windows.Forms.Label labelDefectCode;
+        public System.Windows.Forms.Label labelTotalSortingTrayConfiguration;
+        public System.Windows.Forms.TextBox textBoxDefectCodeName;
+        public System.Windows.Forms.ComboBox comboBoxRejectTray;
+    }
+}
