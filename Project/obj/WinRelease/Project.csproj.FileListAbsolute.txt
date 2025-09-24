@@ -1,0 +1,28 @@
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\ELS1200.exe.config
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\ELS1200.exe
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\ELS1200.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Customer.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Platform.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Product.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\MotionLibrary.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\MoveonMESAPI.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Common.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Newtonsoft.Json.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\IntervalZero.RTX64.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Secsgem.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Barcode Reader Factory.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\IBarcodeReader.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Barcode Reader Zebex.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Barcode Reader Vision.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Customer.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\Product.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\MoveonMESAPI.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\en\Platform.resources.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\bin\WinRelease\zh-CN\Platform.resources.dll
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\ELS1200.exe
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\WinRelease\ELS1200.pdb
