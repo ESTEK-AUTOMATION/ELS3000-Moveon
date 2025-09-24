@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Product
+{
+    public class ProductRecipeInputSettings : Machine.RecipeInputSettings
+    {
+        public uint DeviceSizeX_um;                              //X Column width
+        public uint DeviceSizeY_um;                              //Y Row width
+        public uint NoOfDeviceInColInput;
+        public uint NoOfDeviceInRowInput;
+        public uint DeviceXPitchInput;
+        public uint DeviceYPitchInput;
+        public uint UnitThickness_um;
+        public uint InputPocketDepth_um;
+        public uint InputTrayThickness;
+
+        public int EmptyUnit;
+        public bool EnableCheckEmptyUnit;
+        public string BarcodeRecipe = "Default";
+        #region BarcodeReaderKeyence
+        //1 : Barcode on Bintape
+        //2 : Barcode on Wafer Ring
+        //3 : Reserve1
+        //4 : Reserve2
+        public int BarcodeReaderKeyence_Recipe = 1;
+        #endregion
+        
+        public int PickingCenterXOffsetInput;
+        public int PickingCenterYOffsetInput;
+        public int UnitPlacementRotationOffsetInput;
+    }
+}
