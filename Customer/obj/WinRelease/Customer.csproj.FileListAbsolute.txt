@@ -1,0 +1,29 @@
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Customer.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Customer.pdb
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Common.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\MotionLibrary.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\MoveonMESAPI.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Newtonsoft.Json.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Platform.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Product.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\System.Net.Http.Formatting.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\IntervalZero.RTX64.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Secsgem.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Barcode Reader Factory.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\IBarcodeReader.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Barcode Reader Zebex.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Barcode Reader Vision.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\MoveonMESAPI.pdb
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\Product.pdb
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\en\Platform.resources.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\bin\WinRelease\zh-CN\Platform.resources.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Interop.IWshRuntimeLibrary.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.csproj.ResolveComReference.cache
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.CustomerFormJob.resources
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.CustomerFormNewLot.resources
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.csproj.CopyComplete
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.dll
+D:\Estek Automation\ELS1200 - GitHub\Customer\obj\WinRelease\Customer.pdb
