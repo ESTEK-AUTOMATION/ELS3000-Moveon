@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E0606F7-3E98-4C86-8E02-73B5FFD995E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Product</RootNamespace>
+    <AssemblyName>Product</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Estek Library\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;InputXYTable;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Estek Library\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;APPLICATIONCODE;XTurretApplication;InputXYTable;xRTX;XDEBUGSEQ;NewVisionPlatform;RemoveDefectNo;FiducialWithVisionOffset</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\Estek Library\</OutputPath>
+    <DefineConstants>TRACE;APPLICATIONCODE;XTurretApplication;InputXYTable;xRTX;XDEBUGSEQ;NewVisionPlatform;RemoveDefectNo;FiducialWithVisionOffset</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WinRelease|AnyCPU'">
+    <OutputPath>bin\WinRelease\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;APPLICATIONCODE;XTurretApplication;InputXYTable;xRTX;XDEBUGSEQ;NewVisionPlatform;RemoveDefectNo;FiducialWithVisionOffset</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WinRelease|x64'">
+    <OutputPath>bin\x64\WinRelease\</OutputPath>
+    <DefineConstants>TRACE;APPLICATIONCODE;XTurretApplication;InputXYTable;xRTX;XDEBUGSEQ;NewVisionPlatform;RemoveDefectNo;FiducialWithVisionOffset</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WinDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WinDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;InputXYTable;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'WinDebug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\WinDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Barcode Reader Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\Barcode Reader Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>..\Estek Library\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBarcodeReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\IBarcodeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="MotionLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\MotionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MoveonMESAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\MoveonMESAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Secsgem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\Secsgem.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Estek Library\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormConsumablePart\TurretFlipperMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConsumablePart\TurretFlipperMaintenance.Designer.cs">
+      <DependentUpon>TurretFlipperMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\AlarmParetoChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\AlarmParetoChart.Designer.cs">
+      <DependentUpon>AlarmParetoChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\GroupBoxTray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\GroupBoxTray.Designer.cs">
+      <DependentUpon>GroupBoxTray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\MappingDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\MappingDisplay.designer.cs">
+      <DependentUpon>MappingDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\StateDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\StateDisplay.Designer.cs">
+      <DependentUpon>StateDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\SummaryReportDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\SummaryReportDisplay.designer.cs">
+      <DependentUpon>SummaryReportDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\THKPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\THKPanel.Designer.cs">
+      <DependentUpon>THKPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\TrayInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\TrayInformation.Designer.cs">
+      <DependentUpon>TrayInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\YeildParetoChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\YeildParetoChart.Designer.cs">
+      <DependentUpon>YeildParetoChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLowYieldPart\ContinuousLowYield.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormLowYieldPart\ContinuousLowYield.Designer.cs">
+      <DependentUpon>ContinuousLowYield.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLowYieldPart\LowYieldCountingItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormLowYieldPart\LowYieldCountingItem.Designer.cs">
+      <DependentUpon>LowYieldCountingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLowYieldPart\LowYieldSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormLowYieldPart\LowYieldSetting.Designer.cs">
+      <DependentUpon>LowYieldSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageAdditionalSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageAdditionalSystem.Designer.cs">
+      <DependentUpon>tabpageAdditionalSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageLowYieldSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageLowYieldSetting.Designer.cs">
+      <DependentUpon>tabpageLowYieldSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageMES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageMES.Designer.cs">
+      <DependentUpon>tabpageMES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\SortingSubPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\SortingSubPage.designer.cs">
+      <DependentUpon>SortingSubPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageSortingRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageSortingRecipe.designer.cs">
+      <DependentUpon>tabpageSortingRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpagePickUpHead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpagePickUpHead.Designer.cs">
+      <DependentUpon>tabpagePickUpHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBarcodePrinter.cs" />
+    <Compile Include="ProductContinueLotInfo.cs" />
+    <Compile Include="ProductFormAutoColletCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormAutoColletCalibration.Designer.cs">
+      <DependentUpon>ProductFormAutoColletCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormAutoForceGaugeCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormAutoForceGaugeCalibration.designer.cs">
+      <DependentUpon>ProductFormAutoForceGaugeCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormCalibration.Designer.cs">
+      <DependentUpon>ProductFormCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormPusherControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormPusherControl.Designer.cs">
+      <DependentUpon>ProductFormPusherControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormConsumableParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormConsumableParts.Designer.cs">
+      <DependentUpon>ProductFormConsumableParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsumablePart\MaintenanceCountItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConsumablePart\MaintenanceCountItem.Designer.cs">
+      <DependentUpon>MaintenanceCountItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsumablePart\MaintenanceSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConsumablePart\MaintenanceSetting.Designer.cs">
+      <DependentUpon>MaintenanceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFileFormat.cs" />
+    <Compile Include="FormJob\groupboxCustomerInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\groupboxCustomerInput.Designer.cs">
+      <DependentUpon>groupboxCustomerInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\GUIRightPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\GUIRightPanel.Designer.cs">
+      <DependentUpon>GUIRightPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormLightingCalibration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormLightingCalibration.Designer.cs">
+      <DependentUpon>ProductFormLightingCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormLowYieldParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormLowYieldParts.Designer.cs">
+      <DependentUpon>ProductFormLowYieldParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormManual.Designer.cs">
+      <DependentUpon>ProductFormManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormMotionChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormOutputAlignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormOutputAlignment.Designer.cs">
+      <DependentUpon>ProductFormOutputAlignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormTeachPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormTeachPointGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormTeachPointGuide.Designer.cs">
+      <DependentUpon>ProductFormTeachPointGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionOutputMotionMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionOutputMotionMove.Designer.cs">
+      <DependentUpon>ProductionOutputMotionMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductLotInformation.cs" />
+    <Compile Include="ProductAlarmList.cs" />
+    <Compile Include="ProductBarcodeReaderSequenceThread.cs" />
+    <Compile Include="ProductCommunicationSequenceThread.cs" />
+    <Compile Include="ProductFormBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormBarcode.Designer.cs">
+      <DependentUpon>ProductFormBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageDriverFuji.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageDriverFuji.Designer.cs">
+      <DependentUpon>tabpageDriverFuji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageMisc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageMisc.Designer.cs">
+      <DependentUpon>tabpageMisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageMotionController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageMotionController.Designer.cs">
+      <DependentUpon>tabpageMotionController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageVision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageVision.Designer.cs">
+      <DependentUpon>tabpageVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageVisionTurret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration\tabpageVisionTurret.Designer.cs">
+      <DependentUpon>tabpageVisionTurret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormConversion.Designer.cs">
+      <DependentUpon>ProductFormConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\MainPagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\MainPagePanel.Designer.cs">
+      <DependentUpon>MainPagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\SettingsGroupbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\SettingsGroupbox.Designer.cs">
+      <DependentUpon>SettingsGroupbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\SummaryPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\SummaryPanel.Designer.cs">
+      <DependentUpon>SummaryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\tabpageTurret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\tabpageTurret.Designer.cs">
+      <DependentUpon>tabpageTurret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJob\tabpageWaferSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormJob\tabpageWaferSelection.Designer.cs">
+      <DependentUpon>tabpageWaferSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageFilePath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageFilePath.Designer.cs">
+      <DependentUpon>tabpageFilePath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageServer.Designer.cs">
+      <DependentUpon>tabpageServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageTurretApplication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageTurretApplication.Designer.cs">
+      <DependentUpon>tabpageTurretApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption\tabpageVision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\tabpageVision.Designer.cs">
+      <DependentUpon>tabpageVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\groupboxRecipeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\groupboxRecipeControl.Designer.cs">
+      <DependentUpon>groupboxRecipeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\panelMainRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\panelMainRecipe.Designer.cs">
+      <DependentUpon>panelMainRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageInput.Designer.cs">
+      <DependentUpon>tabpageInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageDelay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageDelay.Designer.cs">
+      <DependentUpon>tabpageDelay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageCassette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageCassette.Designer.cs">
+      <DependentUpon>tabpageCassette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageVisionRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageVisionRecipe.Designer.cs">
+      <DependentUpon>tabpageVisionRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageOutputFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageOutputFile.Designer.cs">
+      <DependentUpon>tabpageOutputFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageMotorPosition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageMotorPosition.Designer.cs">
+      <DependentUpon>tabpageMotorPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormRecipe\tabpageOutput.Designer.cs">
+      <DependentUpon>tabpageOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormTeachMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormTeachMap.Designer.cs">
+      <DependentUpon>ProductFormTeachMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetup\tabPageSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormSetup\tabPageSetup.Designer.cs">
+      <DependentUpon>tabPageSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductConfigurationSettings.cs" />
+    <Compile Include="ProductFormConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormMainInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGUIEvent.cs" />
+    <Compile Include="ProductMainProcess.cs" />
+    <Compile Include="ProductOptionSettings.cs" />
+    <Compile Include="ProductPreviousLotInfo.cs" />
+    <Compile Include="ProductProcessEvent.cs" />
+    <Compile Include="ProductReportEvent.cs" />
+    <Compile Include="ProductReportProcess.cs" />
+    <Compile Include="ProductRTSSProcess.cs" />
+    <Compile Include="ProductSetupSettings.cs" />
+    <Compile Include="ProductShareVariables.cs" />
+    <Compile Include="ProductStateControl.cs" />
+    <Compile Include="ProductTeachPointSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recipe\ProductRecipeCassetteSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeDelaySettings.cs" />
+    <Compile Include="Recipe\ProductRecipeInputSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeMainSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeMotorPositionSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeOutputFileSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeOutputSettings.cs" />
+    <Compile Include="Recipe\ProductRecipePickUpHeadSeting.cs" />
+    <Compile Include="Recipe\ProductRecipeSortingSetting.cs" />
+    <Compile Include="Recipe\ProductRecipeVisionSettings.cs" />
+    <Compile Include="Recipe\ProductRecipeApplicationSetting.cs" />
+    <Compile Include="StationResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormConsumablePart\TurretFlipperMaintenance.resx">
+      <DependentUpon>TurretFlipperMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\AlarmParetoChart.resx">
+      <DependentUpon>AlarmParetoChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\GroupBoxTray.resx">
+      <DependentUpon>GroupBoxTray.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\MappingDisplay.resx">
+      <DependentUpon>MappingDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\StateDisplay.resx">
+      <DependentUpon>StateDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\SummaryReportDisplay.resx">
+      <DependentUpon>SummaryReportDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\THKPanel.resx">
+      <DependentUpon>THKPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\TrayInformation.resx">
+      <DependentUpon>TrayInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\YeildParetoChart.resx">
+      <DependentUpon>YeildParetoChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLowYieldPart\ContinuousLowYield.resx">
+      <DependentUpon>ContinuousLowYield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLowYieldPart\LowYieldCountingItem.resx">
+      <DependentUpon>LowYieldCountingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLowYieldPart\LowYieldSetting.resx">
+      <DependentUpon>LowYieldSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageAdditionalSystem.resx">
+      <DependentUpon>tabpageAdditionalSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageLowYieldSetting.resx">
+      <DependentUpon>tabpageLowYieldSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageMES.resx">
+      <DependentUpon>tabpageMES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\SortingSubPage.resx">
+      <DependentUpon>SortingSubPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageSortingRecipe.resx">
+      <DependentUpon>tabpageSortingRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpagePickUpHead.resx">
+      <DependentUpon>tabpagePickUpHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormAutoColletCalibration.resx">
+      <DependentUpon>ProductFormAutoColletCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormAutoForceGaugeCalibration.resx">
+      <DependentUpon>ProductFormAutoForceGaugeCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormCalibration.resx">
+      <DependentUpon>ProductFormCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormMainInterface.resx">
+      <DependentUpon>ProductFormMainInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormPusherControl.resx">
+      <DependentUpon>ProductFormPusherControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormConsumableParts.resx">
+      <DependentUpon>ProductFormConsumableParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsumablePart\MaintenanceCountItem.resx">
+      <DependentUpon>MaintenanceCountItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsumablePart\MaintenanceSetting.resx">
+      <DependentUpon>MaintenanceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\groupboxCustomerInput.resx">
+      <DependentUpon>groupboxCustomerInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\GUIRightPanel.resx">
+      <DependentUpon>GUIRightPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormBarcode.resx">
+      <DependentUpon>ProductFormBarcode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration\tabpageDriverFuji.resx">
+      <DependentUpon>tabpageDriverFuji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration\tabpageMisc.resx">
+      <DependentUpon>tabpageMisc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration\tabpageMotionController.resx">
+      <DependentUpon>tabpageMotionController.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration\tabpageVision.resx">
+      <DependentUpon>tabpageVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration\tabpageVisionTurret.resx">
+      <DependentUpon>tabpageVisionTurret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormConversion.resx">
+      <DependentUpon>ProductFormConversion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\MainPagePanel.resx">
+      <DependentUpon>MainPagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\SettingsGroupbox.resx">
+      <DependentUpon>SettingsGroupbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\SummaryPanel.resx">
+      <DependentUpon>SummaryPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\tabpageTurret.resx">
+      <DependentUpon>tabpageTurret.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJob\tabpageWaferSelection.resx">
+      <DependentUpon>tabpageWaferSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageFilePath.resx">
+      <DependentUpon>tabpageFilePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageServer.resx">
+      <DependentUpon>tabpageServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageTurretApplication.resx">
+      <DependentUpon>tabpageTurretApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\tabpageVision.resx">
+      <DependentUpon>tabpageVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\groupboxRecipeControl.resx">
+      <DependentUpon>groupboxRecipeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\panelMainRecipe.resx">
+      <DependentUpon>panelMainRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageInput.resx">
+      <DependentUpon>tabpageInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageDelay.resx">
+      <DependentUpon>tabpageDelay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageCassette.resx">
+      <DependentUpon>tabpageCassette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageVisionRecipe.resx">
+      <DependentUpon>tabpageVisionRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageOutputFile.resx">
+      <DependentUpon>tabpageOutputFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageMotorPosition.resx">
+      <DependentUpon>tabpageMotorPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecipe\tabpageOutput.resx">
+      <DependentUpon>tabpageOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetup\tabPageSetup.resx">
+      <DependentUpon>tabPageSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormJob.resx">
+      <DependentUpon>ProductFormJob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormLightingCalibration.resx">
+      <DependentUpon>ProductFormLightingCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormLowYieldParts.resx">
+      <DependentUpon>ProductFormLowYieldParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormOption.resx">
+      <DependentUpon>ProductFormOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormOutputAlignment.resx">
+      <DependentUpon>ProductFormOutputAlignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormTeachMap.resx">
+      <DependentUpon>ProductFormTeachMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormTeachPoint.resx">
+      <DependentUpon>ProductFormTeachPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormTeachPointGuide.resx">
+      <DependentUpon>ProductFormTeachPointGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionOutputMotionMove.resx">
+      <DependentUpon>ProductionOutputMotionMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FormTeachPoint\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JedecTray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JedecTraySelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JedecTraySorting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftTray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftTraySelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftTraySorting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialCarrier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialCarrierSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialCarrierSorting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JedecTrayRejected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftTrayRejected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpecialCarrierRejected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InProgress.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
