@@ -1,0 +1,602 @@
+﻿namespace Product
+{
+    partial class THKPanel
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupBoxTHK = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBoxTHK1 = new System.Windows.Forms.GroupBox();
+            this.labelTHK1FlowRate = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelTHK1ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK1PressureValue = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBoxTHK6 = new System.Windows.Forms.GroupBox();
+            this.labelTHK6FlowRate = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.labelTHK6ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK6PressureValue = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBoxTHK2 = new System.Windows.Forms.GroupBox();
+            this.labelTHK2FlowRate = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelTHK2ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK2PressureValue = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBoxTHK5 = new System.Windows.Forms.GroupBox();
+            this.labelTHK5FlowRate = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.labelTHK5ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK5PressureValue = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.groupBoxTHk3 = new System.Windows.Forms.GroupBox();
+            this.labelTHK3FlowRate = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.labelTHK3ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK3PressureValue = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.groupBoxTHK4 = new System.Windows.Forms.GroupBox();
+            this.labelTHK4FlowRate = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.labelTHK4ForceValue = new System.Windows.Forms.Label();
+            this.labelTHK4PressureValue = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.groupBoxTHK.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBoxTHK1.SuspendLayout();
+            this.groupBoxTHK6.SuspendLayout();
+            this.groupBoxTHK2.SuspendLayout();
+            this.groupBoxTHK5.SuspendLayout();
+            this.groupBoxTHk3.SuspendLayout();
+            this.groupBoxTHK4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBoxTHK
+            // 
+            this.groupBoxTHK.Controls.Add(this.panel1);
+            this.groupBoxTHK.Location = new System.Drawing.Point(3, 3);
+            this.groupBoxTHK.Name = "groupBoxTHK";
+            this.groupBoxTHK.Size = new System.Drawing.Size(273, 556);
+            this.groupBoxTHK.TabIndex = 0;
+            this.groupBoxTHK.TabStop = false;
+            this.groupBoxTHK.Text = "THK Status";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.groupBoxTHK1);
+            this.panel1.Controls.Add(this.groupBoxTHK6);
+            this.panel1.Controls.Add(this.groupBoxTHK2);
+            this.panel1.Controls.Add(this.groupBoxTHK5);
+            this.panel1.Controls.Add(this.groupBoxTHk3);
+            this.panel1.Controls.Add(this.groupBoxTHK4);
+            this.panel1.Location = new System.Drawing.Point(6, 19);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 527);
+            this.panel1.TabIndex = 17;
+            // 
+            // groupBoxTHK1
+            // 
+            this.groupBoxTHK1.Controls.Add(this.labelTHK1FlowRate);
+            this.groupBoxTHK1.Controls.Add(this.label4);
+            this.groupBoxTHK1.Controls.Add(this.labelTHK1ForceValue);
+            this.groupBoxTHK1.Controls.Add(this.labelTHK1PressureValue);
+            this.groupBoxTHK1.Controls.Add(this.label2);
+            this.groupBoxTHK1.Controls.Add(this.label1);
+            this.groupBoxTHK1.Location = new System.Drawing.Point(3, 10);
+            this.groupBoxTHK1.Name = "groupBoxTHK1";
+            this.groupBoxTHK1.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHK1.TabIndex = 6;
+            this.groupBoxTHK1.TabStop = false;
+            this.groupBoxTHK1.Text = "THK 1";
+            // 
+            // labelTHK1FlowRate
+            // 
+            this.labelTHK1FlowRate.AutoSize = true;
+            this.labelTHK1FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK1FlowRate.Name = "labelTHK1FlowRate";
+            this.labelTHK1FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK1FlowRate.TabIndex = 11;
+            this.labelTHK1FlowRate.Text = "000";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(171, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK1ForceValue
+            // 
+            this.labelTHK1ForceValue.AutoSize = true;
+            this.labelTHK1ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK1ForceValue.Name = "labelTHK1ForceValue";
+            this.labelTHK1ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK1ForceValue.TabIndex = 9;
+            this.labelTHK1ForceValue.Text = "000";
+            // 
+            // labelTHK1PressureValue
+            // 
+            this.labelTHK1PressureValue.AutoSize = true;
+            this.labelTHK1PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK1PressureValue.Name = "labelTHK1PressureValue";
+            this.labelTHK1PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK1PressureValue.TabIndex = 8;
+            this.labelTHK1PressureValue.Text = "000";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Force (N):";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Pressure(kPa):";
+            // 
+            // groupBoxTHK6
+            // 
+            this.groupBoxTHK6.Controls.Add(this.labelTHK6FlowRate);
+            this.groupBoxTHK6.Controls.Add(this.label29);
+            this.groupBoxTHK6.Controls.Add(this.labelTHK6ForceValue);
+            this.groupBoxTHK6.Controls.Add(this.labelTHK6PressureValue);
+            this.groupBoxTHK6.Controls.Add(this.label32);
+            this.groupBoxTHK6.Controls.Add(this.label33);
+            this.groupBoxTHK6.Location = new System.Drawing.Point(3, 435);
+            this.groupBoxTHK6.Name = "groupBoxTHK6";
+            this.groupBoxTHK6.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHK6.TabIndex = 16;
+            this.groupBoxTHK6.TabStop = false;
+            this.groupBoxTHK6.Text = "THK 6";
+            this.groupBoxTHK6.Visible = false;
+            // 
+            // labelTHK6FlowRate
+            // 
+            this.labelTHK6FlowRate.AutoSize = true;
+            this.labelTHK6FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK6FlowRate.Name = "labelTHK6FlowRate";
+            this.labelTHK6FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK6FlowRate.TabIndex = 11;
+            this.labelTHK6FlowRate.Text = "000";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(6, 62);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(171, 25);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK6ForceValue
+            // 
+            this.labelTHK6ForceValue.AutoSize = true;
+            this.labelTHK6ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK6ForceValue.Name = "labelTHK6ForceValue";
+            this.labelTHK6ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK6ForceValue.TabIndex = 9;
+            this.labelTHK6ForceValue.Text = "000";
+            // 
+            // labelTHK6PressureValue
+            // 
+            this.labelTHK6PressureValue.AutoSize = true;
+            this.labelTHK6PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK6PressureValue.Name = "labelTHK6PressureValue";
+            this.labelTHK6PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK6PressureValue.TabIndex = 8;
+            this.labelTHK6PressureValue.Text = "000";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 42);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(101, 25);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Force (N):";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(6, 22);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(144, 25);
+            this.label33.TabIndex = 6;
+            this.label33.Text = "Pressure(kPa):";
+            // 
+            // groupBoxTHK2
+            // 
+            this.groupBoxTHK2.Controls.Add(this.labelTHK2FlowRate);
+            this.groupBoxTHK2.Controls.Add(this.label5);
+            this.groupBoxTHK2.Controls.Add(this.labelTHK2ForceValue);
+            this.groupBoxTHK2.Controls.Add(this.labelTHK2PressureValue);
+            this.groupBoxTHK2.Controls.Add(this.label8);
+            this.groupBoxTHK2.Controls.Add(this.label9);
+            this.groupBoxTHK2.Location = new System.Drawing.Point(3, 95);
+            this.groupBoxTHK2.Name = "groupBoxTHK2";
+            this.groupBoxTHK2.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHK2.TabIndex = 12;
+            this.groupBoxTHK2.TabStop = false;
+            this.groupBoxTHK2.Text = "THK 2";
+            // 
+            // labelTHK2FlowRate
+            // 
+            this.labelTHK2FlowRate.AutoSize = true;
+            this.labelTHK2FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK2FlowRate.Name = "labelTHK2FlowRate";
+            this.labelTHK2FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK2FlowRate.TabIndex = 11;
+            this.labelTHK2FlowRate.Text = "000";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK2ForceValue
+            // 
+            this.labelTHK2ForceValue.AutoSize = true;
+            this.labelTHK2ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK2ForceValue.Name = "labelTHK2ForceValue";
+            this.labelTHK2ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK2ForceValue.TabIndex = 9;
+            this.labelTHK2ForceValue.Text = "000";
+            // 
+            // labelTHK2PressureValue
+            // 
+            this.labelTHK2PressureValue.AutoSize = true;
+            this.labelTHK2PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK2PressureValue.Name = "labelTHK2PressureValue";
+            this.labelTHK2PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK2PressureValue.TabIndex = 8;
+            this.labelTHK2PressureValue.Text = "000";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 25);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Force (N):";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(144, 25);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Pressure(kPa):";
+            // 
+            // groupBoxTHK5
+            // 
+            this.groupBoxTHK5.Controls.Add(this.labelTHK5FlowRate);
+            this.groupBoxTHK5.Controls.Add(this.label23);
+            this.groupBoxTHK5.Controls.Add(this.labelTHK5ForceValue);
+            this.groupBoxTHK5.Controls.Add(this.labelTHK5PressureValue);
+            this.groupBoxTHK5.Controls.Add(this.label26);
+            this.groupBoxTHK5.Controls.Add(this.label27);
+            this.groupBoxTHK5.Location = new System.Drawing.Point(3, 350);
+            this.groupBoxTHK5.Name = "groupBoxTHK5";
+            this.groupBoxTHK5.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHK5.TabIndex = 15;
+            this.groupBoxTHK5.TabStop = false;
+            this.groupBoxTHK5.Text = "THK 5";
+            this.groupBoxTHK5.Visible = false;
+            // 
+            // labelTHK5FlowRate
+            // 
+            this.labelTHK5FlowRate.AutoSize = true;
+            this.labelTHK5FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK5FlowRate.Name = "labelTHK5FlowRate";
+            this.labelTHK5FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK5FlowRate.TabIndex = 11;
+            this.labelTHK5FlowRate.Text = "000";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 62);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(171, 25);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK5ForceValue
+            // 
+            this.labelTHK5ForceValue.AutoSize = true;
+            this.labelTHK5ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK5ForceValue.Name = "labelTHK5ForceValue";
+            this.labelTHK5ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK5ForceValue.TabIndex = 9;
+            this.labelTHK5ForceValue.Text = "000";
+            // 
+            // labelTHK5PressureValue
+            // 
+            this.labelTHK5PressureValue.AutoSize = true;
+            this.labelTHK5PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK5PressureValue.Name = "labelTHK5PressureValue";
+            this.labelTHK5PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK5PressureValue.TabIndex = 8;
+            this.labelTHK5PressureValue.Text = "000";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 42);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(101, 25);
+            this.label26.TabIndex = 7;
+            this.label26.Text = "Force (N):";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 22);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(144, 25);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "Pressure(kPa):";
+            // 
+            // groupBoxTHk3
+            // 
+            this.groupBoxTHk3.Controls.Add(this.labelTHK3FlowRate);
+            this.groupBoxTHk3.Controls.Add(this.label11);
+            this.groupBoxTHk3.Controls.Add(this.labelTHK3ForceValue);
+            this.groupBoxTHk3.Controls.Add(this.labelTHK3PressureValue);
+            this.groupBoxTHk3.Controls.Add(this.label14);
+            this.groupBoxTHk3.Controls.Add(this.label15);
+            this.groupBoxTHk3.Location = new System.Drawing.Point(3, 180);
+            this.groupBoxTHk3.Name = "groupBoxTHk3";
+            this.groupBoxTHk3.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHk3.TabIndex = 13;
+            this.groupBoxTHk3.TabStop = false;
+            this.groupBoxTHk3.Text = "THK 3";
+            this.groupBoxTHk3.Visible = false;
+            // 
+            // labelTHK3FlowRate
+            // 
+            this.labelTHK3FlowRate.AutoSize = true;
+            this.labelTHK3FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK3FlowRate.Name = "labelTHK3FlowRate";
+            this.labelTHK3FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK3FlowRate.TabIndex = 11;
+            this.labelTHK3FlowRate.Text = "000";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 62);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(171, 25);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK3ForceValue
+            // 
+            this.labelTHK3ForceValue.AutoSize = true;
+            this.labelTHK3ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK3ForceValue.Name = "labelTHK3ForceValue";
+            this.labelTHK3ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK3ForceValue.TabIndex = 9;
+            this.labelTHK3ForceValue.Text = "000";
+            // 
+            // labelTHK3PressureValue
+            // 
+            this.labelTHK3PressureValue.AutoSize = true;
+            this.labelTHK3PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK3PressureValue.Name = "labelTHK3PressureValue";
+            this.labelTHK3PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK3PressureValue.TabIndex = 8;
+            this.labelTHK3PressureValue.Text = "000";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 42);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(101, 25);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Force (N):";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(144, 25);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Pressure(kPa):";
+            // 
+            // groupBoxTHK4
+            // 
+            this.groupBoxTHK4.Controls.Add(this.labelTHK4FlowRate);
+            this.groupBoxTHK4.Controls.Add(this.label17);
+            this.groupBoxTHK4.Controls.Add(this.labelTHK4ForceValue);
+            this.groupBoxTHK4.Controls.Add(this.labelTHK4PressureValue);
+            this.groupBoxTHK4.Controls.Add(this.label20);
+            this.groupBoxTHK4.Controls.Add(this.label21);
+            this.groupBoxTHK4.Location = new System.Drawing.Point(3, 265);
+            this.groupBoxTHK4.Name = "groupBoxTHK4";
+            this.groupBoxTHK4.Size = new System.Drawing.Size(223, 84);
+            this.groupBoxTHK4.TabIndex = 14;
+            this.groupBoxTHK4.TabStop = false;
+            this.groupBoxTHK4.Text = "THK 4";
+            this.groupBoxTHK4.Visible = false;
+            // 
+            // labelTHK4FlowRate
+            // 
+            this.labelTHK4FlowRate.AutoSize = true;
+            this.labelTHK4FlowRate.Location = new System.Drawing.Point(137, 62);
+            this.labelTHK4FlowRate.Name = "labelTHK4FlowRate";
+            this.labelTHK4FlowRate.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK4FlowRate.TabIndex = 11;
+            this.labelTHK4FlowRate.Text = "000";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 62);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(171, 25);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Flow Rate (L/min):";
+            // 
+            // labelTHK4ForceValue
+            // 
+            this.labelTHK4ForceValue.AutoSize = true;
+            this.labelTHK4ForceValue.Location = new System.Drawing.Point(137, 42);
+            this.labelTHK4ForceValue.Name = "labelTHK4ForceValue";
+            this.labelTHK4ForceValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK4ForceValue.TabIndex = 9;
+            this.labelTHK4ForceValue.Text = "000";
+            // 
+            // labelTHK4PressureValue
+            // 
+            this.labelTHK4PressureValue.AutoSize = true;
+            this.labelTHK4PressureValue.Location = new System.Drawing.Point(137, 22);
+            this.labelTHK4PressureValue.Name = "labelTHK4PressureValue";
+            this.labelTHK4PressureValue.Size = new System.Drawing.Size(45, 25);
+            this.labelTHK4PressureValue.TabIndex = 8;
+            this.labelTHK4PressureValue.Text = "000";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 42);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(101, 25);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Force (N):";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 22);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(144, 25);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Pressure(kPa):";
+            // 
+            // THKPanel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.groupBoxTHK);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "THKPanel";
+            this.Size = new System.Drawing.Size(279, 568);
+            this.groupBoxTHK.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.groupBoxTHK1.ResumeLayout(false);
+            this.groupBoxTHK1.PerformLayout();
+            this.groupBoxTHK6.ResumeLayout(false);
+            this.groupBoxTHK6.PerformLayout();
+            this.groupBoxTHK2.ResumeLayout(false);
+            this.groupBoxTHK2.PerformLayout();
+            this.groupBoxTHK5.ResumeLayout(false);
+            this.groupBoxTHK5.PerformLayout();
+            this.groupBoxTHk3.ResumeLayout(false);
+            this.groupBoxTHk3.PerformLayout();
+            this.groupBoxTHK4.ResumeLayout(false);
+            this.groupBoxTHK4.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        public System.Windows.Forms.GroupBox groupBoxTHK;
+        private System.Windows.Forms.GroupBox groupBoxTHK6;
+        public System.Windows.Forms.Label labelTHK6FlowRate;
+        private System.Windows.Forms.Label label29;
+        public System.Windows.Forms.Label labelTHK6ForceValue;
+        public System.Windows.Forms.Label labelTHK6PressureValue;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.GroupBox groupBoxTHK5;
+        public System.Windows.Forms.Label labelTHK5FlowRate;
+        private System.Windows.Forms.Label label23;
+        public System.Windows.Forms.Label labelTHK5ForceValue;
+        public System.Windows.Forms.Label labelTHK5PressureValue;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox groupBoxTHK4;
+        public System.Windows.Forms.Label labelTHK4FlowRate;
+        private System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label labelTHK4ForceValue;
+        public System.Windows.Forms.Label labelTHK4PressureValue;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.GroupBox groupBoxTHk3;
+        public System.Windows.Forms.Label labelTHK3FlowRate;
+        private System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label labelTHK3ForceValue;
+        public System.Windows.Forms.Label labelTHK3PressureValue;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.GroupBox groupBoxTHK2;
+        public System.Windows.Forms.Label labelTHK2FlowRate;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label labelTHK2ForceValue;
+        public System.Windows.Forms.Label labelTHK2PressureValue;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBoxTHK1;
+        public System.Windows.Forms.Label labelTHK1FlowRate;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label labelTHK1ForceValue;
+        public System.Windows.Forms.Label labelTHK1PressureValue;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+    }
+}

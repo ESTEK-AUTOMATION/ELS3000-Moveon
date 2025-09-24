@@ -1,0 +1,2215 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
+
+namespace Product
+{
+    public partial class MappingDisplay : UserControl
+    {
+        private string m_strmode = "Mapping Display";
+
+        //Total Mapping count value
+        ToolTip t1 = new ToolTip();
+        //Get Top Left Position.
+        int Totol_Count;
+        //Get Top Left Position.
+        int Top_Left_Pos_X;
+        int Top_Left_Pos_Y;
+        //Get Top Right Position.
+        int Top_Right_Pos_X;
+        int Top_Right_Pos_Y;
+        //Get Botton Left Position.
+        int Bottom_Left_Pos_X;
+        int Bottom_Left_Pos_Y;
+        //Get Botton Right Position.
+        int Bottom_Right_Pos_X;
+        int Bottom_Right_Pos_Y;
+        int X_Cordinate;
+        int Y_Cordinate;
+        int Result_Count = 0;
+        string Result_Bincode = "";
+        int Rect_XY;
+        //Number of Row And Coloum
+        int Column_Cell = 65;
+        int Row_Cell = 65;
+        //Get ColumnDirection and RowDirection From Recipe
+        int nColumnDirection;
+        int nRowDirection;
+        //Magnify Glass
+        /// <summary>
+        /// Stores the zoomfactor of the picZoom picturebox
+        /// </summary>
+        //Store Picture 1 Mouse Location for Zoom In and Zoom Out used
+        int PB1_Image_Mouse_Location_X;
+        int PB1_Image_Mouse_Location_Y;
+        /// <summary>
+        /// Stores the color used to fill any areas not covered by an image
+        /// </summary>
+        private Color _BackColor;
+        int _ZoomFactor = 0;
+
+        int Rect_X;
+        int Rect_Y;
+
+        ProductShareVariables m_ProductShareVariables;
+
+        public ProductShareVariables productShareVariables
+        {
+            set
+            {
+                m_ProductShareVariables = value;
+            }
+        }
+
+        public MappingDisplay()
+        {
+            InitializeComponent();
+        }
+        
+        //public void pictureBoxMapping_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    //Machine.EventLogger.WriteLog(string.Format("{0} Click mapping at {1}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), m_strmode));
+        //    if (m_ProductShareVariables.mappingInfo.arrayUnitInfo == null)
+        //    {
+        //        return;
+        //    }
+        //    //Column Left To Right, Row Top To Bottom
+        //    int Top_Left_X;
+        //    int Top_Left_Y;
+        //    //Column Right to Left, Row Top To Bottom
+        //    int Top_Right_X;
+        //    int Top_Right_Y;
+        //    //Column Left To Right, Row Bottom To Top
+        //    int Bottom_Left_X;
+        //    int Bottom_Left_Y;
+        //    //Column Right to Left, Row Bottom To Top
+        //    int Bottom_Right_X;
+        //    int Bottom_Right_Y;
+        //    int Count_Temp_X = 0;
+        //    int Count_Temp_Y = 0;
+        //    //int P_Width = Convert.ToInt16(pictureBox1.Width);
+        //    //int P_Height = Convert.ToInt16(pictureBox1.Height);
+        //    int Count_Max;
+        //    Count_Max = Totol_Count * 20;
+        //    try
+        //    {
+        //        //Count_Temp = Totol_Count;
+        //        //Column Left To Right, Row Top To Botto
+        //        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 0))
+        //        {
+        //            Top_Left_X = e.X - Top_Left_Pos_X;
+        //            Top_Left_Y = e.Y - Top_Left_Pos_Y;
+        //            while (Top_Left_X > 0)
+        //            {
+        //                Top_Left_X = Top_Left_X - Rect_X;
+        //                Count_Temp_X = Count_Temp_X + 1;
+        //            }
+        //            while (Top_Left_Y > 0)
+        //            {
+        //                Top_Left_Y = Top_Left_Y - Rect_Y;
+        //                Count_Temp_Y = Count_Temp_Y + 1;
+        //            }
+        //            Result_Count = GetUnitNoFromMap(m_ProductShareVariables.mappingInfo, Count_Temp_X, Count_Temp_Y);
+        //            //Result_Count = ((Count_Temp_Y - 1) * X_Cell) + Count_Temp_X;
+        //            //if (e.X < (Column_Cell * Rect_X) + Top_Left_Pos_X && e.X > Top_Left_Pos_X && e.Y < (Row_Cell * Rect_Y) + Top_Left_Pos_Y && e.Y > Top_Left_Pos_Y)
+        //            if (nColumnDirection == 0 && nRowDirection == 1 && e.X < (Column_Cell * Rect_X) + Top_Left_Pos_X && e.X > Top_Left_Pos_X && e.Y < (Row_Cell * Rect_Y) + Top_Left_Pos_Y && e.Y > Top_Left_Pos_Y)
+        //            {
+        //                //if (nColumnDirection == 0 && nRowDirection == 1)
+        //                //{
+        //                //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+
+        //                //}
+        //                //if (nColumnDirection == 1 && nRowDirection == 0)
+        //                //{
+        //                //    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                //    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                //    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                //    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+
+        //                //    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                //    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                //    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+
+        //                //}
+        //            }
+        //            else if (nColumnDirection == 1 && nRowDirection == 0 && e.X < (Row_Cell * Rect_Y) + Top_Left_Pos_X && e.X > Top_Left_Pos_X && e.Y < (Column_Cell * Rect_X) + Top_Left_Pos_Y && e.Y > Top_Left_Pos_Y)
+        //            {
+        //                string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //            }
+        //            else
+        //            {
+        //                t1.Show("Out Of Range", pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = "Out of Range";
+        //            }
+        //        }
+        //        //Column Right to Left, Row Top To Bottom
+        //        if ((nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 2))
+        //        {
+        //            Top_Right_X = e.X - (Top_Right_Pos_X + Rect_X);
+        //            Top_Right_Y = e.Y - Top_Right_Pos_Y;
+        //            while (Top_Right_X < 0)
+        //            {
+        //                Top_Right_X = Top_Right_X + Rect_X;
+        //                Count_Temp_X = Count_Temp_X + 1;
+        //            }
+        //            while (Top_Right_Y > 0)
+        //            {
+        //                Top_Right_Y = Top_Right_Y - Rect_Y;
+        //                Count_Temp_Y = Count_Temp_Y + 1;
+        //            }
+        //            Result_Count = GetUnitNoFromMap(m_ProductShareVariables.mappingInfo, Count_Temp_X, Count_Temp_Y);
+        //            //Result_Count = ((Count_Temp_Y - 1) * X_Cell) + Count_Temp_X;
+        //            if (e.X > (Top_Right_Pos_X + Rect_X) - (Column_Cell * Rect_X) && e.X < (Top_Right_Pos_X + Rect_X) && e.Y < (Row_Cell * Rect_Y) + Top_Right_Pos_Y && e.Y > Top_Right_Pos_Y)
+        //            {
+        //                if (nColumnDirection == 2 && nRowDirection == 1)
+        //                {
+        //                    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                }
+        //                if (nColumnDirection == 1 && nRowDirection == 2)
+        //                {
+        //                    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+
+        //                }
+        //            }
+        //            else
+        //            {
+        //                t1.Show("Out Of Range", pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = "Out of Range";
+        //            }
+        //        }
+        //        //Column Left To Right, Row Bottom To Top
+        //        if ((nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 0))
+        //        {
+        //            Bottom_Left_X = e.X - Bottom_Left_Pos_X;
+        //            Bottom_Left_Y = e.Y - (Bottom_Left_Pos_Y + Rect_Y);
+        //            while (Bottom_Left_X > 0)
+        //            {
+        //                Bottom_Left_X = Bottom_Left_X - Rect_X;
+        //                Count_Temp_X = Count_Temp_X + 1;
+        //            }
+        //            while (Bottom_Left_Y < 0)
+        //            {
+        //                Bottom_Left_Y = Bottom_Left_Y + Rect_Y;
+        //                Count_Temp_Y = Count_Temp_Y + 1;
+        //            }
+        //            Result_Count = GetUnitNoFromMap(m_ProductShareVariables.mappingInfo, Count_Temp_X, Count_Temp_Y);
+        //            //Result_Count = ((Count_Temp_Y - 1) * X_Cell) + Count_Temp_X;
+        //            if (e.X < (Column_Cell * Rect_X) + Bottom_Left_Pos_X && e.X > Bottom_Left_Pos_X && e.Y > (Bottom_Left_Pos_Y + Rect_Y) - (Row_Cell * Rect_Y) && e.Y < Bottom_Left_Pos_Y + Rect_Y)
+        //            {
+        //                if (nColumnDirection == 0 && nRowDirection == 3)
+        //                {
+        //                    //string s = string.Format("Cell {0}, Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                }
+        //                if (nColumnDirection == 3 && nRowDirection == 0)
+        //                {
+        //                    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                t1.Show("Out Of Range", pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = "Out of Range";
+        //            }
+        //        }
+        //        //Column Right to Left, Row Bottom To Top
+        //        if ((nColumnDirection == 2 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 2))
+        //        {
+        //            Bottom_Right_X = e.X - (Bottom_Right_Pos_X + Rect_X);
+        //            Bottom_Right_Y = e.Y - (Bottom_Right_Pos_Y + Rect_Y);
+        //            while (Bottom_Right_X < 0)
+        //            {
+        //                Bottom_Right_X = Bottom_Right_X + Rect_X;
+        //                Count_Temp_X = Count_Temp_X + 1;
+        //            }
+        //            while (Bottom_Right_Y < 0)
+        //            {
+        //                Bottom_Right_Y = Bottom_Right_Y + Rect_Y;
+        //                Count_Temp_Y = Count_Temp_Y + 1;
+        //            }
+        //            Result_Count = GetUnitNoFromMap(m_ProductShareVariables.mappingInfo, Count_Temp_X, Count_Temp_Y);
+        //            //Result_Count = ((Count_Temp_Y - 1) * X_Cell) + Count_Temp_X;
+        //            if (e.X > (Bottom_Right_Pos_X + Rect_X) - (Column_Cell * Rect_X) && e.X < (Bottom_Right_Pos_X + Rect_X) && e.Y > (Bottom_Right_Pos_Y + Rect_Y) - (Row_Cell * Rect_Y) && e.Y < Bottom_Right_Pos_Y + Rect_Y)
+        //            {
+        //                if (nColumnDirection == 2 && nRowDirection == 3)
+        //                {
+        //                    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_X, Count_Temp_Y);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                }
+        //                if (nColumnDirection == 3 && nRowDirection == 2)
+        //                {
+        //                    //string s = string.Format("Cell {0},  Col{1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    //t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    ////labelCellLocation.Text = string.Format("Cell = {0}, Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                    //labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_Y, Count_Temp_X);
+        //                    string s = string.Format("Cell {0}, Col {1}, Row {2}", Convert.ToString(Result_Count), Count_Temp_Y, Count_Temp_X);
+        //                    t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                    labelCellLocation.Text = string.Format("Row = {1}, Column = {2}", Result_Count, Count_Temp_X, Count_Temp_Y);
+        //                }
+        //            }
+        //            else
+        //            {
+        //                t1.Show("Out Of Range", pictureBoxMapping, e.X + 10, e.Y + 10);
+        //                labelCellLocation.Text = "Out of Range";
+        //            }
+        //        }
+        //        // If no picture is loaded, return
+        //        if (pictureBoxMapping.Image == null)
+        //            return;
+        //        //int i = m_readInfo.Update_Map_Array_Data(Count_Temp_X, Count_Temp_Y, 8);
+        //        //Generate_Map_Image();
+        //        PB1_Image_Mouse_Location_X = e.X;
+        //        PB1_Image_Mouse_Location_Y = e.Y;
+        //        //UpdateZoomedImage(e.X, e.Y);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //    }
+
+        //}
+
+        public void pictureBoxMapping_MouseDown(object sender, MouseEventArgs e)
+        {
+            BinInfo TemMappingInfo = new BinInfo();
+            //if ((m_ProductShareVariables.nInputTrayNo % 2) == 1)
+            {
+                TemMappingInfo = m_ProductShareVariables.MultipleMappingInfo[m_ProductShareVariables.nInputTrayNo];
+            }
+            //else
+            //{
+            //    TemMappingInfo = m_ProductShareVariables.mappingInfo2;
+            //}
+            if (TemMappingInfo.arrayUnitInfo == null)
+            {
+                return;
+            }
+
+            int nRow = 0;
+            int nColumn = 0;
+            bool bOutOfRange = false;
+
+            if (nColumnDirection == 0 && nRowDirection == 1)
+            {
+                if (e.X >= Top_Left_Pos_X && e.X <= Top_Left_Pos_X + (TemMappingInfo.Col_Max * Rect_X)
+                    && e.Y >= Top_Left_Pos_Y && e.Y <= Top_Left_Pos_Y + (TemMappingInfo.Row_Max * Rect_Y))
+                {
+                    for (int x = Top_Left_Pos_X; x < e.X; x += Rect_X)
+                    {
+                        nColumn++;
+                    }
+                    for (int y = Top_Left_Pos_Y; y < e.Y; y += Rect_Y)
+                    {
+                        nRow++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 1 && nRowDirection == 0)
+            {
+                if (e.X >= Top_Left_Pos_X && e.X <= Top_Left_Pos_X + (TemMappingInfo.Row_Max * Rect_Y)
+                    && e.Y >= Top_Left_Pos_Y && e.Y <= Top_Left_Pos_Y + (TemMappingInfo.Col_Max * Rect_X))
+                {
+                    for (int x = Top_Left_Pos_X; x < e.X; x += Rect_Y)
+                    {
+                        nRow++;
+                    }
+                    for (int y = Top_Left_Pos_Y; y < e.Y; y += Rect_X)
+                    {
+                        nColumn++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 0 && nRowDirection == 3)
+            {
+                if (e.X >= Bottom_Left_Pos_X && e.X <= Bottom_Left_Pos_X + (TemMappingInfo.Col_Max * Rect_X)
+                    && e.Y >= Bottom_Left_Pos_Y - ((TemMappingInfo.Row_Max - 1) * Rect_Y) && e.Y <= Bottom_Left_Pos_Y + Rect_Y)
+                {
+                    for (int x = Bottom_Left_Pos_X; x < e.X; x += Rect_X)
+                    {
+                        nColumn++;
+                    }
+                    for (int y = Bottom_Left_Pos_Y + Rect_Y; y > e.Y; y -= Rect_Y)
+                    {
+                        nRow++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 3 && nRowDirection == 0)
+            {
+                if (e.X >= Bottom_Left_Pos_X && e.X <= Bottom_Left_Pos_X + (TemMappingInfo.Row_Max * Rect_Y)
+                    && e.Y >= Bottom_Left_Pos_Y - ((TemMappingInfo.Col_Max - 1) * Rect_X) && e.Y <= Bottom_Left_Pos_Y + Rect_X)
+                {
+                    for (int x = Bottom_Left_Pos_X; x < e.X; x += Rect_X)
+                    {
+                        nRow++;
+                    }
+                    for (int y = Bottom_Left_Pos_Y + Rect_X; y > e.Y; y -= Rect_Y)
+                    {
+                        nColumn++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 2 && nRowDirection == 1)
+            {
+                if (e.X >= Top_Right_Pos_X - ((TemMappingInfo.Col_Max - 1) * Rect_X) && e.X <= Top_Right_Pos_X + Rect_X
+                    && e.Y >= Top_Right_Pos_Y && e.Y <= Top_Right_Pos_Y + TemMappingInfo.Row_Max * Rect_Y)
+                {
+                    for (int x = Top_Right_Pos_X + Rect_X; x > e.X; x -= Rect_X)
+                    {
+                        nColumn++;
+                    }
+                    for (int y = Top_Right_Pos_Y; y < e.Y; y += Rect_Y)
+                    {
+                        nRow++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 1 && nRowDirection == 2)
+            {
+                if (e.X >= Top_Right_Pos_X - ((TemMappingInfo.Row_Max - 1) * Rect_Y) && e.X <= Top_Right_Pos_X + Rect_Y
+                    && e.Y >= Top_Right_Pos_Y && e.Y <= Top_Right_Pos_Y + TemMappingInfo.Col_Max * Rect_X)
+                {
+                    for (int x = Top_Right_Pos_X + Rect_Y; x > e.X; x -= Rect_Y)
+                    {
+                        nRow++;
+                    }
+                    for (int y = Top_Right_Pos_Y; y < e.Y; y += Rect_X)
+                    {
+                        nColumn++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 2 && nRowDirection == 3)
+            {
+                if (e.X >= Bottom_Right_Pos_X - ((TemMappingInfo.Col_Max - 1) * Rect_X) && e.X <= Bottom_Right_Pos_X + Rect_X
+                    && e.Y >= Bottom_Right_Pos_Y - ((TemMappingInfo.Row_Max - 1) * Rect_Y) && e.Y <= Bottom_Right_Pos_Y + Rect_Y)
+                {
+                    for (int x = Bottom_Right_Pos_X + Rect_X; x > e.X; x -= Rect_X)
+                    {
+                        nColumn++;
+                    }
+                    for (int y = Bottom_Right_Pos_Y + Rect_Y; y > e.Y; y -= Rect_Y)
+                    {
+                        nRow++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+            else if (nColumnDirection == 3 && nRowDirection == 2)
+            {
+                if (e.X >= Bottom_Right_Pos_X - ((TemMappingInfo.Row_Max - 1) * Rect_Y) && e.X <= Bottom_Right_Pos_X + Rect_Y
+                    && e.Y >= Bottom_Right_Pos_Y - ((TemMappingInfo.Col_Max - 1) * Rect_X) && e.Y <= Bottom_Right_Pos_Y + Rect_X)
+                {
+                    for (int x = Bottom_Right_Pos_X + Rect_Y; x > e.X; x -= Rect_Y)
+                    {
+                        nRow++;
+                    }
+                    for (int y = Bottom_Right_Pos_Y + Rect_X; y > e.Y; y -= Rect_X)
+                    {
+                        nColumn++;
+                    }
+                }
+                else
+                {
+                    bOutOfRange = true;
+                }
+            }
+
+            if (bOutOfRange)
+            {
+                t1.Show("Out Of Range", pictureBoxMapping, e.X + 10, e.Y + 10);
+                labelCellLocation.Text = "Out of Range";
+            }
+            else
+            {
+                Result_Count = GetUnitNoFromMap(TemMappingInfo, nRow, nColumn);
+                Result_Bincode = GetDefectCodeFromMap(TemMappingInfo, nRow, nColumn);
+                string s = $"Cell {Result_Count}, Row {nRow}, Col {nColumn}, Bincode {Result_Bincode}";
+                t1.Show(s, pictureBoxMapping, e.X + 10, e.Y + 10);
+                labelCellLocation.Text = $"Row = {nRow}, Column = {nColumn}";
+            }
+        }
+
+        public void pictureBoxMapping_MouseUp(object sender, MouseEventArgs e)
+        {
+            t1.RemoveAll();
+        }
+
+        public int GetUnitNoFromMap(BinInfo mappingInfo, int Y, int X)
+        {
+            int nError = 0;
+            int Array_Index = 0;
+            for (int i = 0; i < mappingInfo.arrayUnitInfo.Length; i++)
+            {
+                if (mappingInfo.arrayUnitInfo[i].InputRow == Y && mappingInfo.arrayUnitInfo[i].InputColumn == X)
+                //if (mappingInfo.arrayUnitInfo[i].Y == Y && mappingInfo.arrayUnitInfo[i].X == X)
+                {
+                    Array_Index = i;
+                    break;
+                }
+            }
+            return mappingInfo.arrayUnitInfo[Array_Index].CellNumber;
+        }
+        public string GetDefectCodeFromMap(BinInfo mappingInfo, int Y, int X)
+        {
+            int nError = 0;
+            int Array_Index = 0;
+            for (int i = 0; i < mappingInfo.arrayUnitInfo.Length; i++)
+            {
+                if (mappingInfo.arrayUnitInfo[i].InputRow == Y && mappingInfo.arrayUnitInfo[i].InputColumn == X)
+                //if (mappingInfo.arrayUnitInfo[i].Y == Y && mappingInfo.arrayUnitInfo[i].X == X)
+                {
+                    Array_Index = i;
+                    break;
+                }
+            }
+            return mappingInfo.arrayUnitInfo[Array_Index].BinCode;
+        }
+        //virtual public void Generate_Map_Image(BinInfo mappingInfo, int ncolumnDirection, int nrowDirection)
+        //{
+        //    nColumnDirection = ncolumnDirection;
+        //    nRowDirection = nrowDirection;
+        //    Column_Cell = mappingInfo.Col_Max;
+        //    Row_Cell = mappingInfo.Row_Max;
+
+        //    //richTextBoxMessage.Text = string.Format("Width = {0}, Height = {1}", Convert.ToString(pictureBox1.Width), Convert.ToString(pictureBox1.Height));
+        //    // Create font and brush.
+        //    Font fontWording = new Font("Arail Narrow", 1);
+        //    SolidBrush solidBrushWording = new SolidBrush(Color.Black);
+        //    //SolidBrush LightGreenBrush = new SolidBrush(Color.LightGreen);                    //Check OK , int = 0
+        //    //SolidBrush grayBrush = new SolidBrush(Color.Gray);                      //Before Check    
+        //    //SolidBrush CyanBrush = new SolidBrush(Color.Cyan);                      //Status "X"
+        //    //SolidBrush YellowBrush = new SolidBrush(Color.Yellow);                  //Status "FR1"
+        //    //SolidBrush MagentaBrush = new SolidBrush(Color.Magenta);                //Status "S"
+        //    SolidBrush LightGreenBrush = new SolidBrush(Color.LightGreen);                      //Status "G"
+        //    //SolidBrush LightSkyBlueBrush = new SolidBrush(Color.LightSkyBlue);      //Status "C"
+        //    SolidBrush CoralBrush = new SolidBrush(Color.Coral);                    //Status "Y"
+        //    SolidBrush HotPinkBrush = new SolidBrush(Color.HotPink);                //Status "DD1"
+        //    SolidBrush BlueBrush = new SolidBrush(Color.Blue);                      //Status mouse click
+        //    // Set format of string.
+        //    StringFormat drawFormat = new StringFormat();
+        //    drawFormat.Alignment = StringAlignment.Center;
+        //    int nPictureBoxMaxWidth = Convert.ToInt16(pictureBoxMapping.Width);
+        //    int nPictureBoxMaxHeight = Convert.ToInt16(pictureBoxMapping.Height);
+        //    int X_Column_Count = 1;
+        //    int Y_Row_Count = 1;
+        //    int nXPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Row_Max;
+        //    int nYPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Col_Max;
+        //    int XY_Length = 0;
+        //    ////Calculate total area
+        //    //int Total_Area = (P_Width - 20) * (P_Height - 20);
+        //    //Totl Number of cell
+        //    int nTotalCell = mappingInfo.Col_Max * mappingInfo.Row_Max;
+        //    Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height);
+        //    bitmap.SetResolution(600, 600);
+        //    Graphics g = Graphics.FromImage(bitmap);
+        //    string strColorCode = "";
+
+        //    string Num;
+        //    if (nXPitchLength < nYPitchLength)
+        //    {
+        //        if (nXPitchLength * mappingInfo.Col_Max > nPictureBoxMaxWidth)
+        //            nXPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Col_Max;
+        //        if (nXPitchLength * mappingInfo.Row_Max > nPictureBoxMaxHeight)
+        //            nXPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Row_Max;
+        //        XY_Length = nXPitchLength;
+        //        Rect_XY = XY_Length;
+
+        //        //if (mappingInfo.arrayUnitInfo[1].First_Pos == 0 ^ mappingInfo.arrayUnitInfo[1].First_Pos == 4)
+        //        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 0))
+        //        {
+        //            //Top Left Position
+        //            Top_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Top_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Left_Pos_X;
+        //            Y_Cordinate = Top_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 2))
+        //        {
+        //            //Top Right Position
+        //            Top_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Top_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Right_Pos_X;// -XY_Length;
+        //            Y_Cordinate = Top_Right_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 0))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Bottom_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Left_Pos_X;
+        //            Y_Cordinate = Bottom_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 2))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Bottom_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Right_Pos_X;
+        //            Y_Cordinate = Bottom_Right_Pos_Y;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (nYPitchLength * mappingInfo.Row_Max > nPictureBoxMaxHeight)
+        //            nYPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Row_Max;
+        //        if (nYPitchLength * mappingInfo.Col_Max > nPictureBoxMaxWidth)
+        //            nYPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Col_Max;
+        //        XY_Length = nYPitchLength;
+        //        Rect_XY = XY_Length;
+        //        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 0))
+        //        {
+        //            //Top Left Position
+        //            Top_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Top_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Left_Pos_X;
+        //            Y_Cordinate = Top_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 2))
+        //        {
+        //            //Top Right Position
+        //            Top_Right_Pos_X = ((nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2) + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Top_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Right_Pos_X;
+        //            Y_Cordinate = Top_Right_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 0))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Bottom_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Left_Pos_X;
+        //            Y_Cordinate = Bottom_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 2))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Bottom_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Right_Pos_X;
+        //            Y_Cordinate = Bottom_Right_Pos_Y;
+        //        }
+        //    }
+        //    //Create Image Object
+        //    //for (Totol_Count = 0; Totol_Count <= 2; Totol_Count++)
+        //    //For
+        //    int Y_Num = 1;
+        //    //For Top Left To Right-->First Position = 0, Top Right To Left-->First Position = 1, 
+        //    //For Bottom Left To Right-->First Position = 2, Bottom Right to Left-->First Position = 3)
+        //    if (nRowDirection == 1 ^ nRowDirection == 3)
+        //    {
+        //        for (Totol_Count = 0; Totol_Count <= nTotalCell - 1; Totol_Count++)
+        //        {
+        //            Num = Convert.ToString(Totol_Count + 1);
+        //            Rectangle drawRact = new Rectangle(X_Cordinate, Y_Cordinate, XY_Length, XY_Length);
+        //            g.DrawRectangle(Pens.Red, drawRact);
+        //            //e.Graphics.DrawRectangle(Pens.Red, drawRact);
+        //            strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+
+        //            switch (strColorCode)
+        //            {
+        //                case "UTT":
+        //                    {
+        //                        g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                        break;
+        //                    }
+        //                //case "MD":
+        //                //    {
+        //                //        g.FillRectangle(CyanBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case "LS":
+        //                //    {
+        //                //        g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case "LO":
+        //                //    {
+        //                //        g.FillRectangle(MagentaBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case "CT":
+        //                //    {
+        //                //        g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case 15:
+        //                //    {
+        //                //        g.FillRectangle(LightSkyBlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case 16:
+        //                //    {
+        //                //        g.FillRectangle(CoralBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case 17:
+        //                //    {
+        //                //        g.FillRectangle(HotPinkBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                //case 18:
+        //                //    {
+        //                //        g.FillRectangle(blueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //        break;
+        //                //    }
+        //                default:
+        //                    g.FillRectangle(BlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                    break;
+        //            }
+        //            //g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //e.Graphics.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            if (Convert.ToInt32(Num) <= mappingInfo.Col_Max)
+        //            {
+        //                g.DrawString(Num, fontWording, solidBrushWording, drawRact, drawFormat);
+        //            }
+        //            if (Y_Num > 1 && X_Column_Count <= 1)
+        //            {
+        //                g.DrawString(Convert.ToString(Y_Num), fontWording, solidBrushWording, drawRact, drawFormat);
+        //            }
+        //            //e.Graphics.DrawString(Num, drawFont, drawBrush, drawRact, drawFormat);
+        //            X_Column_Count = X_Column_Count + 1;
+        //            if ((nColumnDirection == 0 && nRowDirection == 1))
+        //            {
+        //                X_Cordinate = X_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 2 && nRowDirection == 1))
+        //            {
+        //                X_Cordinate = X_Cordinate - XY_Length;
+        //            }
+        //            if ((nColumnDirection == 0 && nRowDirection == 3))
+        //            {
+        //                X_Cordinate = X_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 2 && nRowDirection == 3))
+        //            {
+        //                X_Cordinate = X_Cordinate - XY_Length;
+        //            }
+        //            if (X_Column_Count > mappingInfo.Col_Max)
+        //            {
+        //                Y_Num = Y_Num + 1;
+        //                if ((nColumnDirection == 0 && nRowDirection == 1))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate + XY_Length;
+        //                    X_Cordinate = Top_Left_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 2 && nRowDirection == 1))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate + XY_Length;
+        //                    X_Cordinate = Top_Right_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 0 && nRowDirection == 3))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate - XY_Length;
+        //                    X_Cordinate = Bottom_Left_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 2 && nRowDirection == 3))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate - XY_Length;
+        //                    X_Cordinate = Bottom_Right_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                //y_Max = Y_Cordinate + Y_Width;
+        //            }
+
+        //        }
+        //    }
+        //    //For Left Top To Bottom-->First Position = 4, Right Top To Bottom-->First Position = 5, 
+        //    //For Left Bottom To Up-->First Position = 6, Righ Bottom to Up-->First Position = 7)
+        //    int X_Num = 1;
+        //    if (nRowDirection == 0 ^ nRowDirection == 2)
+        //    {
+        //        for (Totol_Count = 0; Totol_Count <= nTotalCell - 1; Totol_Count++)
+        //        {
+        //            Num = Convert.ToString(Totol_Count + 1);
+        //            Rectangle drawRact = new Rectangle(X_Cordinate, Y_Cordinate, XY_Length, XY_Length);
+        //            g.DrawRectangle(Pens.Red, drawRact);
+        //            //e.Graphics.DrawRectangle(Pens.Red, drawRact);
+        //            strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+
+        //            switch (strColorCode)
+        //            {
+        //                case "UTT":
+        //                    {
+        //                        g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                        break;
+        //                    }
+        //                default:
+        //                    g.FillRectangle(BlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                    break;
+        //            }
+        //            if (Convert.ToInt32(Num) <= mappingInfo.Row_Max)
+        //            {
+        //                g.DrawString(Num, fontWording, solidBrushWording, drawRact, drawFormat);
+        //            }
+        //            if (X_Num > 1 && Y_Row_Count <= 1)
+        //            {
+        //                g.DrawString(Convert.ToString(X_Num), fontWording, solidBrushWording, drawRact, drawFormat);
+        //            }
+        //            //e.Graphics.DrawString(Num, drawFont, drawBrush, drawRact, drawFormat);
+        //            //X_Cordinate = -> or <- , 
+        //            Y_Row_Count = Y_Row_Count + 1;
+        //            if ((nColumnDirection == 1 && nRowDirection == 0))
+        //            {
+        //                Y_Cordinate = Y_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 3 && nRowDirection == 0))
+        //            {
+        //                Y_Cordinate = Y_Cordinate - XY_Length;
+        //            }
+        //            if ((nColumnDirection == 1 && nRowDirection == 2))
+        //            {
+        //                Y_Cordinate = Y_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 3 && nRowDirection == 2))
+        //            {
+        //                Y_Cordinate = Y_Cordinate - XY_Length;
+        //            }
+        //            if (Y_Row_Count > mappingInfo.Row_Max)
+        //            {
+        //                X_Num = X_Num + 1;
+        //                if ((nColumnDirection == 1 && nRowDirection == 0))
+        //                {
+        //                    X_Cordinate = X_Cordinate + XY_Length;
+        //                    Y_Cordinate = Top_Left_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 3 && nRowDirection == 0))
+        //                {
+        //                    X_Cordinate = X_Cordinate + XY_Length;
+        //                    Y_Cordinate = Bottom_Left_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 1 && nRowDirection == 2))
+        //                {
+        //                    X_Cordinate = X_Cordinate - XY_Length;
+        //                    Y_Cordinate = Top_Right_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 3 && nRowDirection == 2))
+        //                {
+        //                    X_Cordinate = X_Cordinate - XY_Length;
+        //                    Y_Cordinate = Bottom_Right_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //            }
+
+        //        }
+        //    }
+        //    try
+        //    {
+        //        if (Directory.Exists("D:\\Estek\\Release") == false)
+        //            Directory.CreateDirectory("D:\\Estek\\Release");
+        //        bitmap.Save("D:\\Estek\\Release\\Map.Bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+        //        bitmap.Dispose();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //    }
+        //    try
+        //    {
+        //        if (pictureBoxMapping.Image != null)
+        //        {
+        //            pictureBoxMapping.Image.Dispose();
+        //            pictureBoxMapping.Image = null;
+        //        }
+        //        FileStream fs = new FileStream("D:\\Estek\\Release\\Map.Bmp", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+        //        pictureBoxMapping.Image = System.Drawing.Image.FromStream(fs);
+        //        fs.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //    }
+        //}
+
+        virtual public void Generate_Map_Image(BinInfo mappingInfo, int colDirection, int rowDirection)
+        {
+            nColumnDirection = colDirection;
+            nRowDirection = rowDirection;
+            Column_Cell = mappingInfo.Col_Max;
+            Row_Cell = mappingInfo.Row_Max;
+
+            //Can set device size according to unit size in input recipe
+            int deviceSizeX = 1;
+            int deviceSizeY = 1;
+
+            //Drawing
+            Font fontWording = new Font("Arail Narrow", 1);
+            SolidBrush solidBrushWording = new SolidBrush(Color.Black);
+            SolidBrush LightGreenBrush = new SolidBrush(Color.LightGreen);
+            SolidBrush BlueBrush = new SolidBrush(Color.Blue);
+            SolidBrush RedBrush = new SolidBrush(Color.Red);
+            StringFormat drawFormat = new StringFormat();
+            drawFormat.Alignment = StringAlignment.Center;
+
+            //Parameters
+            Height = 569;
+            Width = 964;
+            pictureBoxMapping.Height = 565;
+            pictureBoxMapping.Width = 957;
+            panelMapping.Height = 565;
+            panelMapping.Width = 957;
+
+            int pictureBoxPaddingHeight = 70;
+            int pictureBoxPaddingWidth = 70;
+            int pictureBoxHeight = pictureBoxMapping.Height - pictureBoxPaddingHeight;
+            int pictureBoxWidth = pictureBoxMapping.Width - pictureBoxPaddingWidth;
+            int rowPitchLength = 0;
+            int colPitchLength = 0;
+            int rowMinimumPitchLength = 5;
+            int colMinimumPitchLength = 5;
+
+            double ratioRowCol = (double)deviceSizeY / (double)deviceSizeX;
+
+            //1. Calculate lengths
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                //Y larger than X
+                if (ratioRowCol > 1)
+                {
+                    rowPitchLength = pictureBoxWidth / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                //X larger than Y
+                else
+                {
+                    colPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                //Y larger than X
+                if (ratioRowCol > 1)
+                {
+                    rowPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                //X larger than Y
+                else
+                {
+                    colPitchLength = pictureBoxHeight / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+
+            //2. Check if calculated row length or column length fit
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxHeight)
+                {
+                    rowPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxWidth)
+                {
+                    colPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                if (rowPitchLength * mappingInfo.Col_Max > pictureBoxWidth)
+                {
+                    rowPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                if (colPitchLength * mappingInfo.Row_Max > pictureBoxHeight)
+                {
+                    colPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+
+            //3. Check if values are less than minimum length values
+            if (rowPitchLength < rowMinimumPitchLength)
+            {
+                rowPitchLength = rowMinimumPitchLength;
+                colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+            }
+            if (colPitchLength < colMinimumPitchLength)
+            {
+                colPitchLength = colMinimumPitchLength;
+                rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+            }
+
+            Rect_X = colPitchLength;
+            Rect_Y = rowPitchLength;
+
+            //4. Resize picturebox
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxMapping.Height)
+                {
+                    pictureBoxMapping.Height = pictureBoxPaddingHeight + (rowPitchLength * mappingInfo.Row_Max);
+                    panelMapping.Height = pictureBoxMapping.Height;
+                    Height = pictureBoxMapping.Height;
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxMapping.Width)
+                {
+                    pictureBoxMapping.Width = pictureBoxPaddingWidth + (colPitchLength * mappingInfo.Col_Max);
+                    panelMapping.Width = pictureBoxMapping.Width;
+                    Width = pictureBoxMapping.Width;
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxMapping.Width)
+                {
+                    pictureBoxMapping.Width = pictureBoxPaddingWidth + (rowPitchLength * mappingInfo.Row_Max);
+                    panelMapping.Width = pictureBoxMapping.Width;
+                    Width = pictureBoxMapping.Width;
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxMapping.Height)
+                {
+                    pictureBoxMapping.Height = pictureBoxPaddingHeight + (colPitchLength * mappingInfo.Col_Max);
+                    panelMapping.Height = pictureBoxMapping.Height;
+                    Height = pictureBoxMapping.Height;
+                }
+            }
+
+            //Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height, System.Drawing.Imaging.PixelFormat.Format16bppArgb1555);
+            Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height);
+
+            bitmap.SetResolution(600, 600);
+            Graphics g = Graphics.FromImage(bitmap);
+            string strColorCode = "";
+
+            //5. Set first position of map
+            Totol_Count = 0;
+
+            #region Top Left
+            if (nColumnDirection == 0 && nRowDirection == 1)
+            {
+                Top_Left_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                Top_Left_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                X_Cordinate = Top_Left_Pos_X;
+                Y_Cordinate = Top_Left_Pos_Y;
+            }
+            if (nColumnDirection == 1 && nRowDirection == 0)
+            {
+                Top_Left_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                Top_Left_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                X_Cordinate = Top_Left_Pos_X;
+                Y_Cordinate = Top_Left_Pos_Y;
+            }
+            #endregion
+
+            #region Top Right
+            if (nColumnDirection == 2 && nRowDirection == 1)
+            {
+                Top_Right_Pos_X = ((pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2) + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                Top_Right_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                X_Cordinate = Top_Right_Pos_X;
+                Y_Cordinate = Top_Right_Pos_Y;
+            }
+            if (nColumnDirection == 1 && nRowDirection == 2)
+            {
+                Top_Right_Pos_X = ((pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2) + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                Top_Right_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                X_Cordinate = Top_Right_Pos_X;
+                Y_Cordinate = Top_Right_Pos_Y;
+            }
+            #endregion
+
+            #region Bottom Left
+            if ((nColumnDirection == 0 && nRowDirection == 3))
+            {
+                Bottom_Left_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                Bottom_Left_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                X_Cordinate = Bottom_Left_Pos_X;
+                Y_Cordinate = Bottom_Left_Pos_Y;
+            }
+            else if (nColumnDirection == 3 && nRowDirection == 0)
+            {
+                Bottom_Left_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                Bottom_Left_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                X_Cordinate = Bottom_Left_Pos_X;
+                Y_Cordinate = Bottom_Left_Pos_Y;
+            }
+            #endregion
+
+            #region Bottom Right
+            if (nColumnDirection == 2 && nRowDirection == 3)
+            {
+                Bottom_Right_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                Bottom_Right_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                X_Cordinate = Bottom_Right_Pos_X;
+                Y_Cordinate = Bottom_Right_Pos_Y;
+            }
+            if (nColumnDirection == 3 && nRowDirection == 2)
+            {
+                Bottom_Right_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                Bottom_Right_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                X_Cordinate = Bottom_Right_Pos_X;
+                Y_Cordinate = Bottom_Right_Pos_Y;
+            }
+            #endregion
+
+            //6. Draw map
+            for (int y = 1; y <= mappingInfo.Row_Max; y++)
+            {
+                for (int x = 1; x <= mappingInfo.Col_Max; x++)
+                {
+                    Rectangle drawRact;
+
+                    //Draw rectangle dimension according to direction
+                    if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, colPitchLength, rowPitchLength);
+                    }
+                    else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, rowPitchLength, colPitchLength);
+                    }
+                    else
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, colPitchLength, rowPitchLength);
+                    }
+
+                    //g.DrawRectangle(Pens.Red, drawRact);
+                    g.DrawRectangle(Pens.White, drawRact);
+                    strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+
+                    switch (strColorCode)
+                    {
+                        case "UTT":
+                            {
+                                if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                                {
+                                    g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                                }
+                                else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                                {
+                                    g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                                }
+                                break;
+                            }
+                        default:
+                            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                            {
+                                g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                            }
+                            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                            {
+                                g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                            }
+                            break;
+                    }
+
+                    //Row Top to Bottom, Column Left to Right, Start Top Left Corner
+                    if (nColumnDirection == 0 && nRowDirection == 1)
+                    {
+                        X_Cordinate += colPitchLength;
+                    }
+                    //Row Left to Right, Column Top to Bottom, Start Top Left Corner
+                    else if (nColumnDirection == 1 && nRowDirection == 0)
+                    {
+                        Y_Cordinate += colPitchLength;
+                    }
+                    //Row Bottom to Top, Column Left to Right, Start Bottom Left Corner
+                    else if (nColumnDirection == 0 && nRowDirection == 3)
+                    {
+                        X_Cordinate += colPitchLength;
+                    }
+                    //Row Left to Right, Column Bottom to Top, Start Bottom Left Corner
+                    else if (nColumnDirection == 3 && nRowDirection == 0)
+                    {
+                        Y_Cordinate -= colPitchLength;
+                    }
+                    //Row Top to Bottom, Column Right to Left, Start Top Right Corner
+                    else if (nColumnDirection == 2 && nRowDirection == 1)
+                    {
+                        X_Cordinate -= colPitchLength;
+                    }
+                    //Row Right to Left, Column Top to Bottom, Start Top Right Corner
+                    else if (nColumnDirection == 1 && nRowDirection == 2)
+                    {
+                        Y_Cordinate += colPitchLength;
+                    }
+                    //Row Bottom To Top, Column Right to Left, Start Bottom Right Corner
+                    else if (nColumnDirection == 2 && nRowDirection == 3)
+                    {
+                        X_Cordinate -= colPitchLength;
+                    }
+                    //Row Right to Left, Column Bottom to Top, Start Bottom Right Corner
+                    else if (nColumnDirection == 3 && nRowDirection == 2)
+                    {
+                        Y_Cordinate -= colPitchLength;
+                    }
+
+                    if (x == 1)
+                    {
+                        g.DrawString(y.ToString(), fontWording, solidBrushWording, drawRact, drawFormat);
+                    }
+                    if (y == 1)
+                    {
+                        g.DrawString(x.ToString(), fontWording, solidBrushWording, drawRact, drawFormat);
+                    }
+                    Totol_Count++;
+                }
+                if (nColumnDirection == 0 && nRowDirection == 1)
+                {
+                    X_Cordinate = Top_Left_Pos_X;
+                    Y_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 1 && nRowDirection == 0)
+                {
+                    Y_Cordinate = Top_Left_Pos_Y;
+                    X_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 0 && nRowDirection == 3)
+                {
+                    X_Cordinate = Bottom_Left_Pos_X;
+                    Y_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 3 && nRowDirection == 0)
+                {
+                    Y_Cordinate = Bottom_Left_Pos_Y;
+                    X_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 2 && nRowDirection == 1)
+                {
+                    X_Cordinate = Top_Right_Pos_X;
+                    Y_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 1 && nRowDirection == 2)
+                {
+                    Y_Cordinate = Top_Right_Pos_Y;
+                    X_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 2 && nRowDirection == 3)
+                {
+                    X_Cordinate = Bottom_Right_Pos_X;
+                    Y_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 3 && nRowDirection == 2)
+                {
+                    Y_Cordinate = Bottom_Right_Pos_Y;
+                    X_Cordinate -= rowPitchLength;
+                }
+            }
+
+            //6. Export
+            try
+            {
+                if (Directory.Exists("D:\\Estek\\Release") == false)
+                    Directory.CreateDirectory("D:\\Estek\\Release");
+                bitmap.Save("D:\\Estek\\Release\\Map.Bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+                bitmap.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+
+            try
+            {
+                if (pictureBoxMapping.Image != null)
+                {
+                    pictureBoxMapping.Image.Dispose();
+                    pictureBoxMapping.Image = null;
+                }
+                FileStream fs = new FileStream("D:\\Estek\\Release\\Map.Bmp", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+                pictureBoxMapping.Image = System.Drawing.Image.FromStream(fs);
+                fs.Close();
+            }
+            catch (Exception ex)
+            {
+                //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+        
+        //virtual public void Update_Map_Image(BinInfo mappingInfo, int ncolumnDirection, int nrowDirection)
+        //{
+        //    //richTextBoxMessage.Text = string.Format("Width = {0}, Height = {1}", Convert.ToString(pictureBox1.Width), Convert.ToString(pictureBox1.Height));
+        //    // Create font and brush.
+        //    Font drawFont = new Font("Arail Narrow", 1);
+        //    SolidBrush drawPenBrush = new SolidBrush(Color.Black);
+        //    SolidBrush RedBrush = new SolidBrush(Color.Red);                    //Check OK , int = 0
+        //    SolidBrush grayBrush = new SolidBrush(Color.Gray);                      //Before Check    
+        //    SolidBrush CyanBrush = new SolidBrush(Color.Cyan);                      //Status "X"
+        //    SolidBrush YellowBrush = new SolidBrush(Color.Yellow);                  //Status "FR1"
+        //    SolidBrush MagentaBrush = new SolidBrush(Color.Magenta);                //Status "S"
+        //    SolidBrush LimeBrush = new SolidBrush(Color.Lime);                      //Status "G"
+        //    SolidBrush LightSkyBlueBrush = new SolidBrush(Color.LightSkyBlue);      //Status "C"
+        //    SolidBrush WhiteBrush = new SolidBrush(Color.White);                    //Status "Y"
+        //    SolidBrush HotPinkBrush = new SolidBrush(Color.HotPink);                //Status "DD1"
+        //    SolidBrush BlueBrush = new SolidBrush(Color.Blue);                      //Status mouse click
+        //    SolidBrush LightGreenBrush = new SolidBrush(Color.LightGreen);
+        //    // Set format of string.
+        //    StringFormat drawFormat = new StringFormat();
+        //    drawFormat.Alignment = StringAlignment.Center;
+        //    int nPictureBoxMaxWidth = Convert.ToInt16(pictureBoxMapping.Width);
+        //    int nPictureBoxMaxHeight = Convert.ToInt16(pictureBoxMapping.Height);
+        //    int X_Column_Count = 1;
+        //    int Y_Row_Count = 1;
+        //    int nXPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Row_Max;
+        //    int nYPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Col_Max;
+        //    int XY_Length = 0;
+        //    ////Calculate total area
+        //    //int Total_Area = (P_Width - 20) * (P_Height - 20);
+        //    //Totl Number of cell
+        //    int nTotalCell = mappingInfo.Col_Max * mappingInfo.Row_Max;
+        //    Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height);
+        //    bitmap.SetResolution(600, 600);
+        //    Graphics g = Graphics.FromImage(bitmap);
+        //    string strColorCode = "";
+
+        //    string Num;
+        //    if (nXPitchLength < nYPitchLength)
+        //    {
+        //        if (nXPitchLength * mappingInfo.Col_Max > nPictureBoxMaxWidth)
+        //            nXPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Col_Max;
+        //        if (nXPitchLength * mappingInfo.Row_Max > nPictureBoxMaxHeight)
+        //            nXPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Row_Max;
+
+        //        XY_Length = nXPitchLength;
+        //        Rect_XY = XY_Length;
+
+        //        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 0))
+        //        {
+        //            //Top Left Position
+        //            Top_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Top_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Left_Pos_X;
+        //            Y_Cordinate = Top_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 2))
+        //        {
+        //            //Top Right Position
+        //            Top_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Top_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Right_Pos_X;// -XY_Length;
+        //            Y_Cordinate = Top_Right_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 0))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Bottom_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Left_Pos_X;
+        //            Y_Cordinate = Bottom_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 2))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Bottom_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Right_Pos_X;
+        //            Y_Cordinate = Bottom_Right_Pos_Y;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if (nYPitchLength * mappingInfo.Row_Max > nPictureBoxMaxHeight)
+        //            nYPitchLength = (nPictureBoxMaxHeight - 20) / mappingInfo.Row_Max;
+        //        if (nYPitchLength * mappingInfo.Col_Max > nPictureBoxMaxWidth)
+        //            nYPitchLength = (nPictureBoxMaxWidth - 20) / mappingInfo.Col_Max;
+        //        XY_Length = nYPitchLength;
+        //        Rect_XY = XY_Length;
+        //        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 0))
+        //        {
+        //            //Top Left Position
+        //            Top_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Top_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Left_Pos_X;
+        //            Y_Cordinate = Top_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 1 && nRowDirection == 2))
+        //        {
+        //            //Top Right Position
+        //            Top_Right_Pos_X = ((nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2) + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Top_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2;
+        //            X_Cordinate = Top_Right_Pos_X;
+        //            Y_Cordinate = Top_Right_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 0))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Left_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2;
+        //            Bottom_Left_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Left_Pos_X;
+        //            Y_Cordinate = Bottom_Left_Pos_Y;
+        //        }
+        //        if ((nColumnDirection == 2 && nRowDirection == 3) || (nColumnDirection == 3 && nRowDirection == 2))
+        //        {
+        //            //Bottom Left Position
+        //            Bottom_Right_Pos_X = (nPictureBoxMaxWidth - (XY_Length * mappingInfo.Col_Max)) / 2 + (XY_Length * mappingInfo.Col_Max) - XY_Length;
+        //            Bottom_Right_Pos_Y = (nPictureBoxMaxHeight - (XY_Length * mappingInfo.Row_Max)) / 2 + (XY_Length * mappingInfo.Row_Max) - XY_Length;
+        //            X_Cordinate = Bottom_Right_Pos_X;
+        //            Y_Cordinate = Bottom_Right_Pos_Y;
+        //        }
+        //    }
+        //    //Create Image Object
+        //    //for (Totol_Count = 0; Totol_Count <= 2; Totol_Count++)
+        //    if (nRowDirection == 1 ^ nRowDirection == 3)
+        //    {
+        //        int Y_Num = 1;
+        //        for (Totol_Count = 0; Totol_Count <= nTotalCell - 1; Totol_Count++)
+        //        {
+        //            Num = Convert.ToString(Totol_Count + 1);
+        //            Rectangle drawRact = new Rectangle(X_Cordinate, Y_Cordinate, XY_Length, XY_Length);
+        //            g.DrawRectangle(Pens.Red, drawRact);
+        //            //e.Graphics.DrawRectangle(Pens.Red, drawRact);
+        //            strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+
+        //            //string strMissingDieDefectCode = outputFileOption.strMissingDieDefectCode;
+        //            if (strColorCode == "---")
+        //            {
+        //                g.FillRectangle(LimeBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //break;
+        //            }
+        //            //else if (Color_Code == outputFileOption.strMissingDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strLooseDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strWallWidthDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strContaminationDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(MagentaBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            else if (strColorCode == "UTT")
+        //            {
+        //                g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            }
+        //            else
+        //            {
+        //                if (strColorCode == "E" || strColorCode == "T")
+        //                {
+        //                    g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                }
+        //                else
+        //                {
+        //                    bool bFoundDefect = false;
+        //                    foreach (DefectProperty _defectProperty in m_ProductShareVariables.productRecipeOutputFileSettings.listDefect)
+        //                    {
+        //                        if (strColorCode == _defectProperty.Code)
+        //                        {
+        //                            SolidBrush solidBrush = new SolidBrush((Color)System.ComponentModel.TypeDescriptor.GetConverter(typeof(Color)).ConvertFromString(_defectProperty.ColorInHex));
+        //                            g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                            bFoundDefect = true;
+        //                        }
+        //                    }
+        //                    if (bFoundDefect == false)
+        //                    {
+        //                        g.FillRectangle(BlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                    }
+        //                }
+        //            }
+        //            //switch (Color_Code)
+        //            //{
+        //            //    case "---":
+        //            //        {
+        //            //            g.FillRectangle(LimeBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    case "MD2":
+        //            //    //case strMissingDieDefectCode:
+        //            //        {
+        //            //            g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    case "LS2":
+        //            //        {
+        //            //            g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    case "LO2":
+        //            //        {
+        //            //            g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    case "CT2":
+        //            //        {
+        //            //            g.FillRectangle(MagentaBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    case "UTT":
+        //            //        {
+        //            //            g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //            break;
+        //            //        }
+        //            //    //case 15:
+        //            //    //    {
+        //            //    //        g.FillRectangle(LightSkyBlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //    //        break;
+        //            //    //    }
+        //            //    //case 16:
+        //            //    //    {
+        //            //    //        g.FillRectangle(CoralBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //    //        break;
+        //            //    //    }
+        //            //    //case 17:
+        //            //    //    {
+        //            //    //        g.FillRectangle(HotPinkBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //    //        break;
+        //            //    //    }
+        //            //    //case 18:
+        //            //    //    {
+        //            //    //        g.FillRectangle(blueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //    //        break;
+        //            //    //    }
+        //            //    default:
+        //            //        g.FillRectangle(BlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //        break;
+        //            //}
+        //            //g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //e.Graphics.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            if (Convert.ToInt32(Num) <= mappingInfo.Col_Max)
+        //            {
+        //                g.DrawString(Num, drawFont, drawPenBrush, drawRact, drawFormat);
+        //            }
+        //            if (Y_Num > 1 && X_Column_Count <= 1)
+        //            {
+        //                g.DrawString(Convert.ToString(Y_Num), drawFont, drawPenBrush, drawRact, drawFormat);
+        //            }
+        //            //e.Graphics.DrawString(Num, drawFont, drawBrush, drawRact, drawFormat);
+        //            X_Column_Count = X_Column_Count + 1;
+        //            if ((nColumnDirection == 0 && nRowDirection == 1))
+        //            {
+        //                X_Cordinate = X_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 2 && nRowDirection == 1))
+        //            {
+        //                X_Cordinate = X_Cordinate - XY_Length;
+        //            }
+        //            if ((nColumnDirection == 0 && nRowDirection == 3))
+        //            {
+        //                X_Cordinate = X_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 2 && nRowDirection == 3))
+        //            {
+        //                X_Cordinate = X_Cordinate - XY_Length;
+        //            }
+        //            if (X_Column_Count > mappingInfo.Col_Max)
+        //            {
+        //                Y_Num = Y_Num + 1;
+        //                if ((nColumnDirection == 0 && nRowDirection == 1))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate + XY_Length;
+        //                    X_Cordinate = Top_Left_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 2 && nRowDirection == 1))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate + XY_Length;
+        //                    X_Cordinate = Top_Right_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 0 && nRowDirection == 3))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate - XY_Length;
+        //                    X_Cordinate = Bottom_Left_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 2 && nRowDirection == 3))
+        //                {
+        //                    Y_Cordinate = Y_Cordinate - XY_Length;
+        //                    X_Cordinate = Bottom_Right_Pos_X;
+        //                    X_Column_Count = 1;
+        //                }
+        //                //y_Max = Y_Cordinate + Y_Width;
+        //            }
+        //        }
+        //    }
+        //    //For Left Top To Bottom-->First Position = 4, Right Top To Bottom-->First Position = 5, 
+        //    //For Left Bottom To Up-->First Position = 6, Righ Bottom to Up-->First Position = 7)
+        //    int X_Num = 1;
+        //    if (nRowDirection == 0 ^ nRowDirection == 2)
+        //    {
+        //        for (Totol_Count = 0; Totol_Count <= nTotalCell - 1; Totol_Count++)
+        //        {
+        //            Num = Convert.ToString(Totol_Count + 1);
+        //            Rectangle drawRact = new Rectangle(X_Cordinate, Y_Cordinate, XY_Length, XY_Length);
+        //            g.DrawRectangle(Pens.Red, drawRact);
+        //            //e.Graphics.DrawRectangle(Pens.Red, drawRact);
+        //            strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+
+        //            //string strMissingDieDefectCode = outputFileOption.strMissingDieDefectCode;
+        //            if (strColorCode == "---")
+        //            {
+        //                g.FillRectangle(LimeBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                //break;
+        //            }
+        //            //else if (Color_Code == outputFileOption.strMissingDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strLooseDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strWallWidthDieDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            //else if (Color_Code == outputFileOption.strContaminationDefectCode + outputFileOption.strDefectCodeNumber)
+        //            //{
+        //            //    g.FillRectangle(MagentaBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //}
+        //            else if (strColorCode == "UTT")
+        //            {
+        //                g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            }
+        //            else
+        //            {
+        //                if (strColorCode == "E" || strColorCode == "T")
+        //                {
+        //                    g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                }
+        //                else
+        //                {
+        //                    bool bFoundDefect = false;
+        //                    foreach (DefectProperty _defectProperty in m_ProductShareVariables.productRecipeOutputFileSettings.listDefect)
+        //                    {
+        //                        if (strColorCode == _defectProperty.Code)
+        //                        {
+        //                            SolidBrush solidBrush = new SolidBrush((Color)System.ComponentModel.TypeDescriptor.GetConverter(typeof(Color)).ConvertFromString(_defectProperty.ColorInHex));
+        //                            g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                            bFoundDefect = true;
+        //                        }
+        //                    }
+        //                    if (bFoundDefect == false)
+        //                    {
+        //                        g.FillRectangle(BlueBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //                    }
+        //                }
+        //            }
+
+        //            //g.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            //e.Graphics.FillRectangle(grayBrush, X_Cordinate + 1, Y_Cordinate + 1, XY_Length - 1, XY_Length - 1);
+        //            if (Convert.ToInt32(Num) <= mappingInfo.Row_Max)
+        //            {
+        //                g.DrawString(Num, drawFont, drawPenBrush, drawRact, drawFormat);
+        //            }
+        //            if (X_Num > 1 && Y_Row_Count <= 1)
+        //            {
+        //                g.DrawString(Convert.ToString(X_Num), drawFont, drawPenBrush, drawRact, drawFormat);
+        //            }
+        //            //e.Graphics.DrawString(Num, drawFont, drawBrush, drawRact, drawFormat);
+        //            //X_Cordinate = -> or <- , 
+        //            Y_Row_Count = Y_Row_Count + 1;
+        //            if ((nColumnDirection == 1 && nRowDirection == 0))
+        //            {
+        //                Y_Cordinate = Y_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 3 && nRowDirection == 0))
+        //            {
+        //                Y_Cordinate = Y_Cordinate - XY_Length;
+        //            }
+        //            if ((nColumnDirection == 1 && nRowDirection == 2))
+        //            {
+        //                Y_Cordinate = Y_Cordinate + XY_Length;
+        //            }
+        //            if ((nColumnDirection == 3 && nRowDirection == 2))
+        //            {
+        //                Y_Cordinate = Y_Cordinate - XY_Length;
+        //            }
+        //            if (Y_Row_Count > mappingInfo.Row_Max)
+        //            {
+        //                X_Num = X_Num + 1;
+        //                if ((nColumnDirection == 1 && nRowDirection == 0))
+        //                {
+        //                    X_Cordinate = X_Cordinate + XY_Length;
+        //                    Y_Cordinate = Top_Left_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 3 && nRowDirection == 0))
+        //                {
+        //                    X_Cordinate = X_Cordinate + XY_Length;
+        //                    Y_Cordinate = Bottom_Left_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 1 && nRowDirection == 2))
+        //                {
+        //                    X_Cordinate = X_Cordinate - XY_Length;
+        //                    Y_Cordinate = Top_Right_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                if ((nColumnDirection == 3 && nRowDirection == 2))
+        //                {
+        //                    X_Cordinate = X_Cordinate - XY_Length;
+        //                    Y_Cordinate = Bottom_Right_Pos_Y;
+        //                    Y_Row_Count = 1;
+        //                }
+        //                //y_Max = Y_Cordinate + Y_Width;
+        //            }
+
+        //        }
+        //    }
+        //    //X_Max = X_Cordinate + X_Width;
+        //    try
+        //    {
+        //        bitmap.Save("D:\\Estek\\Release\\Map.Bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+        //        bitmap.Dispose();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //    }
+        //    try
+        //    {
+        //        if (pictureBoxMapping.Image != null)
+        //        {
+        //            pictureBoxMapping.Image.Dispose();
+        //            pictureBoxMapping.Image = null;
+        //        }
+        //        FileStream fs = new FileStream("D:\\Estek\\Release\\Map.Bmp", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+        //        pictureBoxMapping.Image = System.Drawing.Image.FromStream(fs);
+        //        fs.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //    }
+        //}
+
+        virtual public void Update_Map_Image(BinInfo mappingInfo, int colDirection, int rowDirection)
+        {
+            nColumnDirection = colDirection;
+            nRowDirection = rowDirection;
+            Column_Cell = mappingInfo.Col_Max;
+            Row_Cell = mappingInfo.Row_Max;
+
+            int deviceSizeX = 1;
+            int deviceSizeY = 1;
+
+            //Drawing
+            Font fontWording = new Font("Arail Narrow", 1);
+            SolidBrush solidBrushWording = new SolidBrush(Color.Black);
+            SolidBrush LightGreenBrush = new SolidBrush(Color.LightGreen);
+            SolidBrush BlueBrush = new SolidBrush(Color.Blue);
+            SolidBrush RedBrush = new SolidBrush(Color.Red);
+            SolidBrush LimeBrush = new SolidBrush(Color.Lime);
+            SolidBrush GrayBrush = new SolidBrush(Color.Gray);
+            SolidBrush YellowBrush = new SolidBrush(Color.Yellow);
+            StringFormat drawFormat = new StringFormat();
+            drawFormat.Alignment = StringAlignment.Center;
+
+            //Parameters
+            Height = 569;
+            Width = 964;
+            pictureBoxMapping.Height = 565;
+            pictureBoxMapping.Width = 957;
+            panelMapping.Height = 565;
+            panelMapping.Width = 957;
+
+            int pictureBoxPaddingHeight = 70;
+            int pictureBoxPaddingWidth = 70;
+            int pictureBoxHeight = pictureBoxMapping.Height - pictureBoxPaddingHeight;
+            int pictureBoxWidth = pictureBoxMapping.Width - pictureBoxPaddingWidth;
+            int rowPitchLength = 0;
+            int colPitchLength = 0;
+            int rowMinimumPitchLength = 5;
+            int colMinimumPitchLength = 5;
+
+            double ratioRowCol = (double)deviceSizeY / (double)deviceSizeX;
+
+            //1. Calculate lengths
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                //Y larger than X
+                if (ratioRowCol > 1)
+                {
+                    rowPitchLength = pictureBoxWidth / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                //X larger than Y
+                else
+                {
+                    colPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                //Y larger than X
+                if (ratioRowCol > 1)
+                {
+                    rowPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                //X larger than Y
+                else
+                {
+                    colPitchLength = pictureBoxHeight / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+
+            //2. Check if calculated row length or column length fit
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxHeight)
+                {
+                    rowPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxWidth)
+                {
+                    colPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                if (rowPitchLength * mappingInfo.Col_Max > pictureBoxWidth)
+                {
+                    rowPitchLength = pictureBoxWidth / mappingInfo.Col_Max;
+                    colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+                }
+                if (colPitchLength * mappingInfo.Row_Max > pictureBoxHeight)
+                {
+                    colPitchLength = pictureBoxHeight / mappingInfo.Row_Max;
+                    rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+                }
+            }
+
+            //3. Check if values are less than minimum length values
+            if (rowPitchLength < rowMinimumPitchLength)
+            {
+                rowPitchLength = rowMinimumPitchLength;
+                colPitchLength = Convert.ToInt32(rowPitchLength / ratioRowCol);
+            }
+            if (colPitchLength < colMinimumPitchLength)
+            {
+                colPitchLength = colMinimumPitchLength;
+                rowPitchLength = Convert.ToInt32(colPitchLength * ratioRowCol);
+            }
+
+            Rect_X = colPitchLength;
+            Rect_Y = rowPitchLength;
+
+            //4. Resize picturebox
+            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxMapping.Height)
+                {
+                    pictureBoxMapping.Height = pictureBoxPaddingHeight + (rowPitchLength * mappingInfo.Row_Max);
+                    panelMapping.Height = pictureBoxMapping.Height;
+                    Height = pictureBoxMapping.Height;
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxMapping.Width)
+                {
+                    pictureBoxMapping.Width = pictureBoxPaddingWidth + (colPitchLength * mappingInfo.Col_Max);
+                    panelMapping.Width = pictureBoxMapping.Width;
+                    Width = pictureBoxMapping.Width;
+                }
+            }
+            else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+            {
+                if (rowPitchLength * mappingInfo.Row_Max > pictureBoxMapping.Width)
+                {
+                    pictureBoxMapping.Width = pictureBoxPaddingWidth + (rowPitchLength * mappingInfo.Row_Max);
+                    panelMapping.Width = pictureBoxMapping.Width;
+                    Width = pictureBoxMapping.Width;
+                }
+                if (colPitchLength * mappingInfo.Col_Max > pictureBoxMapping.Height)
+                {
+                    pictureBoxMapping.Height = pictureBoxPaddingHeight + (colPitchLength * mappingInfo.Col_Max);
+                    panelMapping.Height = pictureBoxMapping.Height;
+                    Height = pictureBoxMapping.Height;
+                }
+            }
+
+            //Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height, System.Drawing.Imaging.PixelFormat.Format16bppArgb1555);
+            Bitmap bitmap = new Bitmap(pictureBoxMapping.Width, pictureBoxMapping.Height);
+
+            bitmap.SetResolution(600, 600);
+            Graphics g = Graphics.FromImage(bitmap);
+            string strColorCode = "";
+            string destination = "";
+
+            //5. Set first position of map
+            Totol_Count = 0;
+
+            #region Top Left
+            if (nColumnDirection == 0 && nRowDirection == 1)
+            {
+                Top_Left_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                Top_Left_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                X_Cordinate = Top_Left_Pos_X;
+                Y_Cordinate = Top_Left_Pos_Y;
+            }
+            if (nColumnDirection == 1 && nRowDirection == 0)
+            {
+                Top_Left_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                Top_Left_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                X_Cordinate = Top_Left_Pos_X;
+                Y_Cordinate = Top_Left_Pos_Y;
+            }
+            #endregion
+
+            #region Top Right
+            if (nColumnDirection == 2 && nRowDirection == 1)
+            {
+                Top_Right_Pos_X = ((pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2) + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                Top_Right_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                X_Cordinate = Top_Right_Pos_X;
+                Y_Cordinate = Top_Right_Pos_Y;
+            }
+            if (nColumnDirection == 1 && nRowDirection == 2)
+            {
+                Top_Right_Pos_X = ((pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2) + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                Top_Right_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                X_Cordinate = Top_Right_Pos_X;
+                Y_Cordinate = Top_Right_Pos_Y;
+            }
+            #endregion
+
+            #region Bottom Left
+            if ((nColumnDirection == 0 && nRowDirection == 3))
+            {
+                Bottom_Left_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2;
+                Bottom_Left_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                X_Cordinate = Bottom_Left_Pos_X;
+                Y_Cordinate = Bottom_Left_Pos_Y;
+            }
+            else if (nColumnDirection == 3 && nRowDirection == 0)
+            {
+                Bottom_Left_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2;
+                Bottom_Left_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                X_Cordinate = Bottom_Left_Pos_X;
+                Y_Cordinate = Bottom_Left_Pos_Y;
+            }
+            #endregion
+
+            #region Bottom Right
+            if (nColumnDirection == 2 && nRowDirection == 3)
+            {
+                Bottom_Right_Pos_X = (pictureBoxMapping.Width - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                Bottom_Right_Pos_Y = (pictureBoxMapping.Height - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                X_Cordinate = Bottom_Right_Pos_X;
+                Y_Cordinate = Bottom_Right_Pos_Y;
+            }
+            if (nColumnDirection == 3 && nRowDirection == 2)
+            {
+                Bottom_Right_Pos_X = (pictureBoxMapping.Width - (rowPitchLength * mappingInfo.Row_Max)) / 2 + (rowPitchLength * mappingInfo.Row_Max) - rowPitchLength;
+                Bottom_Right_Pos_Y = (pictureBoxMapping.Height - (colPitchLength * mappingInfo.Col_Max)) / 2 + (colPitchLength * mappingInfo.Col_Max) - colPitchLength;
+                X_Cordinate = Bottom_Right_Pos_X;
+                Y_Cordinate = Bottom_Right_Pos_Y;
+            }
+            #endregion
+
+            //6. Draw map
+            for (int y = 1; y <= mappingInfo.Row_Max; y++)
+            {
+                for (int x = 1; x <= mappingInfo.Col_Max; x++)
+                {
+                    Rectangle drawRact;
+
+                    if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, colPitchLength, rowPitchLength);
+                    }
+                    else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, rowPitchLength, colPitchLength);
+                    }
+                    else
+                    {
+                        drawRact = new Rectangle(X_Cordinate, Y_Cordinate, colPitchLength, rowPitchLength);
+                    }
+
+                    //g.DrawRectangle(Pens.Red, drawRact);
+                    g.DrawRectangle(Pens.White, drawRact);
+                    strColorCode = mappingInfo.arrayUnitInfo[Totol_Count].BinCode;
+                    destination = mappingInfo.arrayUnitInfo[Totol_Count].Destination;
+
+                    if (strColorCode == "P")
+                    {
+                        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                        {
+                            g.FillRectangle(LimeBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                        }
+                        else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                        {
+                            g.FillRectangle(LimeBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                        }
+                    }
+
+                    ///
+                    else if (strColorCode == "---")
+                    {
+                        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                        {
+                            g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                        }
+                        else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                        {
+                            g.FillRectangle(YellowBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                        }
+                    }
+                    else if (strColorCode == "UTT")
+                    {
+                        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                        {
+                            g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                        }
+                        else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                        {
+                            g.FillRectangle(LightGreenBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                        }
+                    }
+                    else if (strColorCode == "EP")
+                    {
+                        SolidBrush solidBrush = new SolidBrush((Color)System.ComponentModel.TypeDescriptor.GetConverter(typeof(Color)).ConvertFromString(m_ProductShareVariables.productRecipeOutputFileSettings.EmptyUnitColorInHex));
+                        if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                        {
+                            g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                        }
+                        else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                        {
+                            g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                        }
+                    }
+                    else
+                    {
+                        bool bFoundDefect = false;
+                        foreach (DefectProperty _defectProperty in m_ProductShareVariables.productRecipeOutputFileSettings.listDefect)
+                        {
+                            //if ((strColorCode.Substring(0,2).Contains(_defectProperty.Code)==true))
+                            if (strColorCode == _defectProperty.Code)
+                            {
+                                SolidBrush solidBrush = new SolidBrush((Color)System.ComponentModel.TypeDescriptor.GetConverter(typeof(Color)).ConvertFromString(_defectProperty.ColorInHex));
+                                if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                                {
+                                    g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                                }
+                                else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                                {
+                                    g.FillRectangle(solidBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                                }
+                                bFoundDefect = true;
+                            }
+                        }
+                        if (bFoundDefect == false)
+                        {
+                            if ((nColumnDirection == 0 && nRowDirection == 1) || (nColumnDirection == 2 && nRowDirection == 1) || (nColumnDirection == 0 && nRowDirection == 3) || (nColumnDirection == 2 && nRowDirection == 3))
+                                {
+                                    g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, colPitchLength - 1, rowPitchLength - 1);
+                                }
+                                else if ((nColumnDirection == 1 && nRowDirection == 0) || (nColumnDirection == 1 && nRowDirection == 2) || (nColumnDirection == 3 && nRowDirection == 0) || (nColumnDirection == 3 && nRowDirection == 2))
+                                {
+                                    g.FillRectangle(RedBrush, X_Cordinate + 1, Y_Cordinate + 1, rowPitchLength - 1, colPitchLength - 1);
+                                }
+                        }
+                        //}
+                    }
+
+                    //Row Top to Bottom, Column Left to Right, Start Top Left Corner
+                    if (nColumnDirection == 0 && nRowDirection == 1)
+                    {
+                        X_Cordinate += colPitchLength;
+                    }
+                    //Row Left to Right, Column Top to Bottom, Start Top Left Corner
+                    else if (nColumnDirection == 1 && nRowDirection == 0)
+                    {
+                        Y_Cordinate += colPitchLength;
+                    }
+                    //Row Bottom to Top, Column Left to Right, Start Bottom Left Corner
+                    else if (nColumnDirection == 0 && nRowDirection == 3)
+                    {
+                        X_Cordinate += colPitchLength;
+                    }
+                    //Row Left to Right, Column Bottom to Top, Start Bottom Left Corner
+                    else if (nColumnDirection == 3 && nRowDirection == 0)
+                    {
+                        Y_Cordinate -= colPitchLength;
+                    }
+                    //Row Top to Bottom, Column Right to Left, Start Top Right Corner
+                    else if (nColumnDirection == 2 && nRowDirection == 1)
+                    {
+                        X_Cordinate -= colPitchLength;
+                    }
+                    //Row Right to Left, Column Top to Bottom, Start Top Right Corner
+                    else if (nColumnDirection == 1 && nRowDirection == 2)
+                    {
+                        Y_Cordinate += colPitchLength;
+                    }
+                    //Row Bottom To Top, Column Right to Left, Start Bottom Right Corner
+                    else if (nColumnDirection == 2 && nRowDirection == 3)
+                    {
+                        X_Cordinate -= colPitchLength;
+                    }
+                    //Row Right to Left, Column Bottom to Top, Start Bottom Right Corner
+                    else if (nColumnDirection == 3 && nRowDirection == 2)
+                    {
+                        Y_Cordinate -= colPitchLength;
+                    }
+
+                    if (x == 1)
+                    {
+                        g.DrawString(y.ToString(), fontWording, solidBrushWording, drawRact, drawFormat);
+                    }
+                    if (y == 1)
+                    {
+                        g.DrawString(x.ToString(), fontWording, solidBrushWording, drawRact, drawFormat);
+                    }
+                    Totol_Count++;
+                }
+
+                if (nColumnDirection == 0 && nRowDirection == 1)
+                {
+                    X_Cordinate = Top_Left_Pos_X;
+                    Y_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 1 && nRowDirection == 0)
+                {
+                    Y_Cordinate = Top_Left_Pos_Y;
+                    X_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 0 && nRowDirection == 3)
+                {
+                    X_Cordinate = Bottom_Left_Pos_X;
+                    Y_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 3 && nRowDirection == 0)
+                {
+                    Y_Cordinate = Bottom_Left_Pos_Y;
+                    X_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 2 && nRowDirection == 1)
+                {
+                    X_Cordinate = Top_Right_Pos_X;
+                    Y_Cordinate += rowPitchLength;
+                }
+                else if (nColumnDirection == 1 && nRowDirection == 2)
+                {
+                    Y_Cordinate = Top_Right_Pos_Y;
+                    X_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 2 && nRowDirection == 3)
+                {
+                    X_Cordinate = Bottom_Right_Pos_X;
+                    Y_Cordinate -= rowPitchLength;
+                }
+                else if (nColumnDirection == 3 && nRowDirection == 2)
+                {
+                    Y_Cordinate = Bottom_Right_Pos_Y;
+                    X_Cordinate -= rowPitchLength;
+                }
+            }
+
+            //6. Export
+            try
+            {
+                bitmap.Save("D:\\Estek\\Release\\Map.Bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+                bitmap.Dispose();
+            }
+            catch (Exception ex)
+            {
+                //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+
+            try
+            {
+                if (pictureBoxMapping.Image != null)
+                {
+                    pictureBoxMapping.Image.Dispose();
+                    pictureBoxMapping.Image = null;
+                }
+                FileStream fs = new FileStream("D:\\Estek\\Release\\Map.Bmp", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+                pictureBoxMapping.Image = System.Drawing.Image.FromStream(fs);
+                fs.Close();
+            }
+            catch (Exception ex)
+            {
+                //Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        private void panelMapping_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
