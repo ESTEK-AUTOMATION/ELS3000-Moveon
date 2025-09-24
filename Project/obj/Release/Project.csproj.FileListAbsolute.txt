@@ -1,0 +1,723 @@
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\Project.csprojAssemblyReference.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\Project.Properties.Resources.resources
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\Project.csproj.GenerateResource.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\Project.csproj.CopyComplete
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\ELS3600.exe
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_1400_Charles\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Charles\ELS3600-20211214_1651_WC_CHARLES_HighSpeed\Project\obj\Release\ELS3600.pdb
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\ELS3600.exe
+F:\Estek Automation\Project\ELS3600\ELS3600-20211214_2330_HighSpeed\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS3600-20211215_0200_m_bHighSpeed\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS3600-20211215_1812_m_bHighSpeed\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211215_2032_m_bHighSpeed\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211215_2032_RepickPosition\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211216_1941_RepickPosition\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211216_2142_RepickPosition\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\ELS3600.pdb
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csprojAssemblyReference.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.Properties.Resources.resources
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.GenerateResource.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\Project.csproj.CopyComplete
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\ELS3600.exe
+F:\Estek Automation\Project\ELS3600\ELS3600-20211216_2349_RepickPosition\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS3600-20211218_1800_RepickPosition_LoadingTime\Project\obj\Release\ELS3600.pdb
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\Project.Properties.Resources.resources
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\Project.csproj.CopyComplete
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\ELS3600.exe
+F:\Estek Automation\Project\ELS3600\ELS3600-20211218_2120_UPH\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20211219_1211_UPH\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211219_1654_UPH\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\WC\ELS3600-20211219_2239_UPH\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Thor\ELS3600-20211220_1106_UPH_Add2Mapping\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Thor\ELS3600-20211220_1806_UPH_Merge\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Thor\ELS3600-20211220_2357_UPH_Merge_RepickPos_Same_As_Place -Latest\Project\obj\Release\ELS3600.pdb
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csprojAssemblyReference.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.Properties.Resources.resources
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.GenerateResource.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.CopyComplete
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\ELS3600.exe
+F:\Estek Automation\Project\ELS3600\ELS3600-20211221_2230_ -Latest_WC_MergeAll - Charles\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS3600-20211221_2330_ -Latest_WC_MergeAll - Charles\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1433_WithMapping_Diffuser_RetryPicking\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20211231_1632_WithMapping_Diffuser_RetryPicking\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220103_0032_WithMapping_Diffuser_RetryPicking_UPH\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220106_1915_UPH_Machine_ChangeDefectCodeMethod_WithUPHCalculation_WithNewEvent\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220111_1920\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220111_1920\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220111_1920\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220111_1920\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220111_1920\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220111_1920\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220111_1920\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220112_1253_EditReport\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220113_2157_Purging\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220114_1649_Purging\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220114_1649_Purging_InitializeThread\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220115_1018_Purging_InitializeThread_DryRun_Alarm\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220117_1111\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220117_1111\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220117_1111\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220117_1111\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220117_1111\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220117_1111\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220117_1111\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220117_1955\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220117_1955\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220117_1955\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220117_1955\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220117_1955\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220117_1955\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220117_1955\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220119_1005\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220204_1058\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220207_1156\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220208_1802_barcode\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220209_1021_barcode\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220210_0926_barcode\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220302_1954_DirectPlaceSampling_Report\Project\obj\Release\ELS3600.pdb
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.Properties.Resources.resources
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.CopyComplete
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\ELS3600.exe
+D:\handler software\ELS3600 Moveon\Source Code\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220303_1829_DirectPlaceSampling_Report_Mapping\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220314_1448_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220314_1808_DirectPlaceSamplingGui_DefectCounter_OldbarcodePrinter_ InputTableVacuum_DefectColor\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220315_1127_OldBarcodePrinter_OutputQuantity\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220316_1311_OldBarcodePrinter_OutputQuantity\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220329_1412\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220329_1412\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220329_1412\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220329_1412\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220329_1412\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220329_1412\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220329_1412\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220329_1710\Project\obj\Release\ELS3600.pdb
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\Project.csproj.CopyComplete
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\ELS3600.exe
+C:\Users\ESTEK\Desktop\ELS3600-20220330_1641\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220417_2217_Need_To_Update -MES_FiNALIZE\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220427_1407_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220428_2003_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220429_1450_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220502_1100_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220502_1143_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220502_1805_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220504_1541_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220505_1048_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting\Project\obj\Release\ELS3600.pdb
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\Project.Properties.Resources.resources
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\Project.csproj.CopyComplete
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\ELS3600.exe
+D:\ELS3600-20220505_1603_MES_LogForce_Barcode_Seq_NewFormula_RejectSorting_RecipeParameter\Project\obj\Release\ELS3600.pdb
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csprojAssemblyReference.cache
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.Properties.Resources.resources
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csproj.GenerateResource.cache
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csproj.CopyComplete
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\ELS3600.exe
+E:\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\ELS3600.pdb
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.Properties.Resources.resources
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csproj.GenerateResource.cache
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\ELS3600.exe
+C:\Users\ASUS\Documents\Projects\ELS3600\ELS3600-20220609_1409_1.0.0.0e_14_UIHang\Project\obj\Release\ELS3600.pdb
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.exe
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\Sourcecode\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241021_1500_1.0.0.0a_Modify_PNP_Sequence temp\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241030_2100_1.0.0.0a_Modify_PNP_Sequence temp ok\Project\obj\Release\ELS3600.pdb
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\ELS3600.exe
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241031_1115_1.0.0.0a_Modify_Vision_Sequence\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241101_1400_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241102_1120_1.0.0.0a_Modify_Recipe_Page\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241104_2200_1.0.0.0a_Modify_Recipe_Page_Merge\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241105_1800_1.0.0.0a_Steven_Update\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Touch_Up\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241106_1000_1.0.0.0a_Modify_All\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241108_1030_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241108_1140_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241109_1400_1.0.0.0a_Modify_Communication\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\ELS3600.exe
+D:\Estek Automation\ELS1200\ELS1200-20241111_1200_1.0.0.0a_Modify_PNP_X_On_Fly_Trigger\Project\obj\Release\ELS3600.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241111_2300_1.0.0.0a_Modify_Theta\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241112_0900_1.0.0.0a_Update_Machine_Naming\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241114_1000_1.0.0.0a_Update_Add_Setting\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241119_1000_1.0.0.0a_Capture_At_The_Same_Time\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241122_1050_1.0.0.0a_Add_In_Look_Up_Table\Project\obj\Release\ELS1200.pdb
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\ELS1200.exe
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241122_1400_1.0.0.0a_Add_In_Look_Up_Table_Update\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241122_1700_1.0.0.0a_Add_SW1_1\Project\obj\Release\ELS1200.pdb
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.exe
+D:\Estek Project\Nissei\Nissei 1\ELS1200-20241124_1700_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241127_1100_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241127_2200_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241129_1240_1.0.0.0a_Add_Checking result\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241202_1103_1.0.0.0a\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241202_2058_1.0.0.0a\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241203_1852_1.0.0.0a\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241207_1100_add motion chart log\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241209_Add_PHP_calibration\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241211_PH_rotation center\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200\ELS1200-20241212_Add_input_sleeveXY\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\ELS1200 - GitHub\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\Code\KC Git\ELS1200-Nissei\Project\obj\Release\ELS1200.pdb
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\ELS1200.exe
+D:\Estek Automation\Code\ELS1200-Nissei\Project\obj\Release\ELS1200.pdb
+D:\Estek\Release\ELS3000.exe.config
+D:\Estek\Release\ELS3000.exe
+D:\Estek\Release\ELS3000.pdb
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\Project.csprojAssemblyReference.cache
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\Project.Properties.Resources.resources
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\Project.csproj.GenerateResource.cache
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\Project.csproj.CoreCompileInputs.cache
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\Project.csproj.CopyComplete
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\ELS3000.exe
+D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\Project\obj\Release\ELS3000.pdb
