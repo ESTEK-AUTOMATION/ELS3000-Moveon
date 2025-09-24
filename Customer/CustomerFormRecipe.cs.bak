@@ -1,0 +1,926 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using Common;
+using System.Reflection;
+
+namespace Customer
+{
+    public class CustomerFormRecipe : Product.ProductFormRecipe
+    {
+        public CustomerRecipeMainSettings m_CustomerRecipeMainSettings = new CustomerRecipeMainSettings();
+        public CustomerRecipeInputSettings m_CustomerRecipeInputSettings = new CustomerRecipeInputSettings();
+        public CustomerRecipeOutputSettings m_CustomerRecipeOutputSettings = new CustomerRecipeOutputSettings();
+        public CustomerRecipeDelaySettings m_CustomerRecipeDelaySettings = new CustomerRecipeDelaySettings();
+        public CustomerRecipeMotorPositionSettings m_CustomerRecipeMotorPositionSettings = new CustomerRecipeMotorPositionSettings();
+        public CustomerRecipeOutputFileSettings m_CustomerRecipeOutputFileSettings = new CustomerRecipeOutputFileSettings();
+        
+        #region Recipe Setting
+        public CustomerRecipeCassetteSettings m_CustomerRecipeInputCassetteSettings = new CustomerRecipeCassetteSettings();
+        public CustomerRecipeCassetteSettings m_CustomerRecipeOutputCassetteSettings = new CustomerRecipeCassetteSettings();
+        public CustomerRecipeVisionSettings m_CustomerRecipeVisionSettings = new CustomerRecipeVisionSettings();
+        //public CustomerRecipeSortingSettings m_CustomerRecipeSortingSettings = new CustomerRecipeSortingSettings();
+        public CustomerRecipePickUpHeadSetting m_CustomerRecipePickUpHeadSetting = new CustomerRecipePickUpHeadSetting();
+        #endregion Recipe Setting
+        
+        public CustomerRecipeMainSettings m_Ori_CustomerRecipeMainSettings = new CustomerRecipeMainSettings();
+        public CustomerRecipeInputSettings m_Ori_CustomerRecipeInputSettings = new CustomerRecipeInputSettings();
+        public CustomerRecipeOutputSettings m_Ori_CustomerRecipeOutputSettings = new CustomerRecipeOutputSettings();
+        public CustomerRecipeDelaySettings m_Ori_CustomerRecipeDelaySettings = new CustomerRecipeDelaySettings();
+        public CustomerRecipeMotorPositionSettings m_Ori_CustomerRecipeMotorPositionSettings = new CustomerRecipeMotorPositionSettings();
+        public CustomerRecipeOutputFileSettings m_Ori_CustomerRecipeOutputFileSettings = new CustomerRecipeOutputFileSettings();
+        public CustomerRecipePickUpHeadSetting m_Ori_CustomerRecipePickUpHeadSetting = new CustomerRecipePickUpHeadSetting();
+
+
+        #region Recipe Setting
+        public CustomerRecipeCassetteSettings m_Ori_CustomerRecipeInputCassetteSettings = new CustomerRecipeCassetteSettings();
+        public CustomerRecipeCassetteSettings m_Ori_CustomerRecipeOutputCassetteSettings = new CustomerRecipeCassetteSettings();
+        public CustomerRecipeVisionSettings m_Ori_CustomerRecipeVisionSettings = new CustomerRecipeVisionSettings();
+        public CustomerRecipeSortingSettings m_Ori_CustomerRecipeSortingSettings = new CustomerRecipeSortingSettings();
+        #endregion Recipe Setting
+        private CustomerShareVariables m_CustomerShareVariables;// = new ProductShareVariables();
+        private CustomerProcessEvent m_CustomerProcessEvent;// = new CustomerProcessEvent();
+        private CustomerRTSSProcess m_CustomerRTSSProcess;// =  new ProductRTSSProcess();  
+
+        public CustomerShareVariables customerShareVariables
+        {
+            set
+            {
+                m_CustomerShareVariables = value;
+                productShareVariables = m_CustomerShareVariables;
+            }
+        }
+
+        public CustomerProcessEvent customerProcessEvent
+        {
+            set
+            {
+                m_CustomerProcessEvent = value;
+                productProcessEvent = m_CustomerProcessEvent;
+            }
+        }
+
+        public CustomerRTSSProcess customerRTSSProcess
+        {
+            set
+            {
+                m_CustomerRTSSProcess = value;
+                productRTSSProcess = m_CustomerRTSSProcess;
+            }
+        }
+
+        override public void InitializeRecipesSettings()
+        {
+            productRecipeMainSettings = m_CustomerRecipeMainSettings;
+            productRecipeInputSettings = m_CustomerRecipeInputSettings;
+            productRecipeOutputSettings = m_CustomerRecipeOutputSettings;
+            productRecipeDelaySettings = m_CustomerRecipeDelaySettings;
+            productRecipeMotorPositionSettings = m_CustomerRecipeMotorPositionSettings;
+            productRecipeOutputFileSettings = m_CustomerRecipeOutputFileSettings;
+            productRecipeInputCassetteSettings = m_CustomerRecipeInputCassetteSettings;
+            productRecipeOutputCassetteSettings = m_CustomerRecipeOutputCassetteSettings;
+            productRecipeVisionSettings = m_CustomerRecipeVisionSettings;
+            //productRecipeSortingSettings = m_CustomerRecipeSortingSettings;
+            productRecipePickUpHeadSettings = m_CustomerRecipePickUpHeadSetting;
+        }
+
+        override public bool LoadMainSettings(string mainRecipeFilename)
+        {
+            try
+            {
+
+                if (File.Exists(m_strRecipeMainPath + mainRecipeFilename + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeMainSettings = Tools.Deserialize<CustomerRecipeMainSettings>(m_strRecipeMainPath + mainRecipeFilename + m_strRecipeExtension);
+                    m_CustomerRecipeMainSettings = Tools.Deserialize<CustomerRecipeMainSettings>(m_strRecipeMainPath + mainRecipeFilename + m_strRecipeExtension);
+                    productRecipeMainSettings = m_CustomerRecipeMainSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadMainSettings()
+        {
+            try
+            {
+
+                if (File.Exists(m_strRecipeMainPath + groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeMainSettings = Tools.Deserialize<CustomerRecipeMainSettings>(m_strRecipeMainPath + groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeMainSettings = Tools.Deserialize<CustomerRecipeMainSettings>(m_strRecipeMainPath + groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeMainSettings = m_CustomerRecipeMainSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveMainSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiMainSetting = m_CustomerRecipeMainSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiMainSetting)
+                {
+                    if (!object.Equals(f.GetValue(m_CustomerRecipeMainSettings), f.GetValue(m_Ori_CustomerRecipeMainSettings)) && f.FieldType.IsArray == false)
+                    {
+                        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Main Recipe, Recipe Name: {groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeMainSettings)} to {f.GetValue(m_CustomerRecipeMainSettings)}");
+                        RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Main Recipe, Recipe Name: {groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeMainSettings)} to {f.GetValue(m_CustomerRecipeMainSettings)}");
+                    }
+                }
+                Tools.Serialize(m_strRecipeMainPath + groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeMainSettings);
+                m_Ori_CustomerRecipeMainSettings = Tools.Deserialize<CustomerRecipeMainSettings>(m_strRecipeMainPath + groupboxMainRecipeControl.comboBoxRecipeMain.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsMainSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Main Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeMainSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadInputSettings()
+        {
+            try
+            {
+
+                if (File.Exists(m_strRecipeInputPath + m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeInputSettings = Tools.Deserialize<CustomerRecipeInputSettings>(m_strRecipeInputPath + m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeInputSettings = Tools.Deserialize<CustomerRecipeInputSettings>(m_strRecipeInputPath + m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_ProductRecipeInputSettings = m_CustomerRecipeInputSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveInputSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiInputSetting = m_CustomerRecipeInputSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiInputSetting)
+                {
+                    if (!object.Equals(f.GetValue(m_CustomerRecipeInputSettings), f.GetValue(m_Ori_CustomerRecipeInputSettings)) && f.FieldType.IsArray == false)
+                    {
+                        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Input Recipe, Recipe Name: {m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeInputSettings)} to {f.GetValue(m_CustomerRecipeInputSettings)}");
+                        RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Input Recipe, Recipe Name: {m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeInputSettings)} to {f.GetValue(m_CustomerRecipeInputSettings)}");
+                    }
+                }
+                Tools.Serialize(m_strRecipeInputPath + m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeInputSettings);
+                m_Ori_CustomerRecipeInputSettings = Tools.Deserialize<CustomerRecipeInputSettings>(m_strRecipeInputPath + m_tabpageInput.comboBoxRecipeInput.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsInputSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Input Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeInputSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadOutputSettings()
+        {
+            try
+            {
+                if (File.Exists(m_strRecipeOutputPath + m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeOutputSettings = Tools.Deserialize<CustomerRecipeOutputSettings>(m_strRecipeOutputPath + m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeOutputSettings = Tools.Deserialize<CustomerRecipeOutputSettings>(m_strRecipeOutputPath + m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeOutputSettings = m_CustomerRecipeOutputSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveOutputSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiOutputSetting = m_CustomerRecipeOutputSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiOutputSetting)
+                {
+                    if (f.FieldType.IsGenericType && (f.FieldType.GetGenericTypeDefinition() == typeof(List<>)))
+                    {
+                        List<Product.SortTrayInfo> OutputDefectData_New = (List<Product.SortTrayInfo>)f.GetValue(m_CustomerRecipeOutputSettings);
+                        List<Product.SortTrayInfo> OutputDefectData_Ori = (List<Product.SortTrayInfo>)f.GetValue(m_Ori_CustomerRecipeOutputSettings);
+                        FieldInfo[] OutputDefectField = typeof(Product.SortTrayInfo).GetFields();
+                        for (int i = 0; i < OutputDefectData_New.Count; i++)
+                        {
+                            foreach (FieldInfo field in OutputDefectField)
+                            {
+                                if (!object.Equals(field.GetValue(OutputDefectData_New[i]), field.GetValue(OutputDefectData_Ori[i])))
+                                {
+                                    Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output Recipe, Recipe Name: {m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString()}, Parameter changed: {f.Name}, List {i + 1}, {field.Name} changed from {field.GetValue(OutputDefectData_Ori[i])} to {field.GetValue(OutputDefectData_New[i])}");
+                                    RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output Recipe, Recipe Name: {m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString()}, Parameter changed: {f.Name}, List {i + 1}, {field.Name} changed from {field.GetValue(OutputDefectData_Ori[i])} to {field.GetValue(OutputDefectData_New[i])}");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (!object.Equals(f.GetValue(m_CustomerRecipeOutputSettings), f.GetValue(m_Ori_CustomerRecipeOutputSettings)) && f.FieldType.IsArray == false)
+                        {
+                            Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output Recipe, Recipe Name: {m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeOutputSettings)} to {f.GetValue(m_CustomerRecipeOutputSettings)}");
+                            RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output Recipe, Recipe Name: {m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeOutputSettings)} to {f.GetValue(m_CustomerRecipeOutputSettings)}");
+                        }
+                    }
+                }
+                Tools.Serialize(m_strRecipeOutputPath + m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeOutputSettings);
+                m_Ori_CustomerRecipeOutputSettings = Tools.Deserialize<CustomerRecipeOutputSettings>(m_strRecipeOutputPath + m_tabpageOutput.comboBoxRecipeOutput.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsOutputSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Output Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeOutputSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadDelaySettings()
+        {
+            try
+            {
+
+                if (File.Exists(m_strRecipeDelayPath + m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeDelaySettings = Tools.Deserialize<CustomerRecipeDelaySettings>(m_strRecipeDelayPath + m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeDelaySettings = Tools.Deserialize<CustomerRecipeDelaySettings>(m_strRecipeDelayPath + m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeDelaySettings = m_CustomerRecipeDelaySettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveDelaySettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiDelaySetting = m_CustomerRecipeDelaySettings.GetType().GetFields();
+                foreach (FieldInfo f in fiDelaySetting)
+                {
+                    if (!object.Equals(f.GetValue(m_CustomerRecipeDelaySettings), f.GetValue(m_Ori_CustomerRecipeDelaySettings)) && f.FieldType.IsArray == false)
+                    {
+                        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Delay Recipe, Recipe Name: {m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeDelaySettings)} to {f.GetValue(m_CustomerRecipeDelaySettings)}");
+                        RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Delay Recipe, Recipe Name: {m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeDelaySettings)} to {f.GetValue(m_CustomerRecipeDelaySettings)}");
+                    }
+                }
+                Tools.Serialize(m_strRecipeDelayPath + m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeDelaySettings);
+                m_Ori_CustomerRecipeDelaySettings = Tools.Deserialize<CustomerRecipeDelaySettings>(m_strRecipeDelayPath + m_tabpageDelay.comboBoxRecipeDelay.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsDelaySettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Delay Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeDelaySettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadMotorPositionSettings()
+        {
+            try
+            {
+                if (File.Exists(m_strRecipeMotorPositionPath + m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeMotorPositionSettings = Tools.Deserialize<CustomerRecipeMotorPositionSettings>(m_strRecipeMotorPositionPath + m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeMotorPositionSettings = Tools.Deserialize<CustomerRecipeMotorPositionSettings>(m_strRecipeMotorPositionPath + m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeMotorPositionSettings = m_CustomerRecipeMotorPositionSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveMotorPositionSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiMotorPositionSetting = m_CustomerRecipeMotorPositionSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiMotorPositionSetting)
+                {
+                    if (!object.Equals(f.GetValue(m_CustomerRecipeMotorPositionSettings), f.GetValue(m_Ori_CustomerRecipeMotorPositionSettings))&& f.FieldType.IsArray == false)
+                    {
+                        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Motor Position Recipe, Recipe Name: {m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeMotorPositionSettings)} to {f.GetValue(m_CustomerRecipeMotorPositionSettings)}");
+                        RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Motor Position Recipe, Recipe Name: {m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeMotorPositionSettings)} to {f.GetValue(m_CustomerRecipeMotorPositionSettings)}");
+                    }
+                }
+                Tools.Serialize(m_strRecipeMotorPositionPath + m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeMotorPositionSettings);
+                m_Ori_CustomerRecipeMotorPositionSettings = Tools.Deserialize<CustomerRecipeMotorPositionSettings>(m_strRecipeMotorPositionPath + m_tabpageMotorPosition.comboBoxRecipeMotorPosition.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsMotorPositionSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Motor Position Recipe Named: {saveFileDialogRecipe.FileName}");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeMotorPositionSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool LoadOutputFileSettings()
+        {
+            try
+            {
+                if (File.Exists(m_strRecipeOutputFilePath + m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeOutputFileSettings = Tools.Deserialize<CustomerRecipeOutputFileSettings>(m_strRecipeOutputFilePath + m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeOutputFileSettings = Tools.Deserialize<CustomerRecipeOutputFileSettings>(m_strRecipeOutputFilePath + m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeOutputFileSettings = m_CustomerRecipeOutputFileSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveOutputFileSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiOutputFileSetting = m_CustomerRecipeOutputFileSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiOutputFileSetting)
+                {
+                    if (f.FieldType.IsGenericType && (f.FieldType.GetGenericTypeDefinition() == typeof(List<>)))
+                    {
+                        List<Product.DefectProperty> DefectData_New = (List<Product.DefectProperty>)f.GetValue(m_CustomerRecipeOutputFileSettings);
+                        List<Product.DefectProperty> DefectData_Ori = (List<Product.DefectProperty>)f.GetValue(m_Ori_CustomerRecipeOutputFileSettings);
+                        FieldInfo[] DefectField = typeof(Product.DefectProperty).GetFields();
+                        for (int i = 0; i < DefectData_New.Count; i++)
+                        {
+                            foreach (FieldInfo field in DefectField)
+                            {
+                                if (!object.Equals(field.GetValue(DefectData_New[i]), field.GetValue(DefectData_Ori[i])))
+                                {
+                                    Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString()}, Parameter changed: {f.Name}, Defect {i + 1}, {field.Name} changed from {field.GetValue(DefectData_Ori[i])} to {field.GetValue(DefectData_New[i])}");
+                                    RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString()}, Parameter changed: {f.Name}, Defect {i + 1}, {field.Name} changed from {field.GetValue(DefectData_Ori[i])} to {field.GetValue(DefectData_New[i])}");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (!object.Equals(f.GetValue(m_CustomerRecipeOutputFileSettings), f.GetValue(m_Ori_CustomerRecipeOutputFileSettings)) && f.FieldType.IsArray == false)
+                        {
+                            Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeOutputFileSettings)} to {f.GetValue(m_CustomerRecipeOutputFileSettings)}");
+                            RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeOutputFileSettings)} to {f.GetValue(m_CustomerRecipeOutputFileSettings)}");
+                        }
+                    }
+                }
+                Tools.Serialize(m_strRecipeOutputFilePath + m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeOutputFileSettings);
+                m_Ori_CustomerRecipeOutputFileSettings = Tools.Deserialize<CustomerRecipeOutputFileSettings>(m_strRecipeOutputFilePath + m_tabpageOutputFile.comboBoxRecipeOutputFile.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsOutputFileSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Output File Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeOutputFileSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        //override public bool LoadSortingSettings()
+        //{
+        //    try
+        //    {
+        //        if (File.Exists(m_strRecipeSortingPath + m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString() + m_strRecipeExtension))
+        //        {
+        //            m_Ori_CustomerRecipeSortingSettings = Tools.Deserialize<CustomerRecipeSortingSettings>(m_strRecipeSortingPath + m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString() + m_strRecipeExtension);
+        //            m_CustomerRecipeSortingSettings = Tools.Deserialize<CustomerRecipeSortingSettings>(m_strRecipeSortingPath + m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString() + m_strRecipeExtension);
+        //            productRecipeSortingSettings = m_CustomerRecipeSortingSettings;
+        //        }
+        //        else
+        //        {
+        //            updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveSortingSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+        //        FieldInfo[] fiSortingSetting = m_CustomerRecipeSortingSettings.GetType().GetFields();
+        //        foreach (FieldInfo f in fiSortingSetting)
+        //        {
+        //            if (!object.Equals(f.GetValue(m_CustomerRecipeSortingSettings), f.GetValue(m_Ori_CustomerRecipeSortingSettings)) && f.FieldType.IsArray == false)
+        //            {
+        //                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeSortingSettings)} to {f.GetValue(m_CustomerRecipeSortingSettings)}");
+        //            }
+        //        }
+        //        Tools.Serialize(m_strRecipeSortingPath + m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeSortingSettings);
+        //        m_Ori_CustomerRecipeSortingSettings = Tools.Deserialize<CustomerRecipeSortingSettings>(m_strRecipeSortingPath + m_tabpageSortingRecipe.comboBoxRecipeSorting.SelectedItem.ToString() + m_strRecipeExtension);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveAsSortingSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Output File Recipe Named: {saveFileDialogRecipe.FileName}.");
+        //        Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeSortingSettings);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        override public bool LoadPickUpHeadSettings()
+        {
+            try
+            {
+                if (File.Exists(m_strRecipePickUpHeadPath + m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipePickUpHeadSetting = Tools.Deserialize<CustomerRecipePickUpHeadSetting>(m_strRecipePickUpHeadPath + m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipePickUpHeadSetting = Tools.Deserialize<CustomerRecipePickUpHeadSetting>(m_strRecipePickUpHeadPath + m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipePickUpHeadSettings = m_CustomerRecipePickUpHeadSetting;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SavePickUpHeadSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiPickUpHeadSetting = m_CustomerRecipePickUpHeadSetting.GetType().GetFields();
+                foreach (FieldInfo f in fiPickUpHeadSetting)
+                {
+                    if (!object.Equals(f.GetValue(m_CustomerRecipePickUpHeadSetting), f.GetValue(m_Ori_CustomerRecipePickUpHeadSetting)) && f.FieldType.IsArray == false)
+                    {
+                        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipePickUpHeadSetting)} to {f.GetValue(m_CustomerRecipePickUpHeadSetting)}");
+                        RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output File Recipe, Recipe Name: {m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipePickUpHeadSetting)} to {f.GetValue(m_CustomerRecipePickUpHeadSetting)}");
+                    }
+                }
+                Tools.Serialize(m_strRecipePickUpHeadPath + m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipePickUpHeadSetting);
+                m_Ori_CustomerRecipePickUpHeadSetting = Tools.Deserialize<CustomerRecipePickUpHeadSetting>(m_strRecipePickUpHeadPath + m_tabpagePickUpHeadRecipe.comboBoxRecipePickUpHead.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsPickUpHeadSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Output File Recipe Named: {saveFileDialogRecipe.FileName}.");
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipePickUpHeadSetting);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        //override public bool LoadInputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        if (File.Exists(m_strRecipeInputCassettePath + m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension))
+        //        {
+        //            m_Ori_CustomerRecipeInputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeInputCassettePath + m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //            m_CustomerRecipeInputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeInputCassettePath + m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //            productRecipeInputCassetteSettings = m_CustomerRecipeInputCassetteSettings;
+        //        }
+        //        else
+        //        {
+        //            updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveInputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+        //        FieldInfo[] fiInputCassetteSetting = m_CustomerRecipeInputCassetteSettings.GetType().GetFields();
+        //        foreach (FieldInfo f in fiInputCassetteSetting)
+        //        {
+        //            if (!object.Equals(f.GetValue(m_CustomerRecipeInputCassetteSettings), f.GetValue(m_Ori_CustomerRecipeInputCassetteSettings)) && f.FieldType.IsArray == false)
+        //            {
+        //                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Input Cassette Recipe, Recipe Name: {m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeInputCassetteSettings)} to {f.GetValue(m_CustomerRecipeInputCassetteSettings)}");
+        //            }
+        //        }
+        //        Tools.Serialize(m_strRecipeInputCassettePath + m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeInputCassetteSettings);
+        //        m_Ori_CustomerRecipeInputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeInputCassettePath + m_tabpageInputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveAsInputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Input Cassette Recipe Named: {saveFileDialogRecipe.FileName}.");
+        //        Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeInputCassetteSettings);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool LoadOutputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        if (File.Exists(m_strRecipeOutputCassettePath + m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension))
+        //        {
+        //            m_Ori_CustomerRecipeOutputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeOutputCassettePath + m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //            m_CustomerRecipeOutputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeOutputCassettePath + m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //            productRecipeOutputCassetteSettings = m_CustomerRecipeOutputCassetteSettings;
+        //        }
+        //        else
+        //        {
+        //            updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveOutputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+        //        FieldInfo[] fiOutputCassetteSetting = m_CustomerRecipeOutputCassetteSettings.GetType().GetFields();
+        //        foreach (FieldInfo f in fiOutputCassetteSetting)
+        //        {
+        //            if (!object.Equals(f.GetValue(m_CustomerRecipeOutputCassetteSettings), f.GetValue(m_Ori_CustomerRecipeOutputCassetteSettings)) && f.FieldType.IsArray == false)
+        //            {
+        //                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Output Cassette Recipe, Recipe Name: {m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeOutputCassetteSettings)} to {f.GetValue(m_CustomerRecipeOutputCassetteSettings)}");
+        //            }
+        //        }
+        //        Tools.Serialize(m_strRecipeOutputCassettePath + m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeOutputCassetteSettings);
+        //        m_Ori_CustomerRecipeOutputCassetteSettings = Tools.Deserialize<CustomerRecipeCassetteSettings>(m_strRecipeOutputCassettePath + m_tabpageOutputCassette.comboBoxRecipeCassette.SelectedItem.ToString() + m_strRecipeExtension);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        //override public bool SaveAsOutputCassetteSettings()
+        //{
+        //    try
+        //    {
+        //        Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Output Cassette Recipe Named: {saveFileDialogRecipe.FileName}.");
+        //        Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeOutputCassetteSettings);
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+        //        return false;
+        //    }
+        //}
+
+        override public bool LoadVisionSettings()
+        {
+            try
+            {
+                if (File.Exists(m_strRecipeVisionPath + m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString() + m_strRecipeExtension))
+                {
+                    m_Ori_CustomerRecipeVisionSettings = Tools.Deserialize<CustomerRecipeVisionSettings>(m_strRecipeVisionPath + m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString() + m_strRecipeExtension);
+                    m_CustomerRecipeVisionSettings = Tools.Deserialize<CustomerRecipeVisionSettings>(m_strRecipeVisionPath + m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString() + m_strRecipeExtension);
+                    productRecipeVisionSettings = m_CustomerRecipeVisionSettings;
+                }
+                else
+                {
+                    updateRichTextBoxMessageRecipeMain("Recipe file not exist.");
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveVisionSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, made changes at {m_strmode}");
+                FieldInfo[] fiVisionSetting = m_CustomerRecipeVisionSettings.GetType().GetFields();
+                foreach (FieldInfo f in fiVisionSetting)
+                {
+                    if (f.FieldType.IsGenericType && (f.FieldType.GetGenericTypeDefinition() == typeof(List<>)))
+                    {
+                        List<Product.VisionSnapInfo> VisionData_New = (List<Product.VisionSnapInfo>)f.GetValue(m_CustomerRecipeVisionSettings);
+                        List<Product.VisionSnapInfo> VisionData_Ori = (List<Product.VisionSnapInfo>)f.GetValue(m_Ori_CustomerRecipeVisionSettings);
+                        FieldInfo[] VisionField = typeof(Product.VisionSnapInfo).GetFields();
+                        for (int i = 0; i < VisionData_New.Count; i++)
+                        {
+                            foreach (FieldInfo field in VisionField)
+                            {
+                                if (!object.Equals(field.GetValue(VisionData_New[i]), field.GetValue(VisionData_Ori[i])))
+                                {
+                                    Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, Snap {i + 1}, {field.Name} changed from {field.GetValue(VisionData_Ori[i])} to {field.GetValue(VisionData_New[i])}");
+                                    RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, snap {i + 1}, {field.Name} changed from {field.GetValue(VisionData_Ori[i])} to {field.GetValue(VisionData_New[i])}");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //if (f.FieldType.IsArray)
+                        //{
+                        //    Array array = f.GetValue(m_CustomerRecipeVisionSettings) as Array;
+
+                        //if (array.GetType().GetElementType().ToString().Contains("FiducialSettings"))
+                        //{
+                        //    //Product.FiducialSettings[] FiducialData_New = (Product.FiducialSettings[])f.GetValue(m_CustomerRecipeVisionSettings);
+                        //    //Product.FiducialSettings[] FiducialData_Ori = (Product.FiducialSettings[])f.GetValue(m_Ori_CustomerRecipeVisionSettings);
+
+                        //    FieldInfo[] fiducialField = typeof(Product.FiducialSettings).GetFields();
+                        //    for (int i = 0; i < FiducialData_New.Length; i++)
+                        //    {
+                        //        foreach (FieldInfo field in fiducialField)
+                        //        {
+                        //            if (!object.Equals(field.GetValue(FiducialData_New[i]), field.GetValue(FiducialData_Ori[i])))
+                        //            {
+                        //                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, Fiducial {i + 1}, {field.Name} changed from {field.GetValue(FiducialData_Ori[i])} to {field.GetValue(FiducialData_New[i])}");
+                        //            }
+                        //        }
+                        //    }
+                        //}
+                        //else if (array.GetType().GetElementType().ToString().Contains("Pattern"))
+                        //{
+                        //    Product.PatternSettings[] PatternData_New = (Product.PatternSettings[])f.GetValue(m_CustomerRecipeVisionSettings);
+                        //    Product.PatternSettings[] PatternData_Ori = (Product.PatternSettings[])f.GetValue(m_Ori_CustomerRecipeVisionSettings);
+                        //    FieldInfo[] PatternField = typeof(Product.PatternSettings).GetFields();
+                        //    for (int i = 0; i < PatternData_New.Length; i++)
+                        //    {
+                        //        foreach (FieldInfo field in PatternField)
+                        //        {
+                        //            if (!object.Equals(field.GetValue(PatternData_New[i]), field.GetValue(PatternData_Ori[i])) && field.Name != "PatternUnitInfo")
+                        //            {
+                        //                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, Pattern {i + 1}, {field.Name} Value changed from {field.GetValue(PatternData_Ori[i])} to {field.GetValue(PatternData_New[i])}");
+                        //            }
+                        //        }
+                        //    }
+                        //}
+                        //}
+                        if (!object.Equals(f.GetValue(m_CustomerRecipeVisionSettings), f.GetValue(m_Ori_CustomerRecipeVisionSettings)) && f.FieldType.IsArray == false)
+                        {
+                            Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeVisionSettings)} to {f.GetValue(m_CustomerRecipeVisionSettings)}");
+                            RecipeParameterLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} Recipe Type: Vision Recipe, Recipe Name: {m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString()}, Parameter changed: {f.Name}, Value changed from {f.GetValue(m_Ori_CustomerRecipeVisionSettings)} to {f.GetValue(m_CustomerRecipeVisionSettings)}");
+                        }
+                    }
+                }
+                Tools.Serialize(m_strRecipeVisionPath + m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString() + m_strRecipeExtension, m_CustomerRecipeVisionSettings);
+                m_Ori_CustomerRecipeVisionSettings = Tools.Deserialize<CustomerRecipeVisionSettings>(m_strRecipeVisionPath + m_tabpageVisionRecipe.comboBoxRecipeVision.SelectedItem.ToString() + m_strRecipeExtension);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+
+        override public bool SaveAsVisionSettings()
+        {
+            try
+            {
+                Machine.EventLogger.WriteLog($"{DateTime.Now.ToString("yyyyMMdd HHmmss")} User: {m_CustomerShareVariables.strLoginUserName}, created New Vision Recipe Named: {saveFileDialogRecipe.FileName}.");
+                
+                Tools.Serialize(saveFileDialogRecipe.FileName, m_CustomerRecipeVisionSettings);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+                return false;
+            }
+        }
+    }
+}

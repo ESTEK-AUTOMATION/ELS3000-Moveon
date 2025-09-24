@@ -1,0 +1,281 @@
+﻿namespace Customer
+{
+    partial class CustomerFormNewLot
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.richTextBoxMessage = new System.Windows.Forms.RichTextBox();
+            this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.textBoxOperatorID = new System.Windows.Forms.TextBox();
+            this.labelOperatorID = new System.Windows.Forms.Label();
+            this.textBoxLotID1 = new System.Windows.Forms.TextBox();
+            this.label1MESLot = new System.Windows.Forms.Label();
+            this.textBoxLotID2 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID4 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID3 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID6 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID5 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID8 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID7 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID10 = new System.Windows.Forms.TextBox();
+            this.textBoxLotID9 = new System.Windows.Forms.TextBox();
+            this.panelBottom.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelBottom
+            // 
+            this.panelBottom.Controls.Add(this.richTextBoxMessage);
+            this.panelBottom.Controls.Add(this.buttonOK);
+            this.panelBottom.Controls.Add(this.buttonCancel);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 642);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(1284, 100);
+            this.panelBottom.TabIndex = 103;
+            // 
+            // richTextBoxMessage
+            // 
+            this.richTextBoxMessage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxMessage.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxMessage.Margin = new System.Windows.Forms.Padding(6);
+            this.richTextBoxMessage.MaxLength = 2000;
+            this.richTextBoxMessage.Name = "richTextBoxMessage";
+            this.richTextBoxMessage.Size = new System.Drawing.Size(1084, 100);
+            this.richTextBoxMessage.TabIndex = 69;
+            this.richTextBoxMessage.Text = "";
+            this.richTextBoxMessage.TextChanged += new System.EventHandler(this.richTextBoxMessage_TextChanged);
+            // 
+            // buttonOK
+            // 
+            this.buttonOK.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOK.Location = new System.Drawing.Point(1084, 0);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Size = new System.Drawing.Size(100, 100);
+            this.buttonOK.TabIndex = 8;
+            this.buttonOK.Text = "OK";
+            this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Location = new System.Drawing.Point(1184, 0);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(100, 100);
+            this.buttonCancel.TabIndex = 9;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // textBoxOperatorID
+            // 
+            this.textBoxOperatorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxOperatorID.Location = new System.Drawing.Point(184, 12);
+            this.textBoxOperatorID.Name = "textBoxOperatorID";
+            this.textBoxOperatorID.Size = new System.Drawing.Size(451, 26);
+            this.textBoxOperatorID.TabIndex = 6;
+            this.textBoxOperatorID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxOperatorID_KeyUp);
+            // 
+            // labelOperatorID
+            // 
+            this.labelOperatorID.AutoSize = true;
+            this.labelOperatorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOperatorID.Location = new System.Drawing.Point(13, 15);
+            this.labelOperatorID.Name = "labelOperatorID";
+            this.labelOperatorID.Size = new System.Drawing.Size(101, 20);
+            this.labelOperatorID.TabIndex = 112;
+            this.labelOperatorID.Text = "Operator ID :";
+            // 
+            // textBoxLotID1
+            // 
+            this.textBoxLotID1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID1.Location = new System.Drawing.Point(184, 63);
+            this.textBoxLotID1.Name = "textBoxLotID1";
+            this.textBoxLotID1.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID1.TabIndex = 0;
+            this.textBoxLotID1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID1_KeyUp);
+            // 
+            // label1MESLot
+            // 
+            this.label1MESLot.AutoSize = true;
+            this.label1MESLot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1MESLot.Location = new System.Drawing.Point(13, 68);
+            this.label1MESLot.Name = "label1MESLot";
+            this.label1MESLot.Size = new System.Drawing.Size(61, 20);
+            this.label1MESLot.TabIndex = 118;
+            this.label1MESLot.Text = "Lot ID :";
+            // 
+            // textBoxLotID2
+            // 
+            this.textBoxLotID2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID2.Location = new System.Drawing.Point(184, 117);
+            this.textBoxLotID2.Name = "textBoxLotID2";
+            this.textBoxLotID2.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID2.TabIndex = 119;
+            this.textBoxLotID2.Visible = false;
+            this.textBoxLotID2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID2_KeyUp);
+            // 
+            // textBoxLotID4
+            // 
+            this.textBoxLotID4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID4.Location = new System.Drawing.Point(184, 224);
+            this.textBoxLotID4.Name = "textBoxLotID4";
+            this.textBoxLotID4.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID4.TabIndex = 121;
+            this.textBoxLotID4.Visible = false;
+            this.textBoxLotID4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID4_KeyUp);
+            // 
+            // textBoxLotID3
+            // 
+            this.textBoxLotID3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID3.Location = new System.Drawing.Point(184, 170);
+            this.textBoxLotID3.Name = "textBoxLotID3";
+            this.textBoxLotID3.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID3.TabIndex = 120;
+            this.textBoxLotID3.Visible = false;
+            this.textBoxLotID3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID3_KeyUp);
+            // 
+            // textBoxLotID6
+            // 
+            this.textBoxLotID6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID6.Location = new System.Drawing.Point(184, 328);
+            this.textBoxLotID6.Name = "textBoxLotID6";
+            this.textBoxLotID6.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID6.TabIndex = 123;
+            this.textBoxLotID6.Visible = false;
+            this.textBoxLotID6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID6_KeyUp);
+            // 
+            // textBoxLotID5
+            // 
+            this.textBoxLotID5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID5.Location = new System.Drawing.Point(184, 274);
+            this.textBoxLotID5.Name = "textBoxLotID5";
+            this.textBoxLotID5.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID5.TabIndex = 122;
+            this.textBoxLotID5.Visible = false;
+            this.textBoxLotID5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID5_KeyUp);
+            // 
+            // textBoxLotID8
+            // 
+            this.textBoxLotID8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID8.Location = new System.Drawing.Point(184, 432);
+            this.textBoxLotID8.Name = "textBoxLotID8";
+            this.textBoxLotID8.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID8.TabIndex = 125;
+            this.textBoxLotID8.Visible = false;
+            this.textBoxLotID8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID8_KeyUp);
+            // 
+            // textBoxLotID7
+            // 
+            this.textBoxLotID7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID7.Location = new System.Drawing.Point(184, 378);
+            this.textBoxLotID7.Name = "textBoxLotID7";
+            this.textBoxLotID7.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID7.TabIndex = 124;
+            this.textBoxLotID7.Visible = false;
+            this.textBoxLotID7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID7_KeyUp);
+            // 
+            // textBoxLotID10
+            // 
+            this.textBoxLotID10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID10.Location = new System.Drawing.Point(184, 536);
+            this.textBoxLotID10.Name = "textBoxLotID10";
+            this.textBoxLotID10.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID10.TabIndex = 127;
+            this.textBoxLotID10.Visible = false;
+            this.textBoxLotID10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID10_KeyUp);
+            // 
+            // textBoxLotID9
+            // 
+            this.textBoxLotID9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLotID9.Location = new System.Drawing.Point(184, 482);
+            this.textBoxLotID9.Name = "textBoxLotID9";
+            this.textBoxLotID9.Size = new System.Drawing.Size(451, 26);
+            this.textBoxLotID9.TabIndex = 126;
+            this.textBoxLotID9.Visible = false;
+            this.textBoxLotID9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxLotID9_KeyUp);
+            // 
+            // CustomerFormNewLot
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1284, 742);
+            this.ControlBox = false;
+            this.Controls.Add(this.textBoxLotID10);
+            this.Controls.Add(this.textBoxLotID9);
+            this.Controls.Add(this.textBoxLotID8);
+            this.Controls.Add(this.textBoxLotID7);
+            this.Controls.Add(this.textBoxLotID6);
+            this.Controls.Add(this.textBoxLotID5);
+            this.Controls.Add(this.textBoxLotID4);
+            this.Controls.Add(this.textBoxLotID3);
+            this.Controls.Add(this.textBoxLotID2);
+            this.Controls.Add(this.textBoxLotID1);
+            this.Controls.Add(this.label1MESLot);
+            this.Controls.Add(this.textBoxOperatorID);
+            this.Controls.Add(this.labelOperatorID);
+            this.Controls.Add(this.panelBottom);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "CustomerFormNewLot";
+            this.Text = "New Lot";
+            this.TopMost = true;
+            this.panelBottom.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panelBottom;
+        private System.Windows.Forms.RichTextBox richTextBoxMessage;
+        private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Label labelOperatorID;
+        private System.Windows.Forms.TextBox textBoxLotID1;
+        private System.Windows.Forms.Label label1MESLot;
+        private System.Windows.Forms.TextBox textBoxLotID2;
+        private System.Windows.Forms.TextBox textBoxLotID4;
+        private System.Windows.Forms.TextBox textBoxLotID3;
+        private System.Windows.Forms.TextBox textBoxLotID6;
+        private System.Windows.Forms.TextBox textBoxLotID5;
+        private System.Windows.Forms.TextBox textBoxLotID8;
+        private System.Windows.Forms.TextBox textBoxLotID7;
+        private System.Windows.Forms.TextBox textBoxLotID10;
+        private System.Windows.Forms.TextBox textBoxLotID9;
+        public System.Windows.Forms.TextBox textBoxOperatorID;
+    }
+}

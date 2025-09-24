@@ -1,0 +1,418 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Customer
+{
+    public class CustomerFormMainInterface : Product.ProductFormMainInterface
+    {
+        public new CustomerFormJob m_formJob;// = new CustomerFormJob();
+        public new CustomerFormReport m_formReport;// = new CustomerFormReport();
+        public new CustomerFormRecipe m_formRecipe;// = new ProductFormRecipe();
+        public new CustomerFormTeachPoint m_formTeachPoint;
+
+        public new CustomerFormIO m_formIO;
+
+        public new CustomerFormOption m_formOption;// = new ProductFormOption();
+        public new CustomerFormSetup m_formSetup;// = new ProductFormSetup();
+        public new CustomerFormConfiguration m_formConfiguration;// = new ProductFormConfiguration();
+
+        private CustomerShareVariables m_CustomerShareVariables = new CustomerShareVariables();
+        private CustomerProcessEvent m_CustomerProcessEvent = new CustomerProcessEvent();
+        private CustomerGUIEvent m_CustomerGUIEvent = new CustomerGUIEvent();
+
+        private CustomerStateControl m_CustomerStateControl = new CustomerStateControl();
+        private CustomerRTSSProcess m_CustomerRTSSProcess = new CustomerRTSSProcess();
+        private CustomerMainProcess m_CustomerMainProcess = new CustomerMainProcess();
+        private CustomerReportProcess m_CustomerReportProcess = new CustomerReportProcess();
+
+        private CustomerReportEvent m_CustomerReportEvent = new CustomerReportEvent();
+        
+        private bool m_CustomerRunRtssSequence = true;
+        private bool m_CustomerRunExeSequence = false;
+        public CustomerShareVariables customerShareVariables
+        {
+            set
+            {
+                m_CustomerShareVariables = value;
+                productShareVariables = m_CustomerShareVariables;
+            }
+        }
+        public string CustomerAssemblyName
+        {
+            set { ProductAssemblyName = value; }
+        }
+        public string CustomerAssemblyVersion
+        {
+            set { ProductAssemblyVersion = value; }
+        }
+        public string CustomerAssemblyVersion1
+        {
+            get { return ProductionAssemblyVersion1; }
+            set { ProductionAssemblyVersion1 = value; }
+           
+        }
+
+        public bool CustomerRunRtssSequence
+        {
+            set
+            {
+                m_CustomerRunRtssSequence = value;
+            }
+        }
+
+        public bool CustomerRunExeSequence
+        {
+            set
+            {
+                m_CustomerRunExeSequence = value;
+            }
+        }
+        public CustomerFormMainInterface()
+        {
+            //base.Load += new System.EventHandler(Initialize);
+        }
+
+        override public void SetFormMainInterfaceVariables()
+        {
+            productShareVariables = m_CustomerShareVariables;
+            productProcessEvent = m_CustomerProcessEvent;
+            productGUIEvent = m_CustomerGUIEvent;
+
+            //m_ReportProcess.shareVariables = m_ShareVariables;
+
+            m_CustomerRTSSProcess.customerShareVariables = m_CustomerShareVariables;
+            m_CustomerRTSSProcess.customerProcessEvent = m_CustomerProcessEvent;
+            m_CustomerRTSSProcess.customerGUIEvent = m_CustomerGUIEvent;
+
+            m_CustomerRTSSProcess.CustomerRunRtssSequence = m_CustomerRunRtssSequence;
+            m_CustomerRTSSProcess.CustomerRunExeSequence = m_CustomerRunExeSequence;
+
+            productRTSSProcess = m_CustomerRTSSProcess;
+
+            m_CustomerStateControl.customerShareVariables = m_CustomerShareVariables;
+            m_CustomerStateControl.customerProcessEvent = m_CustomerProcessEvent;
+            m_CustomerStateControl.customerRTSSProcess = m_CustomerRTSSProcess;
+            productStateControl = m_CustomerStateControl;
+
+            m_CustomerMainProcess.customerShareVariables = m_CustomerShareVariables;
+            m_CustomerMainProcess.customerProcessEvent = m_CustomerProcessEvent;
+            m_CustomerMainProcess.customerStateControl = m_CustomerStateControl;
+            m_CustomerMainProcess.customerRTSSProcess = m_CustomerRTSSProcess;
+            m_CustomerMainProcess.customerReportProcess = m_CustomerReportProcess;
+
+            productReportProcess = m_CustomerReportProcess;
+
+            //m_MainProcess.reportProcess = m_ReportProcess;
+            productMainProcess = m_CustomerMainProcess;
+
+            base.SetFormMainInterfaceVariables();
+        }
+
+        #region Form Job
+        override public void CreateFormJob()
+        {
+            try
+            {
+                m_formJob = new CustomerFormJob();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormJob()
+        {
+            try
+            {
+                base.m_formJob = m_formJob;
+                base.SetFormJob();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormJobVariables()
+        {
+            try
+            {
+                m_formJob.customerShareVariables = m_CustomerShareVariables;
+                m_formJob.customerProcessEvent = m_CustomerProcessEvent;
+                m_formJob.customerStateControl = m_CustomerStateControl;
+                m_formJob.customerRTSSProcess = m_CustomerRTSSProcess;
+                m_formJob.customerReportProcess = m_CustomerReportProcess;
+               // m_formJob.reportProcess = m_CustomerReportProcess;
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void InitializeFormJob()
+        {
+            try
+            {
+                m_formJob.Initialize();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        #endregion Form Job
+
+        #region Form Recipe
+        override public void CreateFormRecipe()
+        {
+            try
+            {
+                m_formRecipe = new CustomerFormRecipe();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormRecipe()
+        {
+            base.m_formRecipe = m_formRecipe;
+            base.SetFormRecipe();
+        }
+
+        override public void SetFormRecipeVariables()
+        {
+            m_formRecipe.customerShareVariables = m_CustomerShareVariables;
+            m_formRecipe.customerProcessEvent = m_CustomerProcessEvent;
+            m_formRecipe.customerRTSSProcess = m_CustomerRTSSProcess;
+        }
+
+        override public void InitializeFormRecipe()
+        {
+            m_formRecipe.Initialize();
+        }
+        #endregion Form Recipe
+        
+        #region Form Report
+        override public void CreateFormReport()
+        {
+            try
+            {
+                m_formReport = new CustomerFormReport();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormReport()
+        {
+            base.m_formReport = m_formReport;
+            base.SetFormReport();
+        }
+
+        override public void SetFormReportVariables()
+        {
+            m_formReport.customerShareVariables = m_CustomerShareVariables;
+            m_formReport.reportProcess = reportProcess;
+            m_formReport.customerReportEvent = m_CustomerReportEvent;
+        }
+
+        override public void InitializeFormReport()
+        {
+            m_formReport.Initialize();
+        }
+        #endregion Form Report
+
+        #region Form IO
+
+        override public void CreateFormIO()
+        {
+            m_formIO = new CustomerFormIO();
+        }
+
+        override public void SetFormIO()
+        {
+            base.m_formIO = m_formIO;
+        }
+
+        override public void SetFormIOVariables()
+        {
+            m_formIO.shareVariables = m_CustomerShareVariables;
+            m_formIO.guiEvent = m_CustomerGUIEvent;
+            m_formIO.rtssProcess = m_CustomerRTSSProcess;
+        }
+
+        //override public void InitializeFormIO()
+        //{
+        //}
+        #endregion Form IO
+
+        #region Form Teach Point
+        override public void CreateFormTeachPoint()
+        {
+            m_formTeachPoint = new CustomerFormTeachPoint();
+        }
+
+        override public void SetFormTeachPoint()
+        {
+            base.m_formTeachPoint = m_formTeachPoint;
+            base.SetFormTeachPoint();
+        }
+
+        override public void SetFormTeachPointVariables()
+        {
+            m_formTeachPoint.customerShareVariables = m_CustomerShareVariables;
+            m_formTeachPoint.customerProcessEvent = m_CustomerProcessEvent;
+            m_formTeachPoint.customerRTSSProcess = m_CustomerRTSSProcess;
+        }
+
+        override public void InitializeFormTeachPoint()
+        {
+            base.InitializeFormTeachPoint();
+            //m_formTeachPoint.Initialize();
+        }
+        #endregion Form Teach Point
+
+        #region FormOption
+        override public void CreateFormOption()
+        {
+            try
+            {
+                m_formOption = new CustomerFormOption();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormOption()
+        {
+            base.m_formOption = m_formOption;
+            base.SetFormOption();
+        }
+
+        override public void SetFormOptionVariables()
+        {
+            m_formOption.customerProcessEvent = m_CustomerProcessEvent;
+            m_formOption.customerShareVariables = m_CustomerShareVariables;
+        }
+
+        override public void InitializeFormOption()
+        {
+            m_formOption.Initialize();
+        }
+
+        #endregion FormOption
+
+        #region FormSetup
+        override public void CreateFormSetup()
+        {
+            try
+            {
+                m_formSetup = new CustomerFormSetup();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormSetup()
+        {
+            base.m_formSetup = m_formSetup;
+            base.SetFormSetup();
+        }
+
+        override public void SetFormSetupVariables()
+        {
+            m_formSetup.customerProcessEvent = m_CustomerProcessEvent;
+            m_formSetup.customerShareVariables = m_CustomerShareVariables;
+            m_formSetup.customerRTSSProcess = m_CustomerRTSSProcess;
+        }
+
+        override public void InitializeFormSetup()
+        {
+            m_formSetup.Initialize();
+        }
+        #endregion FormSetup
+
+        #region FormConfiguration
+        override public void CreateFormConfiguration()
+        {
+            try
+            {
+                m_formConfiguration = new CustomerFormConfiguration();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0}  {1} at {2}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString(), m_strmode));
+            }
+        }
+
+        override public void SetFormConfiguration()
+        {
+            base.m_formConfiguration = m_formConfiguration;
+            base.SetFormConfiguration();
+        }
+
+        override public void SetFormConfigurationVariables()
+        {
+            m_formConfiguration.customerShareVariables = m_CustomerShareVariables;
+            m_formConfiguration.customerProcessEvent = m_CustomerProcessEvent;
+        }
+
+        override public void InitializeFormConfiguration()
+        {
+            m_formConfiguration.Initialize();
+        }
+        #endregion FormConfiguration
+
+        override public void Initialize()
+        {
+            //RecipeParameterLogger.ThreadStart();
+            try
+            {
+                base.Initialize();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0} {1}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString()));
+            }
+        }
+        override public void OnMainFormExit()
+        {
+            //RecipeParameterLogger.ExitThread();
+            try
+            {
+                base.OnMainFormExit();
+            }
+            catch (Exception ex)
+            {
+                Machine.DebugLogger.WriteLog(string.Format("{0} {1}.", DateTime.Now.ToString("yyyyMMdd HHmmss"), ex.ToString()));
+            }
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // CustomerFormMainInterface
+            // 
+            this.ClientSize = new System.Drawing.Size(1898, 1029);
+            this.Name = "CustomerFormMainInterface";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+    }
+}
