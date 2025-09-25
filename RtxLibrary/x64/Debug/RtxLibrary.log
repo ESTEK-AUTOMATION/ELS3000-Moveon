@@ -1,0 +1,227 @@
+﻿  RtxLibrary.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(80): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(81): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(82): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(83): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(85): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(86): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(87): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(88): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(89): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(90): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(91): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(92): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(93): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(94): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(95): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(96): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(98): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(99): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(101): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(102): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(104): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(105): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(106): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(107): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(108): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(109): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(110): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(111): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(112): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(113): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(114): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(115): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(117): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(118): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(121): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(122): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(124): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(125): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(128): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(129): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(131): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(132): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(134): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(135): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(137): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(138): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(139): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(140): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(141): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(142): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(144): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(145): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(146): warning C4141: 'dllexport': used more than once
+  RtxLibraryExportFunction.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(80): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(81): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(82): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(83): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(85): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(86): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(87): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(88): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(89): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(90): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(91): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(92): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(93): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(94): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(95): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(96): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(98): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(99): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(101): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(102): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(104): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(105): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(106): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(107): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(108): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(109): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(110): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(111): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(112): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(113): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(114): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(115): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(117): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(118): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(121): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(122): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(124): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(125): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(128): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(129): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(131): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(132): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(134): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(135): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(137): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(138): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(139): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(140): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(141): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(142): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(144): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(145): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibrary.h(146): warning C4141: 'dllexport': used more than once
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3667): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LONGLONG'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3667): note: consider using '%llu' in the format string
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3667): note: consider using '%Iu' in the format string
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3667): note: consider using '%I64u' in the format string
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3824): warning C4297: 'SetShareMemorySettingBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3824): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3855): warning C4297: 'GetShareMemorySettingBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3855): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3868): warning C4297: 'GetShareMemorySettingArrayBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3868): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3886): warning C4297: 'SetShareMemorySettingArrayBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3886): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3937): warning C4297: 'GetShareMemorySettingLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(3937): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4049): warning C4297: 'SetShareMemorySettingLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4049): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4074): warning C4297: 'GetShareMemorySettingArrayLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4074): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4119): warning C4297: 'SetShareMemorySettingArrayLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4119): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4164): warning C4297: 'GetShareMemorySettingUInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4164): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4261): warning C4297: 'SetShareMemorySettingUInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4261): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4270): warning C4297: 'GetShareMemorySettingDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4270): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4284): warning C4297: 'SetShareMemorySettingDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4284): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4383): warning C4297: 'GetShareMemoryTeachPointLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4383): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4608): warning C4297: 'SetShareMemoryTeachPointLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4608): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4614): warning C4297: 'GetShareMemoryProductionBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4614): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4621): warning C4297: 'SetShareMemoryProductionBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4621): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4651): warning C4297: 'GetShareMemoryProductionInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4651): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4686): warning C4297: 'SetShareMemoryProductionInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4686): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4730): warning C4297: 'GetShareMemoryProductionLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4730): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4812): warning C4297: 'SetShareMemoryProductionLong': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4812): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4857): warning C4297: 'GetShareMemoryProductionArray': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4857): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4904): warning C4297: 'SetShareMemoryProductionArray': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4904): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4941): warning C4297: 'GetShareMemoryProductionPatternResultString': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4941): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4955): warning C4297: 'SetShareMemoryProductionPatternResultString': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4955): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4968): warning C4297: 'GetShareMemoryProductionPatternResultInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4968): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4980): warning C4297: 'SetShareMemoryProductionPatternResultInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4980): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4990): warning C4297: 'GetShareMemoryProductionArrayBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(4990): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5001): warning C4297: 'SetShareMemoryProductionArrayBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5001): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5009): warning C4297: 'GetShareMemoryProductionDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5009): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5017): warning C4297: 'SetShareMemoryProductionDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5017): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5075): warning C4297: 'GetShareMemoryCustomizeBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5075): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5155): warning C4297: 'SetShareMemoryCustomizeBool': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5155): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5165): warning C4297: 'GetShareMemoryIOArrayInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5165): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5224): warning C4297: 'GetShareMemoryEvent': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5224): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5703): warning C4297: 'GetShareMemoryEvent': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5703): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5710): warning C4297: 'SetShareMemoryEvent': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(5710): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6834): warning C4297: 'SetShareMemoryEvent': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6834): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6842): warning C4297: 'GetShareMemoryGeneralInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6842): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6886): warning C4297: 'GetShareMemoryGeneralInt': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(6886): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7012): warning C4297: 'GetShareMemoryGeneralDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7012): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7026): warning C4297: 'SetShareMemoryGeneralDouble': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7026): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7053): warning C4297: 'GetShareMemoryGeneralString': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7053): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7065): warning C4297: 'SetShareMemoryGeneralString': function assumed not to throw an exception but does
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rtxlibrary\rtxlibraryexportfunction.cpp(7065): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+  Generating Code...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemorySetting * smCustomerSetting" (?smCustomerSetting@@3PEAVCustomerSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryTeachPoint * smCustomerTeachPoint" (?smCustomerTeachPoint@@3PEAVCustomerSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryProduction * smCustomerProduction" (?smCustomerProduction@@3PEAVCustomerSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryCustomize * smCustomerCustomize" (?smCustomerCustomize@@3PEAVCustomerSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryIO * smCustomerIO" (?smCustomerIO@@3PEAVCustomerSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryModuleStatus * smCustomerModuleStatus" (?smCustomerModuleStatus@@3PEAVCustomerSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryEvent * smCustomerEvent" (?smCustomerEvent@@3PEAVCustomerSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryGeneral * smCustomerGeneral" (?smCustomerGeneral@@3PEAVCustomerSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+     Creating library F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\Debug\RtxLibrary.lib and object F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\Debug\RtxLibrary.exp
+F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\Debug\RtxLibrary.dll : warning LNK4088: image being generated due to /FORCE option; image may not run
+  RtxLibrary.vcxproj -> F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\Debug\RtxLibrary.dll
