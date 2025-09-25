@@ -1,0 +1,254 @@
+﻿  RtxLibrary.cpp
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(80): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(81): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(82): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(83): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(85): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(86): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(87): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(88): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(90): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(91): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(93): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(94): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(95): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(96): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(97): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(98): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(99): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(100): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(102): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(103): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(105): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(106): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(108): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(109): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(111): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(112): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(114): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(115): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(116): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(117): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(118): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(119): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(120): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(121): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(122): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(123): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(124): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(125): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(127): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(128): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(130): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(131): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(133): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(134): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(136): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(137): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(139): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(140): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(142): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(143): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(145): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(146): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(147): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(148): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(149): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(150): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(152): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(153): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(154): warning C4141: 'dllexport': used more than once
+  RtxLibraryExportFunction.cpp
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(80): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(81): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(82): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(83): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(85): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(86): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(87): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(88): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(90): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(91): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(93): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(94): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(95): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(96): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(97): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(98): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(99): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(100): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(102): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(103): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(105): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(106): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(108): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(109): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(111): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(112): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(114): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(115): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(116): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(117): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(118): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(119): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(120): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(121): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(122): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(123): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(124): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(125): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(127): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(128): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(130): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(131): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(133): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(134): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(136): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(137): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(139): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(140): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(142): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(143): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(145): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(146): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(147): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(148): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(149): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(150): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(152): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(153): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibrary.h(154): warning C4141: 'dllexport': used more than once
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3351): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'LONGLONG'
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3351): note: consider using '%llu' in the format string
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3351): note: consider using '%Iu' in the format string
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3351): note: consider using '%I64u' in the format string
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3499): warning C4297: 'SetShareMemorySettingBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3499): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3528): warning C4297: 'GetShareMemorySettingBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3528): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3541): warning C4297: 'GetShareMemorySettingArrayBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3541): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3559): warning C4297: 'SetShareMemorySettingArrayBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3559): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3634): warning C4297: 'SetShareMemorySettingArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3634): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3697): warning C4297: 'GetShareMemorySettingArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3697): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3747): warning C4297: 'GetShareMemorySettingLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3747): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3857): warning C4297: 'SetShareMemorySettingLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3857): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3882): warning C4297: 'GetShareMemorySettingArrayLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3882): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3926): warning C4297: 'SetShareMemorySettingArrayLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3926): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3971): warning C4297: 'GetShareMemorySettingUInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(3971): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4067): warning C4297: 'SetShareMemorySettingUInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4067): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4075): warning C4297: 'GetShareMemorySettingDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4075): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4087): warning C4297: 'SetShareMemorySettingDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4087): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4185): warning C4297: 'GetShareMemoryTeachPointLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4185): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4410): warning C4297: 'SetShareMemoryTeachPointLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4410): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4416): warning C4297: 'GetShareMemoryProductionBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4416): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4423): warning C4297: 'SetShareMemoryProductionBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4423): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4451): warning C4297: 'GetShareMemoryProductionInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4451): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4486): warning C4297: 'SetShareMemoryProductionInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4486): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4531): warning C4297: 'GetShareMemoryProductionString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4531): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4582): warning C4297: 'SetShareMemoryProductionString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4582): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4588): warning C4297: 'GetShareMemoryProductionLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4588): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4596): warning C4297: 'SetShareMemoryProductionLong': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4596): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4629): warning C4297: 'GetShareMemoryProductionArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4629): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4668): warning C4297: 'SetShareMemoryProductionArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4668): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4692): warning C4297: 'GetShareMemoryProductionDoubleArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4692): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4725): warning C4297: 'SetShareMemoryProductionDoubleArray': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4725): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4762): warning C4297: 'GetShareMemoryProductionPatternResultString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4762): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4776): warning C4297: 'SetShareMemoryProductionPatternResultString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4776): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4789): warning C4297: 'GetShareMemoryProductionPatternResultInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4789): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4801): warning C4297: 'SetShareMemoryProductionPatternResultInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4801): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4810): warning C4297: 'GetShareMemoryProductionArrayBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4810): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4821): warning C4297: 'SetShareMemoryProductionArrayBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4821): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4827): warning C4297: 'GetShareMemoryProductionDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4827): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4835): warning C4297: 'SetShareMemoryProductionDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4835): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4853): warning C4297: 'GetShareMemoryCustomizeBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4853): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4861): warning C4297: 'SetShareMemoryCustomizeBool': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4861): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4871): warning C4297: 'GetShareMemoryIOArrayInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4871): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4907): warning C4297: 'GetShareMemoryEvent': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4907): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4909): warning C4297: 'GetShareMemoryEvent': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4909): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4916): warning C4297: 'SetShareMemoryEvent': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4916): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4917): warning C4297: 'SetShareMemoryEvent': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4917): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4925): warning C4297: 'GetShareMemoryGeneralInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4925): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4926): warning C4297: 'GetShareMemoryGeneralInt': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4926): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4945): warning C4297: 'GetShareMemoryGeneralDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4945): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4952): warning C4297: 'SetShareMemoryGeneralDouble': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4952): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4972): warning C4297: 'GetShareMemoryGeneralString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4972): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4984): warning C4297: 'SetShareMemoryGeneralString': function assumed not to throw an exception but does
+  d:\estek automation\steven\move on\els1200-nissei\rtxlibrary\rtxlibraryexportfunction.cpp(4984): note: __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryCustomize * smCustomerCustomize" (?smCustomerCustomize@@3PEAVCustomerSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class VisionModule PickAndPlaceCurrentVisionModule" (?PickAndPlaceCurrentVisionModule@@3VVisionModule@@A) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryModuleStatus * smCustomerModuleStatus" (?smCustomerModuleStatus@@3PEAVCustomerSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryGeneral * smCustomerGeneral" (?smCustomerGeneral@@3PEAVCustomerSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryIO * smCustomerIO" (?smCustomerIO@@3PEAVCustomerSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryEvent * smCustomerEvent" (?smCustomerEvent@@3PEAVCustomerSharedMemoryEvent@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryProduction * smCustomerProduction" (?smCustomerProduction@@3PEAVCustomerSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemoryTeachPoint * smCustomerTeachPoint" (?smCustomerTeachPoint@@3PEAVCustomerSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class CustomerSharedMemorySetting * smCustomerSetting" (?smCustomerSetting@@3PEAVCustomerSharedMemorySetting@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class PickAndPlaceStation PickAndPlaceCurrentStation" (?PickAndPlaceCurrentStation@@3VPickAndPlaceStation@@A) already defined in RtxLibrary.obj; second definition ignored
+RtxLibraryExportFunction.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in RtxLibrary.obj; second definition ignored
+     Creating library D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\\Estek Library C++\x64\Release\RtxLibrary.lib and object D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\\Estek Library C++\x64\Release\RtxLibrary.exp
+D:\Estek\Release\RtxLibrary.dll : warning LNK4088: image being generated due to /FORCE option; image may not run
+  Generating code
+  All 1535 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RtxLibrary.vcxproj -> D:\Estek\Release\RtxLibrary.dll
