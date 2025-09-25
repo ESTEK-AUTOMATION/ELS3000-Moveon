@@ -1,0 +1,5 @@
+﻿  RtxLibrary.cpp
+f:\estek automation\project\die sorter\software\die sorter machine_20200121_0900_1.0.0.0ai_platformc_lywyman_bhd pralarm_t_newr_cly\rtxlibrary\rtxlibrary.h(36): fatal error C1083: Cannot open include file: 'CCustomerSharedMemory.h': No such file or directory
+  RtxLibraryExportFunction.cpp
+f:\estek automation\project\die sorter\software\die sorter machine_20200121_0900_1.0.0.0ai_platformc_lywyman_bhd pralarm_t_newr_cly\rtxlibrary\rtxlibrary.h(36): fatal error C1083: Cannot open include file: 'CCustomerSharedMemory.h': No such file or directory
+  Generating Code...
