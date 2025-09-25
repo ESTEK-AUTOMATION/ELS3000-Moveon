@@ -1,0 +1,1451 @@
+#include "CProductIOControl.h"
+
+CProductIOControl::CProductIOControl()
+{
+}
+
+CProductIOControl::~CProductIOControl()
+{
+}
+
+int RTFCNDCL CProductIOControl::SetProductIOControl(CProductIOControl *productIOControl)
+{
+	m_cProductIOControl = productIOControl;
+	m_cProductIOControl->SetPlatformIOControl(productIOControl);
+	return 0;
+}
+
+void CProductIOControl::SetOutputBeforeExitSoftware()
+{
+	SetTowerLightRed(false);
+	SetTowerLightAmber(false);
+	SetTowerLightGreen(false);
+	SetTowerLightBlue(false);
+	SetTowerLightBuzzer(false);
+
+	SetMaintenanceLight(true);
+
+	//SetRejectStationUnloadingCylinderOn(false);
+	m_cProductIOControl->SetInputIonizerBlowerValveOn(false);
+	m_cProductIOControl->SetOutputIonizerBlowerValveOn(false);
+
+	SetInputVisionSOV(false);
+	SetInputVisionROV(false);
+
+	SetBottomVisionSOV(false);
+	SetBottomVisionROV(false);
+
+	SetS2VisionSOV(false);
+	SetS2VisionROV(false);
+
+	SetS1VisionSOV(false);
+	SetS1VisionROV(false);
+
+	SetS3VisionSOV(false);
+	SetS3VisionROV(false);
+
+	SetOutputVisionSOV(false);
+	SetOutputVisionROV(false);
+	return;
+}
+
+#pragma region Input
+
+#pragma region Card General
+bool CProductIOControl::IsMainPressureSwitchReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 0);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPNP1VacuumSwitchReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 1);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsStartButtonPressed()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 2);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsStopButtonPressed()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 3);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return true;
+}
+bool CProductIOControl::IsResetButtonPressed()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 4);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPowerReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 5);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsFrontDoorOpen()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 6);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return true;
+}
+bool CProductIOControl::IsRearDoorOpen()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 7);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return true;
+}
+bool CProductIOControl::IsLeftDoorOpen()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 8);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return true;
+}
+bool CProductIOControl::IsRightDoorOpen()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 9);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return true;
+}
+bool CProductIOControl::IsPNP2VacuumSwitchReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 10);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputIonizerBlowerReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 11);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputIonizerBlowerReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 12);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsRejectTrayTableIonizerFanReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral16In16Out1_0, 13);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+#pragma endregion Card General
+
+#pragma region Card Stacker
+bool CProductIOControl::IsInputLoadingStackerFullSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 0);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputLoadingStackerPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 1);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputLoadingStackerLockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 2);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputLoadingStackerUnlockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 3);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputUnloadingStackerFullSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 4);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputUnloadingStackerPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 5);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputUnloadingStackerLockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 6);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputUnloadingStackerUnlockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 7);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableTrayPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 8);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsOutputLoadingStackerFullSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 11);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputLoadingStackerPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 12);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputLoadingStackerLockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 13);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputLoadingStackerUnlockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 14);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputUnloadingStackerFullSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 15);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputUnloadingStackerPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 16);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputUnloadingStackerLockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 17);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputUnloadingStackerUnlockSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 18);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableTrayPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 19);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsRejectTrayPresentSensorOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 20);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionLightingExtendSensor()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 25);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionLightingRetractSensor()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 26);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsSW2N3VisionLightingUpSensor()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 27);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsSW2N3VisionLightingDownSensor()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 28);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsLiveAllVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardTray32In32Out2_2, 31);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+#pragma endregion
+
+#pragma region Vision
+
+bool CProductIOControl::IsInputVisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 0);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 1);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsInputVisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 2);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsInputVisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+//rename?
+bool CProductIOControl::IsBottomVisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 9);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsBottomVisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 10);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsBottomVisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsBottomVisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 11);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsBottomVisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsS1VisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 15);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS1VisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 16);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS1VisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS1VisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 17);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS1VisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsS2VisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 21);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS2VisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 22);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS2VisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS2VisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 23);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS2VisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS3VisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 24);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS3VisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 25);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS3VisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS3VisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 26);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsS3VisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputVisionReadyOn()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 27);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputVisionEndOfVision()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 28);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsOutputVisionEndOfVision: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputVisionGrabDone()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 29);
+	if (nStatus == 1)
+	{
+		m_cLogger->WriteLog("[I/O]: IsOutputVisionGrabDone: true.\n");
+		return true;
+	}
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+
+#pragma endregion
+#pragma region Motor
+bool CProductIOControl::IsPickAndPlace1XAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 30);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace1XAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardGeneral32Out_4, 31);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace2XAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 0);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace2XAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 1);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace1YAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 2);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace1YAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 3);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableXAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 4);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableXAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 5);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableYAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 6);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableYAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 7);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableZAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 8);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputTrayTableZAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 9);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsPickAndPlace2YAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 10);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsPickAndPlace2YAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 11);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableXAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 12);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableXAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 13);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableYAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 14);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableYAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 15);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableZAxisMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 16);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsOutputTrayTableZAxisMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 17);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionModuleMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 18);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsInputVisionModuleMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 19);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+
+bool CProductIOControl::IsS1VisionModuleMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 24);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS1VisionModuleMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 25);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS2VisionModuleMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 26);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS2VisionModuleMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 27);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS3VisionModuleMotorReady()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 28);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+bool CProductIOControl::IsS3VisionModuleMotorInPosition()
+{
+	int nStatus = m_cIO->ReadInput(m_CardMotor32In32Out1_11, 29);
+	if (nStatus == 1)
+		return false;
+	else if (nStatus == 0)
+		return true;
+	//Subject to application
+	else
+		return false;
+}
+#pragma endregion
+#pragma endregion
+
+#pragma region Output
+//Card General
+bool CProductIOControl::SetTowerLightRed(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 0, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 0, 0);
+	}
+}
+bool CProductIOControl::SetTowerLightAmber(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 1, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 1, 0);
+	}
+}
+bool CProductIOControl::SetTowerLightGreen(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 2, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 2, 0);
+	}
+}
+bool CProductIOControl::SetTowerLightBlue(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 3, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 3, 0);
+	}
+}
+bool CProductIOControl::SetTowerLightBuzzer(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 4, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 4, 0);
+	}
+}
+bool CProductIOControl::SetMaintenanceLight(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 6, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 6, 0);
+	}
+}
+bool CProductIOControl::SetInputIonizerBlowerValveOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 7, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 7, 0);
+	}
+}
+bool CProductIOControl::SetOutputIonizerBlowerValveOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 8, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 8, 0);
+	}
+}
+bool CProductIOControl::SetPNP1VacuumValveOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 9, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 9, 0);
+	}
+}
+bool CProductIOControl::SetPNP2VacuumValveOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 10, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 10, 0);
+	}
+}
+bool CProductIOControl::SetInputTrayTableVacuumOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 11, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 11, 0);
+	}
+}
+bool CProductIOControl::SetInputLoadingStackerUnlockCylinderOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 12, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 12, 0);
+	}
+}
+bool CProductIOControl::SetInputUnloadingStackerUnlockCylinderOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 13, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 13, 0);
+	}
+}
+bool CProductIOControl::SetOutputLoadingStackerUnlockCylinderOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 14, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 14, 0);
+	}
+}
+bool CProductIOControl::SetOutputUnloadingStackerUnlockCylinderOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 15, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardGeneral16In16Out1_0, 15, 0);
+	}
+}
+//--
+
+//Vision
+bool CProductIOControl::SetInputVisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetInputVisionSOV: true.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 0, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetInputVisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 0, 0);
+	}
+}
+bool CProductIOControl::SetInputVisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 1, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 1, 0);
+	}
+}
+bool CProductIOControl::SetInputVisionLightingExtendCylinder(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 4, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 4, 0);
+	}
+}
+bool CProductIOControl::SetSideWall2_3VisionLighitngExtendCylinder(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 5, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 5, 0);
+	}
+}
+bool CProductIOControl::SetBottomVisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetBottomVisionSOV: true.\n");
+
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 9, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetBottomVisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 9, 0);
+	}
+}
+bool CProductIOControl::SetBottomVisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 10, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 10, 0);
+	}
+}
+bool CProductIOControl::SetS1VisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetS1VisionSOV: true.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 15, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetS1VisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 15, 0);
+	}
+}
+bool CProductIOControl::SetS1VisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 16, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 16, 0);
+	}
+}
+bool CProductIOControl::SetS2VisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetS2VisionSOV: true.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 21, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetS2VisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 21, 0);
+	}
+}
+bool CProductIOControl::SetS2VisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 22, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 22, 0);
+	}
+}
+bool CProductIOControl::SetS3VisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetS3VisionSOV: true.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 24, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetS3VisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 24, 0);
+	}
+}
+bool CProductIOControl::SetS3VisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 25, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 25, 0);
+	}
+}
+bool CProductIOControl::SetOutputVisionSOV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		m_cLogger->WriteLog("[I/O]: SetOutputVisionSOV: true.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 27, 1);
+	}
+	else
+	{
+		m_cLogger->WriteLog("[I/O]: SetOutputVisionSOV: false.\n");
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 27, 0);
+	}
+}
+bool CProductIOControl::SetOutputVisionROV(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 28, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 28, 0);
+	}
+}
+bool CProductIOControl::SetOutputTrayTableVacuumOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 30, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 30, 0);
+	}
+}
+bool CProductIOControl::SetRejectTrayTableVacuumOn(bool trueToOn)
+{
+	if (trueToOn)
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 31, 1);
+	}
+	else
+	{
+		return m_cIO->WriteOutput(m_CardVision16In16Out2_5, 31, 0);
+	}
+}
+
+#pragma endregion
+
+#pragma region Tower Light
+bool CProductIOControl::SetTowerLightStartHome()
+{
+	SetTowerLightRed(false);
+	SetTowerLightAmber(true);
+	SetTowerLightGreen(false);
+	SetTowerLightBuzzer(false);
+	return true;
+}
+bool CProductIOControl::SetTowerLightHoming()
+{
+	SetTowerLightRed(false);
+	SetTowerLightAmber(true);
+	SetTowerLightGreen(false);
+	SetTowerLightBuzzer(false);
+	return true;
+}
+bool CProductIOControl::SetTowerLightRunning()
+{
+	SetTowerLightRed(false);
+	SetTowerLightAmber(false);
+	SetTowerLightGreen(true);
+	SetTowerLightBuzzer(false);
+	return true;
+}
+bool CProductIOControl::SetTowerLightIdle()
+{
+	SetTowerLightRed(false);
+	SetTowerLightAmber(true);
+	SetTowerLightGreen(false);
+	SetTowerLightBuzzer(false);
+	return true;
+}
+bool CProductIOControl::SetTowerLightAlarm()
+{
+	SetTowerLightRed(true);
+	SetTowerLightAmber(false);
+	SetTowerLightGreen(false);
+	SetTowerLightBuzzer(true);
+	return true;
+}
+bool CProductIOControl::IsSetTowerLightAmber()
+{
+	int nStatus = m_cIO->ReadOutput(m_CardGeneral16In16Out1_0, 1);
+	if (nStatus == 1)
+		return true;
+	else if (nStatus == 0)
+		return false;
+	//Subject to application
+	else
+		return false;
+}
+#pragma endregion
