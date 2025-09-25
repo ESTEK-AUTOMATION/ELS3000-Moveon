@@ -1,0 +1,12 @@
+﻿  RtxApp.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+  RtxApp.vcxproj -> F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\Debug\RtxApp.exe
