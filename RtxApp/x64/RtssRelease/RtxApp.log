@@ -1,0 +1,23 @@
+﻿  RtxApp.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(47): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(48): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol1': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  RtxApp.vcxproj -> D:\Estek\Release\RtxApp.rtss
+  RTX64 StampTool
+  Stamptool: Successfully stamped file 'D:\Estek\Release\RtxApp.rtss'!
+  D:\Estek Automation\ELS1200 - GitHub\x64\RtssRelease\RPlatform.rtdll
+  1 File(s) copied
+  D:\Estek Automation\ELS1200 - GitHub\x64\RtssRelease\RProduct.rtdll
+  1 File(s) copied
+  D:\Estek Automation\ELS1200 - GitHub\x64\RtssRelease\RCustomer.rtdll
+  1 File(s) copied
