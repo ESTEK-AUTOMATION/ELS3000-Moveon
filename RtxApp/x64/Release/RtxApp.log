@@ -1,0 +1,16 @@
+﻿  RtxApp.cpp
+d:\estek automation\steven\move on\els1200-nissei\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\steven\move on\els1200-nissei\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\steven\move on\els1200-nissei\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\steven\move on\els1200-nissei\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\steven\move on\els1200-nissei\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  Generating code
+  All 27 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RtxApp.vcxproj -> D:\Estek\Release\RtxApp.exe
+  D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\x64\Release\RPlatform.dll
+  1 File(s) copied
+  D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\x64\Release\RProduct.dll
+  1 File(s) copied
+  D:\Estek Automation\Steven\MOVE ON\ELS1200-Nissei\x64\Release\RCustomer.dll
+  1 File(s) copied
