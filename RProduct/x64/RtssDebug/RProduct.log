@@ -1,0 +1,553 @@
+﻿  CProductIOControl.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  CProductMain.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  CProductMotorControl.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(486): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(1442): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(2385): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(3373): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(4301): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(5285): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(6298): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(7283): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(8293): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(9277): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10200): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10353): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10480): warning C4101: 'lnClockStart': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10480): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10480): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10480): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(10480): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11007): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11158): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11286): warning C4101: 'lnClockStart': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11286): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11286): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11286): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11286): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(11908): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(12601): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(12839): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13774): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13837): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13913): warning C4091: 'typedef ': ignored on left of 'CProductMotorControl::PickAndPlaceXAxisMotorSetTriggeringPoint::PositionTrigger' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14039): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14056): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13902): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13902): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13902): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(13902): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14069): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14069): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14069): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14069): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14113): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14113): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14113): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14113): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14132): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14132): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14132): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14132): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14246): warning C4101: 'slPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14380): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14380): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14498): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14814): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14770): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14880): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(14836): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15054): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15054): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15170): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15486): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15442): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15552): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15508): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15726): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15726): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(15843): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16159): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16115): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16225): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16181): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16399): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16399): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16516): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16832): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16788): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16898): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(16854): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17072): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17072): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17189): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17505): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17461): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17571): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17527): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17745): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17745): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(17861): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18177): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18133): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18243): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18199): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18416): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18416): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18549): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18576): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18675): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18741): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18958): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(18958): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19037): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19064): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19165): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19231): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19448): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19448): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19527): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19554): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19655): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19721): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19938): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(19938): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20017): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20044): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20145): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20211): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20428): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20428): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20507): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20534): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20635): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20701): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20918): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20918): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(20997): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(21024): warning C4101: 'lnClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(21125): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(21191): warning C4101: 'command': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(22169): warning C4101: 'lnClockStart': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(22169): warning C4101: 'lnClockEnd': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(22169): warning C4101: 'lnClockSpan': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(22169): warning C4101: 'lnClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24413): warning C4101: 'lnClockStart': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24615): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24629): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24668): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24656): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24679): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24718): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24706): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24745): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24733): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24772): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24760): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24799): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24787): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24826): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24814): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24853): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24841): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24880): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24868): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24907): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24895): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24934): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24922): warning C4101: 'wValue': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(24946): warning C4101: 'lnClockStart': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25360): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25652): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25656): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25689): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25693): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25725): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25729): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25744): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25748): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25763): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25767): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25782): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25786): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25801): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25805): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25859): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26101): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26148): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\winsock2.h(1828): note: see declaration of 'inet_addr'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26190): warning C4101: 'chData': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26191): warning C4101: 'chAllData': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26222): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26214): warning C4101: 'chData': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26215): warning C4101: 'chAllData': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26265): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CProductSequence.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(3077): warning C4065: switch statement contains 'default' but no 'case' labels
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(3086): warning C4101: 'lnDelayIn100ns': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7681): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7945): warning C4018: '>': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9574): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9591): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9610): warning C4018: '>=': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9632): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9639): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9736): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9779): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9795): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9881): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(9892): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7093): warning C4101: 'BinCode': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(6959): warning C4101: 'fiducialFeedback': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7145): warning C4101: 'lnInputTableSequenceClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7145): warning C4101: 'lnDelayIn100ns': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(7873): warning C4101: 'msg1': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(10564): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(10571): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(10875): warning C4244: '=': conversion from 'LONGLONG' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(11566): warning C4018: '>': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(11574): warning C4018: '>': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(11652): warning C4018: '>': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(11656): warning C4018: '>': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(13118): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(13807): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(13945): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(13949): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14380): warning C4244: '=': conversion from 'LONGLONG' to 'int', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14453): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14472): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14493): warning C4018: '>=': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14514): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14523): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14563): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14572): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14616): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14631): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14744): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14756): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14786): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(14999): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15008): warning C4018: '<': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15019): warning C4018: '>=': signed/unsigned mismatch
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15163): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15174): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(10186): warning C4101: 'fiducialFeedback': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15640): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15642): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15644): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15646): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15648): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15650): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15664): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15666): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15668): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15670): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15672): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15674): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15688): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15690): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15692): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15694): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15696): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15698): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15712): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15714): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15716): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15718): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15720): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15722): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15736): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15738): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15740): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15742): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15744): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15746): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16507): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16509): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16511): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16513): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16515): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16517): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16525): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16527): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16529): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16531): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16533): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16535): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16543): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16545): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16547): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16549): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16551): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16553): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16561): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16563): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16565): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16567): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16569): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16571): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16580): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16582): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16584): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16586): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16588): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(16590): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17291): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(15375): warning C4101: 'lnOutputTableSequenceClockStart2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17674): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17458): warning C4101: 'IsSideWallTopVisionWantToMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17456): warning C4101: 'IsSideWallLeftVisonWantToMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17461): warning C4101: 'lnPnPSequenceClockStart3': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17448): warning C4101: 'nSidewallLeftVisionYAxisMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17457): warning C4101: 'IsSideWallRightVisionWantToMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17451): warning C4101: 'nSidewallBottomVisionYAxisMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17449): warning C4101: 'nSidewallRightVisionYAxisMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17461): warning C4101: 'lnDelayIn100ns': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17459): warning C4101: 'IsSideWallBottomVisionWantToMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(17450): warning C4101: 'nSidewallTopVisionYAxisMove': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(20411): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(20520): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductsequence.cpp(20548): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+  CProductShareVariables.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  CProductStateControl.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductstatecontrol.cpp(80): warning C4101: 'lnClockStart': unreferenced local variable
+  CProductThread.cpp
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductmotorcontrol.h(42): note: see declaration of 'std::vector<char,std::allocator<char>>'
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(213): warning C4101: 'nPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(725): warning C4101: 'nPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(1168): warning C4101: 'nPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(1824): warning C4101: 'nPosition': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(19972): warning C4101: 'lnClockStartSemi2': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(19972): warning C4101: 'lnClockStartSemi': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(19972): warning C4101: 'lnClockEndSemi': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(19972): warning C4101: 'lnClockSpanSemi': unreferenced local variable
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20369): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20375): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20663): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20669): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20957): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(20963): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(21251): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(21257): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductthread.cpp(22502): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+  RProduct.cpp
+  RProductExportFunction.cpp
+  Generating Code...
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductstatecontrol.cpp(143): warning C4715: 'CProductStateControl::OnCheckResumeStartStateReady': not all control paths return a value
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(25444): warning C4715: 'CProductMotorControl::THKReadRunningStatus': not all control paths return a value
+f:\estek automation\project\ets5000\ets5000_20210817_2100_siapbug_uph - rtx\rproduct\cproductmotorcontrol.cpp(26320): warning C4715: 'CProductMotorControl::convertData': not all control paths return a value
+CProductMain.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CIO * m_cIO" (?m_cIO@@3PEAVCIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CPlatformIOControl * m_cPlatformIOControl" (?m_cPlatformIOControl@@3PEAVCPlatformIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMain.obj : warning LNK4006: "class CProductIOControl * m_cProductIOControl" (?m_cProductIOControl@@3PEAVCProductIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CIO * m_cIO" (?m_cIO@@3PEAVCIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CPlatformIOControl * m_cPlatformIOControl" (?m_cPlatformIOControl@@3PEAVCPlatformIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CMotionLibrary * m_cMotion" (?m_cMotion@@3PEAVCMotionLibrary@@EA) already defined in CProductMain.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CPlatformMotorControl * m_cPlatformMotorControl" (?m_cPlatformMotorControl@@3PEAVCPlatformMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CProductIOControl * m_cProductIOControl" (?m_cProductIOControl@@3PEAVCProductIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CProductMotorControl * m_cProductMotorControl" (?m_cProductMotorControl@@3PEAVCProductMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductMotorControl.obj : warning LNK4006: "class CProductAgito * m_Agito" (?m_Agito@@3PEAVCProductAgito@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CIO * m_cIO" (?m_cIO@@3PEAVCIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CPlatformIOControl * m_cPlatformIOControl" (?m_cPlatformIOControl@@3PEAVCPlatformIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CMotionLibrary * m_cMotion" (?m_cMotion@@3PEAVCMotionLibrary@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CPlatformMotorControl * m_cPlatformMotorControl" (?m_cPlatformMotorControl@@3PEAVCPlatformMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CPlatformStateControl * m_cPlatformStateControl" (?m_cPlatformStateControl@@3PEAVCPlatformStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CPlatformSequence * m_cPlatformSequence" (?m_cPlatformSequence@@3PEAVCPlatformSequence@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductIOControl * m_cProductIOControl" (?m_cProductIOControl@@3PEAVCProductIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductMotorControl * m_cProductMotorControl" (?m_cProductMotorControl@@3PEAVCProductMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductAgito * m_Agito" (?m_Agito@@3PEAVCProductAgito@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductStateControl * m_cProductStateControl" (?m_cProductStateControl@@3PEAVCProductStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductSequence.obj : warning LNK4006: "class CProductSequence * m_cProductSequence" (?m_cProductSequence@@3PEAVCProductSequence@@EA) already defined in CProductMain.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductShareVariables.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CIO * m_cIO" (?m_cIO@@3PEAVCIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CPlatformIOControl * m_cPlatformIOControl" (?m_cPlatformIOControl@@3PEAVCPlatformIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CMotionLibrary * m_cMotion" (?m_cMotion@@3PEAVCMotionLibrary@@EA) already defined in CProductMain.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CPlatformMotorControl * m_cPlatformMotorControl" (?m_cPlatformMotorControl@@3PEAVCPlatformMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CPlatformStateControl * m_cPlatformStateControl" (?m_cPlatformStateControl@@3PEAVCPlatformStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CProductIOControl * m_cProductIOControl" (?m_cProductIOControl@@3PEAVCProductIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CProductMotorControl * m_cProductMotorControl" (?m_cProductMotorControl@@3PEAVCProductMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CProductAgito * m_Agito" (?m_Agito@@3PEAVCProductAgito@@EA) already defined in CProductMain.obj; second definition ignored
+CProductStateControl.obj : warning LNK4006: "class CProductStateControl * m_cProductStateControl" (?m_cProductStateControl@@3PEAVCProductStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemorySetting * smSetting" (?smSetting@@3PEAVSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryTeachPoint * smTeachPoint" (?smTeachPoint@@3PEAVSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryProduction * smProduction" (?smProduction@@3PEAVSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryCustomize * smCustomize" (?smCustomize@@3PEAVSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryIO * smIO" (?smIO@@3PEAVSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryModuleStatus * smModuleStatus" (?smModuleStatus@@3PEAVSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryEvent * smEvent" (?smEvent@@3PEAVSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class SharedMemoryGeneral * smGeneral" (?smGeneral@@3PEAVSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemorySetting * smProductSetting" (?smProductSetting@@3PEAVProductSharedMemorySetting@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryTeachPoint * smProductTeachPoint" (?smProductTeachPoint@@3PEAVProductSharedMemoryTeachPoint@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryProduction * smProductProduction" (?smProductProduction@@3PEAVProductSharedMemoryProduction@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryCustomize * smProductCustomize" (?smProductCustomize@@3PEAVProductSharedMemoryCustomize@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryIO * smProductIO" (?smProductIO@@3PEAVProductSharedMemoryIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryModuleStatus * smProductModuleStatus" (?smProductModuleStatus@@3PEAVProductSharedMemoryModuleStatus@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryEvent * smProductEvent" (?smProductEvent@@3PEAVProductSharedMemoryEvent@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class ProductSharedMemoryGeneral * smProductGeneral" (?smProductGeneral@@3PEAVProductSharedMemoryGeneral@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "__int64 m_TurretDelay" (?m_TurretDelay@@3_JA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CLogger * m_cLogger" (?m_cLogger@@3PEAVCLogger@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformShareVariables * m_cPlatformShareVariables" (?m_cPlatformShareVariables@@3PEAVCPlatformShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CIO * m_cIO" (?m_cIO@@3PEAVCIO@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformIOControl * m_cPlatformIOControl" (?m_cPlatformIOControl@@3PEAVCPlatformIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CMotionLibrary * m_cMotion" (?m_cMotion@@3PEAVCMotionLibrary@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformMotorControl * m_cPlatformMotorControl" (?m_cPlatformMotorControl@@3PEAVCPlatformMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformStateControl * m_cPlatformStateControl" (?m_cPlatformStateControl@@3PEAVCPlatformStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformSequence * m_cPlatformSequence" (?m_cPlatformSequence@@3PEAVCPlatformSequence@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CPlatformThread * m_cPlatformThread" (?m_cPlatformThread@@3PEAVCPlatformThread@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductShareVariables * m_cProductShareVariables" (?m_cProductShareVariables@@3PEAVCProductShareVariables@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductIOControl * m_cProductIOControl" (?m_cProductIOControl@@3PEAVCProductIOControl@@EA) already defined in CProductIOControl.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductMotorControl * m_cProductMotorControl" (?m_cProductMotorControl@@3PEAVCProductMotorControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductAgito * m_Agito" (?m_Agito@@3PEAVCProductAgito@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductStateControl * m_cProductStateControl" (?m_cProductStateControl@@3PEAVCProductStateControl@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductSequence * m_cProductSequence" (?m_cProductSequence@@3PEAVCProductSequence@@EA) already defined in CProductMain.obj; second definition ignored
+CProductThread.obj : warning LNK4006: "class CProductThread * m_cProductThread" (?m_cProductThread@@3PEAVCProductThread@@EA) already defined in CProductMain.obj; second definition ignored
+     Creating library F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\\Estek Library C++\x64\RtssDebug\RProduct.lib and object F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\\Estek Library C++\x64\RtssDebug\RProduct.exp
+CProductThread.obj : error LNK2001: unresolved external symbol __imp_UnregisterClassA
+CProductMain.obj : error LNK2001: unresolved external symbol __imp_UnregisterClassA
+CProductMotorControl.obj : error LNK2001: unresolved external symbol __imp_UnregisterClassA
+CProductSequence.obj : error LNK2001: unresolved external symbol __imp_UnregisterClassA
+CProductStateControl.obj : error LNK2001: unresolved external symbol __imp_UnregisterClassA
+CProductThread.obj : error LNK2001: unresolved external symbol "class ATL::CAtlBaseModule ATL::_AtlBaseModule" (?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A)
+CProductMain.obj : error LNK2001: unresolved external symbol "class ATL::CAtlBaseModule ATL::_AtlBaseModule" (?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A)
+CProductMotorControl.obj : error LNK2001: unresolved external symbol "class ATL::CAtlBaseModule ATL::_AtlBaseModule" (?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A)
+CProductSequence.obj : error LNK2001: unresolved external symbol "class ATL::CAtlBaseModule ATL::_AtlBaseModule" (?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A)
+CProductStateControl.obj : error LNK2001: unresolved external symbol "class ATL::CAtlBaseModule ATL::_AtlBaseModule" (?_AtlBaseModule@ATL@@3VCAtlBaseModule@1@A)
+F:\Estek Automation\Project\ETS5000\ETS5000_20210817_2100_SiapBug_UPH - RTX\x64\RtssDebug\RProduct.rtdll : fatal error LNK1120: 2 unresolved externals
