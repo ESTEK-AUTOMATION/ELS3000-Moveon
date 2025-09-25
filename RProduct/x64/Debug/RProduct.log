@@ -1,0 +1,28 @@
+﻿  CProductIOControl.cpp
+  CProductMain.cpp
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  CProductMotorControl.cpp
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\rproduct\cproductmotorcontrol.cpp(13919): warning C4091: 'typedef ': ignored on left of 'CProductMotorControl::PickAndPlaceXAxisMotorSetTriggeringPoint::PositionTrigger' when no variable is declared
+  CProductSequence.cpp
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  CProductShareVariables.cpp
+  CProductStateControl.cpp
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  CProductThread.cpp
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\thor\ets5000_20210819_1120_latest- rtx-rtss_merge - uph\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  RProduct.cpp
+  RProductExportFunction.cpp
+  Generating Code...
