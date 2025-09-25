@@ -1,0 +1,262 @@
+﻿  CProductIOControl.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  CProductMain.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(47): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(48): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol1': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  CProductMotorControl.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(47): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(48): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol1': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(446): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(1264): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(1352): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(3220): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(4468): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(5515): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(7082): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(8356): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(9630): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(10634): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(11278): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(11922): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(12566): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(12733): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(13219): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(13452): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14148): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14213): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14319): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14319): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14319): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14319): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14319): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14363): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14363): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14363): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14363): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14382): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14382): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14382): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14382): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14506): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14505): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(14759): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15452): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15517): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15623): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15623): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15623): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15623): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15623): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15667): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15667): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15667): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15667): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15686): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15686): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15686): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15686): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15813): warning C4244: 'return': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15812): warning C4101: 'slPosition': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15911): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15911): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(15973): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16207): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16159): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16279): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16229): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16302): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16564): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16564): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16655): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16892): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16845): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16963): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16914): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(16986): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17259): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17259): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17259): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17369): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17395): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17499): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17618): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17568): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17800): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17800): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17882): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(17908): warning C4101: 'lnClockStart3': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18012): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18131): warning C4244: 'argument': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18081): warning C4101: 'command': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18392): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18392): warning C4101: 'lnClockEnd': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18392): warning C4101: 'lnClockSpan': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(18392): warning C4101: 'lnClockStart2': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(22946): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23148): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23174): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23162): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23201): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23189): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23224): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23212): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23239): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23275): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23314): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23302): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23363): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23329): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23390): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23378): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23417): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23405): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23444): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23432): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23471): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23459): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23499): warning C4244: 'argument': conversion from 'long' to 'WORD', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23486): warning C4101: 'wValue': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23510): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(23578): warning C4101: 'lnClockStart': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24019): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24508): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24512): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24526): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24530): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24544): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24548): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24599): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24603): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24617): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24621): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24635): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24639): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24690): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24694): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24708): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24712): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24727): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24731): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24745): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24749): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24764): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24768): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24782): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24786): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24806): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24810): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24812): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24813): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24875): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24879): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24881): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24882): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24944): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24948): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24950): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(24951): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25015): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25019): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25021): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25022): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25080): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25084): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25098): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25102): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25117): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25121): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25135): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25139): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25222): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25263): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25812): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25824): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25897): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\winsock2.h(1828): note: see declaration of 'inet_addr'
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(25937): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\winsock2.h(1828): note: see declaration of 'inet_addr'
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26006): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\um\winsock2.h(1828): note: see declaration of 'inet_addr'
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26111): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26112): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26136): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26137): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26163): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26164): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26197): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26189): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26190): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26246): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26251): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26253): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26236): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26237): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26309): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26314): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26316): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26299): warning C4101: 'chData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26300): warning C4101: 'chAllData': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductmotorcontrol.cpp(26375): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CProductSequence.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(47): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(48): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol1': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+d:\estek automation\els1200 - github\rproduct\cproductsequence.cpp(9924): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+d:\estek automation\els1200 - github\rproduct\cproductsequence.cpp(9957): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+d:\estek automation\els1200 - github\rproduct\cproductsequence.cpp(9967): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+d:\estek automation\els1200 - github\rproduct\cproductsequence.cpp(9982): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+  CProductSequenceInputTrayTable.cpp
+d:\estek automation\els1200 - github\include\filelogger.h(116): warning C4251: 'CFileLogger::m_strLogMsg': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CFileLogger'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): warning C4251: 'CProductMotorControl::ArrayEventTable': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(47): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(48): warning C4251: 'CProductMotorControl::ArraySpeednInTargetTol1': class 'std::vector<char,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'CProductMotorControl'
+  d:\estek automation\els1200 - github\include\cproductmotorcontrol.h(46): note: see declaration of 'std::vector<char,std::allocator<char>>'
+d:\estek automation\els1200 - github\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(1287): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(1828): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(1877): warning C4018: '>': signed/unsigned mismatch
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(1881): warning C4018: '>': signed/unsigned mismatch
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(1919): warning C4018: '>': signed/unsigned mismatch
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(13): warning C4101: 'nTotalS2VisionSnap': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(13): warning C4101: 'nTotalInputVisionSnap': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(12): warning C4101: 'nCurrentS2ResultCounter': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(11): warning C4101: 'nCurrentS1Vision': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(13): warning C4101: 'nCurrentInputVisionDone': unreferenced local variable
+d:\estek automation\els1200 - github\rproduct\cproductsequenceinputtraytable.cpp(13): warning C4101: 'nCurrentS2VisionDone': unreferenced local variable
+  CProductSequenceOutputAndRejectTrayTable.cpp
