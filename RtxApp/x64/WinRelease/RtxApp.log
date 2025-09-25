@@ -1,0 +1,16 @@
+﻿  RtxApp.cpp
+d:\estek automation\els1200 - github\include\pch.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+d:\estek automation\els1200 - github\include\cproductsequence.h(40): warning C4091: 'typedef ': ignored on left of 'CProductSequence::InputUnitInfo' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(48): warning C4091: 'typedef ': ignored on left of 'CProductSequence::FiducialFeedback' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(54): warning C4091: 'typedef ': ignored on left of 'CProductSequence::Position' when no variable is declared
+d:\estek automation\els1200 - github\include\cproductsequence.h(61): warning C4091: 'typedef ': ignored on left of 'CProductSequence::ThetaResult' when no variable is declared
+  Generating code
+  All 27 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RtxApp.vcxproj -> D:\Estek\Release\RtxApp.exe
+  D:\Estek Automation\ELS1200 - GitHub\x64\WinRelease\RPlatform.dll
+  1 File(s) copied
+  D:\Estek Automation\ELS1200 - GitHub\x64\WinRelease\RProduct.dll
+  1 File(s) copied
+  D:\Estek Automation\ELS1200 - GitHub\x64\WinRelease\RCustomer.dll
+  1 File(s) copied
