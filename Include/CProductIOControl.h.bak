@@ -1,0 +1,206 @@
+#pragma once
+#ifndef __CPRODUCTIOCONTROL_H_INCLUDED__ 
+#define __CPRODUCTIOCONTROL_H_INCLUDED__
+
+#ifndef NUMBER_IO_CARD
+#define NUMBER_IO_CARD 21
+#endif
+
+#ifndef __CPLATFORMIOCONTROL_H_INCLUDED__ 
+#include "CPlatformIOControl.h"
+#endif
+
+#ifndef __CPRODUCTSHAREVARIABLES_H_INCLUDED__ 
+#include "CProductShareVariables.h"
+#endif
+
+#ifndef __CPRODUCTSHAREDMEMORY_H_INCLUDED__ 
+#include "CProductSharedMemory.h"
+#endif
+
+#include "RProduct.h"
+
+class RProduct_API CProductIOControl : public CPlatformIOControl
+{
+	int m_CardGeneral16In16Out1_0 = 0;
+	int m_CardTray32In32Out2_2 = 2;
+	int m_CardTray16In16Out1_3 = 3;
+
+	int m_CardGeneral32Out_4 = 4;
+	int m_CardVision16In16Out2_5 = 5;
+
+	int m_CardMotor32In32Out1_11 = 11;
+	int m_CardMotor32In32Out2_12 = 12;
+
+public:
+	CProductIOControl();
+	~CProductIOControl();
+	virtual int RTFCNDCL CProductIOControl::SetProductIOControl(CProductIOControl *productIOControl);
+	void CProductIOControl::SetOutputBeforeExitSoftware() override;
+	bool CProductIOControl::SetTowerLightStartHome() override;
+	bool CProductIOControl::SetTowerLightHoming() override;
+	bool CProductIOControl::SetTowerLightRunning() override;
+	bool CProductIOControl::SetTowerLightIdle() override;
+	bool CProductIOControl::SetTowerLightAlarm() override;
+	bool CProductIOControl::IsSetTowerLightAmber() override;
+
+#pragma region Input
+	bool CProductIOControl::IsMainPressureSwitchReady();
+	bool CProductIOControl::IsPNP1VacuumSwitchReady();
+	bool CProductIOControl::IsStartButtonPressed();
+	bool CProductIOControl::IsStopButtonPressed();
+	bool CProductIOControl::IsResetButtonPressed();
+	bool CProductIOControl::IsPowerReady();
+	bool CProductIOControl::IsFrontDoorOpen();
+	bool CProductIOControl::IsRearDoorOpen();
+	bool CProductIOControl::IsLeftDoorOpen();
+	bool CProductIOControl::IsRightDoorOpen();
+	bool CProductIOControl::IsPNP2VacuumSwitchReady();
+	bool CProductIOControl::IsInputIonizerBlowerReady();
+	bool CProductIOControl::IsOutputIonizerBlowerReady();
+	bool CProductIOControl::IsRejectTrayTableIonizerFanReady();
+
+	bool CProductIOControl::IsInputLoadingStackerFullSensorOn();
+	bool CProductIOControl::IsInputLoadingStackerPresentSensorOn();
+	bool CProductIOControl::IsInputLoadingStackerLockSensorOn();
+	bool CProductIOControl::IsInputLoadingStackerUnlockSensorOn();
+
+	bool CProductIOControl::IsInputUnloadingStackerFullSensorOn();
+	bool CProductIOControl::IsInputUnloadingStackerPresentSensorOn();
+	bool CProductIOControl::IsInputUnloadingStackerLockSensorOn();
+	bool CProductIOControl::IsInputUnloadingStackerUnlockSensorOn();
+
+	bool CProductIOControl::IsInputTrayTableTrayPresentSensorOn();
+
+	bool CProductIOControl::IsOutputLoadingStackerFullSensorOn();
+	bool CProductIOControl::IsOutputLoadingStackerPresentSensorOn();
+	bool CProductIOControl::IsOutputLoadingStackerLockSensorOn();
+	bool CProductIOControl::IsOutputLoadingStackerUnlockSensorOn();
+
+	bool CProductIOControl::IsOutputUnloadingStackerFullSensorOn();
+	bool CProductIOControl::IsOutputUnloadingStackerPresentSensorOn();
+	bool CProductIOControl::IsOutputUnloadingStackerLockSensorOn();
+	bool CProductIOControl::IsOutputUnloadingStackerUnlockSensorOn();
+
+	bool CProductIOControl::IsOutputTrayTableTrayPresentSensorOn();
+
+	bool CProductIOControl::IsRejectTrayPresentSensorOn();
+
+	bool CProductIOControl::IsInputVisionLightingExtendSensor();
+	bool CProductIOControl::IsInputVisionLightingRetractSensor();
+	bool CProductIOControl::IsSW2N3VisionLightingUpSensor();
+	bool CProductIOControl::IsSW2N3VisionLightingDownSensor();
+
+	bool CProductIOControl::IsLiveAllVision();
+
+	bool CProductIOControl::IsInputVisionReadyOn();
+	bool CProductIOControl::IsInputVisionEndOfVision();
+	bool CProductIOControl::IsInputVisionGrabDone();
+
+	bool CProductIOControl::IsBottomVisionReadyOn();
+	bool CProductIOControl::IsBottomVisionEndOfVision();
+	bool CProductIOControl::IsBottomVisionGrabDone();
+
+	bool CProductIOControl::IsS1VisionReadyOn();
+	bool CProductIOControl::IsS1VisionEndOfVision();
+	bool CProductIOControl::IsS1VisionGrabDone();
+
+	bool CProductIOControl::IsS2VisionReadyOn();
+	bool CProductIOControl::IsS2VisionEndOfVision();
+	bool CProductIOControl::IsS2VisionGrabDone();
+
+	bool CProductIOControl::IsS3VisionReadyOn();
+	bool CProductIOControl::IsS3VisionEndOfVision();
+	bool CProductIOControl::IsS3VisionGrabDone();
+
+	bool CProductIOControl::IsOutputVisionReadyOn();
+	bool CProductIOControl::IsOutputVisionEndOfVision();
+	bool CProductIOControl::IsOutputVisionGrabDone();
+
+	bool CProductIOControl::IsPickAndPlace1XAxisMotorReady();
+	bool CProductIOControl::IsPickAndPlace1XAxisMotorInPosition();
+
+	bool CProductIOControl::IsPickAndPlace2XAxisMotorReady();
+	bool CProductIOControl::IsPickAndPlace2XAxisMotorInPosition();
+	bool CProductIOControl::IsPickAndPlace1YAxisMotorReady();
+	bool CProductIOControl::IsPickAndPlace1YAxisMotorInPosition();
+
+	bool CProductIOControl::IsInputTrayTableXAxisMotorReady();
+	bool CProductIOControl::IsInputTrayTableXAxisMotorInPosition();
+	bool CProductIOControl::IsInputTrayTableYAxisMotorReady();
+	bool CProductIOControl::IsInputTrayTableYAxisMotorInPosition();
+	bool CProductIOControl::IsInputTrayTableZAxisMotorReady();
+	bool CProductIOControl::IsInputTrayTableZAxisMotorInPosition();
+
+	bool CProductIOControl::IsPickAndPlace2YAxisMotorReady();
+	bool CProductIOControl::IsPickAndPlace2YAxisMotorInPosition();
+
+	bool CProductIOControl::IsOutputTrayTableXAxisMotorReady();
+	bool CProductIOControl::IsOutputTrayTableXAxisMotorInPosition();
+	bool CProductIOControl::IsOutputTrayTableYAxisMotorReady();
+	bool CProductIOControl::IsOutputTrayTableYAxisMotorInPosition();
+	bool CProductIOControl::IsOutputTrayTableZAxisMotorReady();
+	bool CProductIOControl::IsOutputTrayTableZAxisMotorInPosition();
+
+	bool CProductIOControl::IsInputVisionModuleMotorReady();
+	bool CProductIOControl::IsInputVisionModuleMotorInPosition();
+
+	bool CProductIOControl::IsS1VisionModuleMotorReady();
+	bool CProductIOControl::IsS1VisionModuleMotorInPosition();
+	bool CProductIOControl::IsS2VisionModuleMotorReady();
+	bool CProductIOControl::IsS2VisionModuleMotorInPosition();
+	bool CProductIOControl::IsS3VisionModuleMotorReady();
+	bool CProductIOControl::IsS3VisionModuleMotorInPosition();
+
+#pragma endregion
+
+#pragma region Output
+	bool CProductIOControl::SetTowerLightRed(bool trueToOn);
+	bool CProductIOControl::SetTowerLightAmber(bool trueToOn);
+	bool CProductIOControl::SetTowerLightGreen(bool trueToOn);
+	bool CProductIOControl::SetTowerLightBlue(bool trueToOn);
+	bool CProductIOControl::SetTowerLightBuzzer(bool trueToOn);
+	
+	bool CProductIOControl::SetMaintenanceLight(bool trueToOn);
+	bool CProductIOControl::SetInputIonizerBlowerValveOn(bool trueToOn);
+	bool CProductIOControl::SetOutputIonizerBlowerValveOn(bool trueToOn);
+	bool CProductIOControl::SetPNP1VacuumValveOn(bool trueToOn);
+	bool CProductIOControl::SetPNP2VacuumValveOn(bool trueToOn);
+
+	bool CProductIOControl::SetInputTrayTableVacuumOn(bool trueToOn);
+
+	bool CProductIOControl::SetInputLoadingStackerUnlockCylinderOn(bool trueToOn);
+	bool CProductIOControl::SetInputUnloadingStackerUnlockCylinderOn(bool trueToOn);
+	bool CProductIOControl::SetOutputLoadingStackerUnlockCylinderOn(bool trueToOn);
+	bool CProductIOControl::SetOutputUnloadingStackerUnlockCylinderOn(bool trueToOn);
+
+	bool CProductIOControl::SetInputVisionSOV(bool trueToOn);
+	bool CProductIOControl::SetInputVisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetInputVisionLightingExtendCylinder(bool trueToOn);
+	bool CProductIOControl::SetSideWall2_3VisionLighitngExtendCylinder (bool trueToOn);
+
+	bool CProductIOControl::SetBottomVisionSOV(bool trueToOn);
+	bool CProductIOControl::SetBottomVisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetS1VisionSOV(bool trueToOn);
+	bool CProductIOControl::SetS1VisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetS2VisionSOV(bool trueToOn);
+	bool CProductIOControl::SetS2VisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetS3VisionSOV(bool trueToOn);
+	bool CProductIOControl::SetS3VisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetOutputVisionSOV(bool trueToOn);
+	bool CProductIOControl::SetOutputVisionROV(bool trueToOn);
+
+	bool CProductIOControl::SetOutputTrayTableVacuumOn(bool trueToOn);
+	bool CProductIOControl::SetRejectTrayTableVacuumOn(bool trueToOn);
+#pragma endregion
+
+	bool IsAlarmState = false;
+};
+#endif
+CProductIOControl *m_cProductIOControl = new CProductIOControl();
+

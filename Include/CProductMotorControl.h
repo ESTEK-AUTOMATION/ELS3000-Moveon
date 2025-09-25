@@ -1,0 +1,633 @@
+#pragma once
+#ifndef __CPRODUCTMOTORCONTROL_H_INCLUDED__ 
+#define __CPRODUCTMOTORCONTROL_H_INCLUDED__
+
+#ifndef __CPLATFORMMOTORCONTROL_H_INCLUDED__ 
+#include "CPlatformMotorControl.h"
+#endif
+
+#ifndef __CPRODUCTIOCONTROL_H_INCLUDED__ 
+#include "CProductIOControl.h"
+#endif
+
+#ifndef __CPRODUCTSHAREVARIABLES_H_INCLUDED__ 
+#include "CProductShareVariables.h"
+#endif
+
+#ifndef __CPRODUCTSHAREDMEMORY_H_INCLUDED__ 
+#include "CProductSharedMemory.h"
+#endif
+
+#include "RProduct.h"
+
+#include "pch.h"
+#if UNDER_WIN
+//#include <atlstr.h>
+#include "winsock.h"
+#pragma comment(lib, "ws2_32.lib") 
+#endif
+#include "string.h"
+#include <vector>
+#include <windows.h>
+#include <iostream>
+
+
+#define DEFAULT_BUFLEN 512
+class RProduct_API CProductMotorControl : public CPlatformMotorControl
+{
+
+	//#pragma region Etel Control Variables
+	//DSA_STATUS EtelDriveStatus = { sizeof(DSA_STATUS) };
+	//#pragma endregion
+
+	int err = 0;
+public:
+
+	std::vector<char> ArrayEventTable;
+	std::vector<char> ArraySpeednInTargetTol;
+	std::vector<char> ArraySpeednInTargetTol1;
+	double CAM_Full = 1;// 0.7;
+	double CAM_Turret = 1;// 0.7;
+
+	double CAM_Pusher = 1;//0.7;
+	double CAM_AlignerXY = 0.7;//1;
+
+	double CAM_Slow = 0.01;
+	double CAM_Standby = 0.05;
+	signed long AlignerXLastMoveValue;
+	bool AlignerXLastMoveDirectionTrueToPositive;
+
+	int TimeArrayCycle = 0;
+	int TimeArrayTurretMotorIndex = 1;
+	int TimeArrayEjectorZAxisUp = 2;
+	int TimeArrayEjectorZAxisStandby = 3;
+	int TimeArrayInputPusherZAxisPusherUp = 4;
+	int TimeArrayInputPusherZAxisPusherDown = 5;
+	int TimeArrayPickupPusherZAxisPusherUp = 6;
+	int TimeArrayPickupPusherZAxisPusherDown = 7;
+	int TimeArrayInputPusherZAxisPusherEjecting = 8;
+	int TimeArrayAlignerPusherZAxisPusherUp = 9;
+	int TimeArrayAlignerPusherZAxisPusherDown = 10;
+	int TimeArraySidewallPusherZAxisPusherUp = 11;
+	int TimeArraySidewallPusherZAxisPusherDown = 12;
+	int TimeArrayOutputPusherZAxisPusherUp = 13;
+	int TimeArrayOutputPusherZAxisPusherDown = 14;
+	int TimeArrayAlignerXAxisMotorAlign = 15;
+	int TimeArrayAlignerXAxisMotorStandby = 16;
+	int TimeArrayAlignerYAxisMotorAlign = 17;
+	int TimeArrayAlignerYAxisMotorStandby = 18;
+
+	int TimeUnitReady = 60;
+	int TimeAllPusherMoveDown = 62;
+	int TimeArrayTurretIndexAndRnAPrealign = 64;
+
+
+	MotorConfiguration m_motorConfiguration[MOTORQUANTITY];
+	CProductMotorControl();
+	~CProductMotorControl();
+	virtual int CProductMotorControl::SetProductMotorControl(CProductMotorControl *productMotorControl);
+	int CProductMotorControl::SetClass(CMotionLibrary *motionLibrary);
+	int CProductMotorControl::LoadMotorSetting() override;
+
+	int CProductMotorControl::PickAndPlace1XAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveToInputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveToS1Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveToS3Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveToOutputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveToParkingPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorSetStartEndPoint(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorEnablePositionTrigger(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorDisablePositionTrigger(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1XAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace1XAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace1XAxisMotorSafeToMoveTeachHoming();
+	bool CProductMotorControl::IsPickAndPlace1XAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsPickAndPlace1XAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadPickAndPlace1XAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace2XAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveToInputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveToS1Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveToS3Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveToOutputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveToParkingPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorSetStartEndPoint(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorEnablePositionTrigger(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorDisablePositionTrigger(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2XAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace2XAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace2XAxisMotorSafeToMoveTeachHoming();
+	bool CProductMotorControl::IsPickAndPlace2XAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsPickAndPlace2XAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadPickAndPlace2XAxisMotorEncoder();
+
+#pragma region Fuji Control
+	int CProductMotorControl::MotionController1Initialize(CMotionLibrary *cMotion);
+	int CProductMotorControl::MotionController2Initialize(CMotionLibrary *cMotion);
+	int CProductMotorControl::MotionController3Initialize(CMotionLibrary *cMotion);
+	int CProductMotorControl::MotionController4Initialize(CMotionLibrary *cMotion);
+
+	int CProductMotorControl::PickAndPlace1YAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToInputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToInputPositionCurve(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToS1Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToS3Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToOutputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToOutputPositionCurve(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveToStandbyPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMove(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1YAxisMotorMoveCurve(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace1YAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace1YAxisMotorSafeToMoveTeachHoming();
+	bool CProductMotorControl::IsPickAndPlace1YAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsPickAndPlace1YAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadPickAndPlace1YAxisMotorEncoder();
+
+
+	int CProductMotorControl::InputTrayTableXAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveCenter(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveInputS2CalibrationPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveInputSWVisionDotGridPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveInputBottomAndInputVisionDotGridPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableXAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableXAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsInputTrayTableXAxisMotorSafeToMove();
+	bool CProductMotorControl::IsInputTrayTableXAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsInputTrayTableXAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadInputTrayTableXAxisMotorEncoder();
+
+	int CProductMotorControl::InputTrayTableYAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveCenter(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveInputS2SWAndBottomDotGridPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveInputIPVCalibrationPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableYAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableYAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsInputTrayTableYAxisMotorSafeToMove();
+	bool CProductMotorControl::IsInputTrayTableYAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsInputTrayTableYAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadInputTrayTableYAxisMotorEncoder();
+
+	int CProductMotorControl::InputTrayTableZAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveDown(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveSingulation(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveSecondSingulation(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableZAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputTrayTableZAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsInputTrayTableZAxisMotorSafeToMove();
+	bool CProductMotorControl::IsInputTrayTableZAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsInputTrayTableZAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadInputTrayTableZAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace2YAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToInputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToInputPositionCurve(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToS1Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToS3Position(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToOutputPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToOutputPositionCurve(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveToStandbyPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMove(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2YAxisMotorMoveCurve(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace2YAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace2YAxisMotorSafeToMoveTeachHoming();
+	bool CProductMotorControl::IsPickAndPlace2YAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsPickAndPlace2YAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadPickAndPlace2YAxisMotorEncoder();
+
+	int CProductMotorControl::OutputTrayTableXAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveCenter(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveRejectTrayCenter(CMotionLibrary *cMotion, int TrayNo);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveManualLoadUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveOutputOPVCalibrationPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableXAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsOutputTrayTableXAxisMotorSafeToMove();
+	bool CProductMotorControl::IsOutputTrayTableXAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsOutputTrayTableXAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadOutputTrayTableXAxisMotorEncoder();
+
+	int CProductMotorControl::OutputTrayTableYAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveCenter(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveRejectTrayCenter(CMotionLibrary *cMotion, int TrayNo);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveManualLoadUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveOutputOPVCalibrationPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableYAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsOutputTrayTableYAxisMotorSafeToMove();
+	bool CProductMotorControl::IsOutputTrayTableYAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsOutputTrayTableYAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadOutputTrayTableYAxisMotorEncoder();
+
+	int CProductMotorControl::OutputTrayTableZAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveDown(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveLoad(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveSingulation(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveSecondSingulation(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveUnload(CMotionLibrary *cMotion);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::OutputTrayTableZAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsOutputTrayTableZAxisMotorSafeToMove();
+	bool CProductMotorControl::IsOutputTrayTableZAxisMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsOutputTrayTableZAxisMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadOutputTrayTableZAxisMotorEncoder();
+
+	int CProductMotorControl::InputVisionModuleMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::InputVisionModuleMotorMoveFocusPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::InputVisionModuleMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputVisionModuleMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::InputVisionModuleMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsInputVisionModuleMotorSafeToMove();
+	bool CProductMotorControl::IsInputVisionModuleMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsInputVisionModuleMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadInputVisionModuleMotorEncoder();
+
+	int CProductMotorControl::S2VisionModuleMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::S2VisionModuleMotorMoveFocusPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::S2VisionModuleMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S2VisionModuleMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S2VisionModuleMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsS2VisionModuleMotorSafeToMove();
+	bool CProductMotorControl::IsS2VisionModuleMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsS2VisionModuleMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadS2VisionModuleMotorEncoder();
+
+	int CProductMotorControl::S1VisionModuleMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::S1VisionModuleMotorMoveFocusPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorMoveRetractPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::S1VisionModuleMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S1VisionModuleMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S1VisionModuleMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsS1VisionModuleMotorSafeToMove();
+	bool CProductMotorControl::IsS1VisionModuleMotorSafeToMoveRelative(signed long position);
+	bool CProductMotorControl::IsS1VisionModuleMotorSafeToMoveAbsolute(signed long position);
+	signed long CProductMotorControl::ReadS1VisionModuleMotorEncoder();
+
+	int CProductMotorControl::S3VisionModuleMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::S3VisionModuleMotorMoveFocusPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::S3VisionModuleMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S3VisionModuleMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::S3VisionModuleMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsS3VisionModuleMotorSafeToMove();
+	bool CProductMotorControl::IsS3VisionModuleMotorSafeToMoveRelative(signed long movePos_um);
+	bool CProductMotorControl::IsS3VisionModuleMotorSafeToMoveAbsolute(signed long movePos_um);
+	signed long CProductMotorControl::ReadS3VisionModuleMotorEncoder();
+#pragma endregion
+
+	int CProductMotorControl::PickAndPlace1ZAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMoveUpPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMoveInputDownPosition(CMotionLibrary *cMotion, bool TrueToDown);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMoveOutputDownPosition(CMotionLibrary *cMotion, bool TrueToDown);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1ZAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace1ZAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace1ZAxisMotorSafeToMoveRelative(signed long movePos_um);
+	bool CProductMotorControl::IsPickAndPlace1ZAxisMotorSafeToMoveAbsolute(signed long movePos_um);
+	signed long CProductMotorControl::ReadPickAndPlace1ZAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorMoveStandbyPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace1ThetaAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace1ThetaAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace1ThetaAxisMotorSafeToMoveRelative(signed long movePos_um);
+	bool CProductMotorControl::IsPickAndPlace1ThetaAxisMotorSafeToMoveAbsolute(signed long movePos_um);
+	signed long CProductMotorControl::ReadPickAndPlace1ThetaAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace2ZAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMoveUpPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMoveInputDownPosition(CMotionLibrary *cMotion, bool TrueToDown);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMoveOutputDownPosition(CMotionLibrary *cMotion, bool TrueToDown);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2ZAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace2ZAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace2ZAxisMotorSafeToMoveRelative(signed long movePos_um);
+	bool CProductMotorControl::IsPickAndPlace2ZAxisMotorSafeToMoveAbsolute(signed long movePos_um);
+	signed long CProductMotorControl::ReadPickAndPlace2ZAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorOn(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorStop(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorHome(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorSettingUp(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorSetSpeedAndAcceleration(CMotionLibrary *cMotion, int speedPercent, int accelerationPercent);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorMoveStandbyPosition(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorMoveRelative(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorMoveAbsolute(CMotionLibrary *cMotion, signed long movePos_um);
+	int CProductMotorControl::PickAndPlace2ThetaAxisMotorMove(CMotionLibrary *cMotion);
+	bool CProductMotorControl::IsPickAndPlace2ThetaAxisMotorSafeToMove();
+	bool CProductMotorControl::IsPickAndPlace2ThetaAxisMotorSafeToMoveRelative(signed long movePos_um);
+	bool CProductMotorControl::IsPickAndPlace2ThetaAxisMotorSafeToMoveAbsolute(signed long movePos_um);
+	signed long CProductMotorControl::ReadPickAndPlace2ThetaAxisMotorEncoder();
+
+	int CProductMotorControl::PickAndPlace1THKMotorOff(CMotionLibrary *cMotion);
+	int CProductMotorControl::PickAndPlace2THKMotorOff(CMotionLibrary *cMotion);
+
+	bool CProductMotorControl::IsAllPickupHeadAtSafetyPosition();
+
+#pragma region THK Robot
+	int CProductMotorControl::THKInitialize(unsigned int NoOfIndex);
+	int CProductMotorControl::THKConnect(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReconnect(unsigned int NoOfIndex);
+	int CProductMotorControl::THKResetAlarm(unsigned int NoOfIndex);
+	int CProductMotorControl::THKDisconnect(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOn(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOnZAxis(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOnThetaAxis(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOff(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOffZAxis(unsigned int NoOfIndex);
+	int CProductMotorControl::THKServoOffThetaAxis(unsigned int NoOfIndex);
+	int CProductMotorControl::THKUserSettingOrigin(unsigned int NoOfIndex);
+	int CProductMotorControl::THKHomeMotor(unsigned int NoOfIndex);
+	int CProductMotorControl::THKHomeMotorZAxisMotor(unsigned int NoOfIndex);
+	int CProductMotorControl::THKHomeThetaAxisMotor(unsigned int NoOfIndex);
+	int CProductMotorControl::THKZAxisInching(unsigned int NoOfIndex);
+	int CProductMotorControl::THKZAxisInchingUp(unsigned int NoOfIndex);
+	int CProductMotorControl::THKThetaAxisInching(unsigned int NoOfIndex);
+	int CProductMotorControl::THKPick(unsigned int NoOfIndex);
+	int CProductMotorControl::IsTHKZAxisSafeToMove(unsigned int NoOfIndex);
+	int CProductMotorControl::IsTHKZAxisSafeToMoveUp(unsigned int NoOfIndex);
+	int CProductMotorControl::THKSoftlandingPick(unsigned int NoOfIndex);
+	int CProductMotorControl::THKSoftlandingPlace(unsigned int NoOfIndex);
+	int CProductMotorControl::THKPlace(unsigned int NoOfIndex);
+	int CProductMotorControl::THKAutoCalibrationPlace(unsigned int NoOfIndex);
+	int CProductMotorControl::THKRotationSequence(unsigned int NoOfIndex);
+	int CProductMotorControl::THKMoveUpWithRotationSequence(unsigned int NoOfIndex);
+	int CProductMotorControl::THKMoveUpSequence(unsigned int NoOfIndex);
+	int CProductMotorControl::THKStopMotor(unsigned int NoOfIndex);
+	int CProductMotorControl::THKVacuumValveOn(unsigned int NoOfIndex);
+	int CProductMotorControl::THKVacuumValveOff(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReleaseValveOn(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReleaseValveOff(unsigned int NoOfIndex);
+	int CProductMotorControl::THKSequenceTrigger(unsigned int NoOfIndex, unsigned int nNoOfSequence);
+	int CProductMotorControl::THKSetOriginValue(unsigned int NoOfIndex, unsigned int nAxisNo, signed long Value);
+	int CProductMotorControl::THKResetForceOriginValue(unsigned int NoOfIndex);
+	int CProductMotorControl::THKSetTargetValue(unsigned int NoOfIndex, unsigned int nNoOfTargetValue, signed long Value);
+	int CProductMotorControl::THKSetTargetValue1(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue2(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue3(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue4(unsigned int NoOfIndex, double Value);
+	int CProductMotorControl::THKSetTargetValue5(unsigned int NoOfIndex, double Value);
+	int CProductMotorControl::THKSetTargetValue6(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue7(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue8(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue9(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue10(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue11(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKSetTargetValue12(unsigned int NoOfIndex, signed long Value);
+	int CProductMotorControl::THKInchingValue(unsigned int NoOfIndex, unsigned int nAxisNo, signed long Value);
+	int CProductMotorControl::THKUserOriginSetting(unsigned int NoOfIndex, unsigned int nAxisNo);
+	int CProductMotorControl::THKReadEncoderValue(unsigned int NoOfIndex, unsigned int nAxisNo, signed long* Value);
+	int CProductMotorControl::THKReadForceValue(unsigned int NoOfIndex, double* Value);
+	int CProductMotorControl::THKReadPressureValue(unsigned int NoOfIndex, double* Value);
+	int CProductMotorControl::THKReadFlowRateValue(unsigned int NoOfIndex, double* Value);
+	int CProductMotorControl::THKReadMotorServoOnOff(unsigned int NoOfIndex, unsigned int AxisNo);
+
+	int CProductMotorControl::THKReadMotorServoStatus(unsigned int NoOfIndex, unsigned int nAxisNo);
+	int CProductMotorControl::THKReadMotorHomeStatus(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReadVacuumStatus(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReadValveStatus(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReadAlarm(unsigned int NoOfIndex);
+
+	int CProductMotorControl::THKReadStartSequenceResult(unsigned int NoOfIndex, int ByteOffset);
+	int CProductMotorControl::THKReadStopRunningResult(unsigned int NoOfIndex, int ByteOffset);
+	int CProductMotorControl::THKReadControllerStatus(unsigned int NoOfIndex);
+	int CProductMotorControl::THKReadControllerStatus(unsigned int NoOfIndex, int group, int nStatus);
+	int CProductMotorControl::THKReadRunningStatus(unsigned int NoOfIndex, unsigned int nAxisNo);
+#pragma endregion THK Robot
+
+#pragma region Agito
+
+	int CProductMotorControl::AgitoServoOn(unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoServoOn(unsigned int uController, unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoStartMotor(unsigned int uAxis);
+	int CProductMotorControl::AgitoStartMotor(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoStartMotor1(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoStopMotor(unsigned int uAxis);
+	int CProductMotorControl::AgitoStopMotor(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoAbortMotor(unsigned int uAxis);
+	int CProductMotorControl::AgitoAbortMotor(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoHomeMotor(unsigned int uAxis);
+	int CProductMotorControl::AgitoHomeMotor(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoMotorAbsolute(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorAbsolute(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorAbsolute1(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorAbsolute(unsigned int uAxis, double diValue);
+	int CProductMotorControl::AgitoMotorAbsolute(unsigned int uController, unsigned int uAxis, double diValue);
+	int CProductMotorControl::AgitoMotorRelative(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorRelative(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorRelative1(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorRelative(unsigned int uAxis, double diValue);
+	int CProductMotorControl::AgitoMotorRelative(unsigned int uController, unsigned int uAxis, double diValue);
+	int CProductMotorControl::AgitoMotorAcceleration(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorAcceleration(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorDeceleration(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorDeceleration(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorSpeed(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorSpeed(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorSpeed(unsigned int uAxis, long iValue, long iInTargetTolValue, long Acceleration, long Deceleration);
+	int CProductMotorControl::AgitoMotorSpeed(unsigned int uController, unsigned int uAxis, long iValue, long iIntargetTolValue, long Acceleration, long Deceleration);
+	int CProductMotorControl::AgitoMotorSpeed1(unsigned int uController, unsigned int uAxis, long iValue, long iIntargetTolValue, long Acceleration, long Deceleration);
+	int CProductMotorControl::AgitoMotorSpeedGotError(unsigned int uController, unsigned int uAxis, long iValue, long iIntargetTolValue, long Acceleration, long Deceleration);
+	int CProductMotorControl::AgitoMotorJerk(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotorJerk(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoEmergencyDec(unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoEmergencyDec(unsigned int uController, unsigned int uAxis, long iValue);
+	int CProductMotorControl::AgitoMotionMode(unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoMotionMode(unsigned int uController, unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoGantry(unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoGantry(unsigned int uController, unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoGenData(unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoGenData(unsigned int uController, unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	signed long CProductMotorControl::ReadAgitoMotorPosition(unsigned int uAxis);
+	signed long CProductMotorControl::ReadAgitoMotorPosition(unsigned int uController, unsigned int uAxis);
+	double CProductMotorControl::ReadAgitoMotorPosition(unsigned int uAxis, int differentiate);
+	double CProductMotorControl::ReadAgitoMotorPosition(unsigned int uController, unsigned int uAxis, int differentiate);
+	int CProductMotorControl::ReadAgitoMotorOnOff(unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorOnOff(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorHomeStat(unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorHomeStat(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorLimit(unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorLimit(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorMoving(unsigned int uAxis);
+	int CProductMotorControl::ReadAgitoMotorMoving(unsigned int uController, unsigned int uAxis);
+	// wc 19042022
+	int CProductMotorControl::AgitoMotorEnableLockPosition(unsigned int uController, unsigned int uAxis, int iValue);
+	int CProductMotorControl::AgitoMotorEnableLockPosition1(unsigned int uController, unsigned int uAxis, int iValue);
+	double CProductMotorControl::ReadAgitoMotorLockPosition(unsigned int uController, unsigned int uAxis, int differentiate);
+	double CProductMotorControl::ReadAgitoMotorLockPosition1(unsigned int uController, unsigned int uAxis, int differentiate);
+	//--
+
+	// Position Event Trigger
+	int CProductMotorControl::AgitoPositionEventTriggerEnable(unsigned int uAxis);
+	int CProductMotorControl::AgitoPositionEventTriggerEnable(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoPositionEventTriggerDisable(unsigned int uAxis);
+	int CProductMotorControl::AgitoPositionEventTriggerDisable(unsigned int uController, unsigned int uAxis);
+	int CProductMotorControl::AgitoPositionEventTriggerPulseWidth(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerPulseWidth(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventType(unsigned int uAxis, signed long iValue); // 0: Single Event 1: Fix Gap 2: Table
+	int CProductMotorControl::AgitoPositionEventTriggerEventType(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventBeginPosition(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventBeginPosition(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventGap(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventGap(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventEndPosition(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventEndPosition(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventSelect(unsigned int uAxis, signed long iValue); // 0: None 1: 1 2: 2 3: 1 & 2 4: 3 5: 1 & 3 6: 2 & 3 7: 1 & 2 & 3
+	int CProductMotorControl::AgitoPositionEventTriggerEventSelect(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventStartIndex(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventStartIndex(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventEndIndex(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventEndIndex(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTable(unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTable(unsigned int uController, unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTableSelect(unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTableSelect(unsigned int uController, unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTableSelectAndEventTable(unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoPositionEventTriggerEventTableSelectAndEventTable(unsigned int uController, unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoOutputTriggerOnOffIO0(unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoOutputTriggerOnOffIO0(unsigned int uController, unsigned int uAxis, signed long iValue);
+	int CProductMotorControl::AgitoOutputFunction(unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoOutputFunction(unsigned int uController, unsigned int uAxis, unsigned int uIndex, signed long iValue);
+	int CProductMotorControl::AgitoOutputTriggerOnOff(unsigned int uAxis, unsigned int IONumber, signed long iValue);
+	int CProductMotorControl::AgitoOutputTriggerOnOff(unsigned int uController, unsigned int uAxis, unsigned int IONumber, signed long iValue);
+
+	int CProductMotorControl::AgitoTCPIPConnect(const char*IPAddress, int PortNo);
+	int CProductMotorControl::AgitoTCPIPConnect(unsigned int uController, const char*IPAddress, int PortNo);
+	int CProductMotorControl::AgitoTCPIPConnect1(unsigned int uController, const char*IPAddress, int PortNo);
+	int CProductMotorControl::AgitoSend(const char*Data, int length);
+	int CProductMotorControl::AgitoSend(unsigned int uController, const char*Data, int length);
+	int CProductMotorControl::AgitoSend1(unsigned int uController, const char*Data, int length);
+	int CProductMotorControl::AgitoSendAndReceive(const char*Data, int length, char*R_Data);
+	int CProductMotorControl::AgitoSendAndReceive(unsigned int uController, const char*Data, int length, char*R_Data);
+	int CProductMotorControl::AgitoSendAndReceive1(unsigned int uController, const char*Data, int length, char*R_Data);
+	int CProductMotorControl::AgitoReceive(char*R_Data);
+	int CProductMotorControl::AgitoReceive(unsigned int uController, char*R_Data);
+	int CProductMotorControl::AgitoReceive1(unsigned int uController, char*R_Data);
+	int CProductMotorControl::AgitoClosePort();
+	int CProductMotorControl::AgitoClosePort(unsigned int uController);
+	int CProductMotorControl::convert(char num[]);
+	char CProductMotorControl::convertData(char num);
+#pragma endregion
+	int nNoOfTriggerPoint;
+	int nNoOfTriggerPointAtResort;
+	SOCKET socket_s;
+	int recvbuflen = DEFAULT_BUFLEN;
+	char recvbuf[DEFAULT_BUFLEN];
+};
+#endif
+
+CProductMotorControl *m_cProductMotorControl = new CProductMotorControl();
+CProductAgito *m_Agito = new CProductAgito();
+//CProductAgito *m_Agito2 = new CProductAgito();

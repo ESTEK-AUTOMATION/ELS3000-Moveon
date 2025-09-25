@@ -1,0 +1,1359 @@
+#pragma once
+#ifndef __PRODUCTSEQUENCE_H_INCLUDED__ 
+#define __PRODUCTSEQUENCE_H_INCLUDED__
+
+class HomingSequenceNo
+{
+public:
+	static const int CheckWhetherGetUnitOnPickAndPlace = 0;
+	static const int IsPickAndPlace1XYMotorOffDone = 1;
+	static const int IsPickAndPlace2XYMotorOffDone = 2;
+
+	static const int ResetVariablesBeforeHoming = 3;
+	static const int InitializeBeforeHoming = 4;
+	static const int CheckMainPressureDoorAndMotorStatus = 5;
+
+	static const int StartLockInputOutputStackerCylinderAndMoveBottomVisionBacklightUpCylinderDown = 6;
+	static const int IsLockInputOutputStackerCylinderAndMoveBottomVisionBacklightUpCylinderDownDone = 7;
+
+	static const int StartInitializeMotionController = 8;
+	static const int IsInitializeMotionControllerDone = 9;
+
+	static const int StartTableTrayZPickAndPlaceZAndAllVisionMotorHome = 10;
+	static const int IsTableTrayZPickAndPlaceZAndAllVisionMotorHomeDone = 11;
+	static const int StartStopTableTrayZPickAndPlaceZAndAllVisionMotorHome = 12;
+	static const int IsStopTableTrayZPickAndPlaceZAndAllVisionMotorHomeDone = 13;
+
+	static const int StartPickAndPlaceYMotorHome = 14;
+	static const int IsPickAndPlaceYMotorHomeDone = 15;
+	static const int StartStopPickAndPlaceYMotorHome = 16;
+	static const int IsStopPickAndPlaceYMotorHomeDone = 17;
+
+	static const int StartAllMotorSettingUp = 18;
+	static const int IsAllMotorSettingUpDone = 19;
+
+	static const int StartTableTrayXYPickAndPlaceXTMotorHome = 20;
+	static const int IsTableTrayXYPickAndPlaceXTMotorHomeDone = 21;
+	static const int StartStopTableTrayXYPickAndPlaceXTMotorHome = 22;
+	static const int IsStopTableTrayXYPickAndPlaceXTMotorHomeDone = 23;
+
+	static const int CheckTrayPresentOnTrayTable = 24;
+
+	static const int StartMoveTrayTableXYToUnload = 25;
+	static const int IsMoveTrayTableXYToUnloadDone = 26;
+	static const int StartStopMoveTrayTableXYToUnload = 27;
+	static const int IsStopMoveTrayTableXYToUnloadDone = 28;
+
+	static const int StartMoveTrayTableZToSingulation = 29;
+	static const int IsMoveTrayTableZToSingulationDone = 30;
+	static const int StartStopMoveTrayTableZToSingulation = 31;
+	static const int IsStopMoveTrayTableZToSingulationDone = 32;
+
+	static const int StartUnlockUnloadingStackerCylinder = 33;
+	static const int IsUnlockUnloadingStackerCylinderDone = 34;
+
+	static const int StartMoveTrayTableZToUnloading = 35;
+	static const int IsMoveTrayTableZToUnloadingDone = 36;
+	static const int StartStopMoveTrayTableZToUnloading = 37;
+	static const int IsStopMoveTrayTableZToUnloadingDone = 38;
+
+	static const int StartLockUnloadingStackerCylinder = 39;
+	static const int IsLockUnloadingStackerCylinderDone = 40;
+
+	static const int StartSetInputTableVacuumOffDuringUnloading = 1000;
+	static const int IsSetInputTableVacuumOffDuringUnloadingDone = 1001;
+
+	static const int StartMoveTrayTableZToDownPosition = 41;
+	static const int IsMoveTrayTableZToDownPositionDone = 42;
+	static const int StartStopMoveTrayTableZToDownPosition = 43;
+	static const int IsStopMoveTrayTableZToDownPositionDone = 44;
+
+	static const int StartMoveInputTrayTableXYToLoadAndOutputTrayTableXYToManualLoadUnloadAndMovePickZUp = 45;
+	static const int IsMoveInputTrayTableXYToLoadAndOutputTrayTableXYToManualLoadUnloadAndMovePickZUpDone = 46;
+	static const int StartStopMoveInputTrayTableXYToLoadAndOutputTrayTableXYToManualLoadUnloadAndMovePickZUp = 47;
+	static const int IsStopMoveInputTrayTableXYToLoadAndOutputTrayTableXYToManualLoadUnloadAndMovePickZUpDone = 48;
+
+	static const int StartMovePNP12YAxisToStandbyPosition = 49;
+	static const int IsMovePNP12YAxisToStandbyPositionDone = 50;
+	static const int StopMovePNP12YAxisToStandbyPosition = 51;
+	static const int IsStopMovePNP12YAxisToStandbyPositionDone = 52;
+
+	static const int StartMovePNP12XAxisToStandbyPosition = 53;
+	static const int IsMovePNP12XAxisToStandbyPositionDone = 54;
+	static const int StopMovePNP12XAxisToStandbyPosition = 55;
+	static const int IsStopMovePNP12XAxisToStandbyPositionDone = 56;
+
+	static const int StartMovePNP12YAxisToPreProductionStandbyPosition = 57;
+	static const int IsMovePNP12YAxisToPreProductionStandbyPositionDone = 58;
+	static const int StopMovePNP12YAxisToPreProductionStandbyPosition = 59;
+	static const int IsStopMovePNP12YAxisToPreProductionStandbyPositionDone = 60;
+};
+
+class InputTrayTableSequenceNo
+{
+public:
+	static const int WaitingToReceiveEventStartInputTrayTableSequence = 0;
+
+	static const int IsInputTrayTableZAxisAtDownPosition = 1;
+
+	static const int IsInputTrayTableReady = 2;//check present
+
+	static const int StartSetInputTableVacuumOn = 90000;
+	static const int IsSetInputTableVacuumOnDone = 90001;
+
+#pragma region Loading
+	static const int StartMoveInputTrayTableXYAxisToLoadingPosition = 3;
+	static const int IsMoveInputTrayTableXYAxisToLoadingPositionDone = 4;
+	static const int StopMoveInputTrayTableXYAxisToLoadingPosition = 5;
+	static const int IsStopMoveInputTrayTableXYAxisToLoadingPositionDone = 6;
+
+	static const int StartMoveInputTrayTableZAxisToLoadingPosition = 7;
+	static const int IsMoveInputTrayTableZAxisToLoadingPositionDone = 8;
+	static const int StopMoveInputTrayTableZAxisToLoadingPosition = 9;
+	static const int IsStopMoveInputTrayTableZAxisToLoadingPositionDone = 10;
+
+	static const int InputLoadingStackerUnlockCylinderUnlock = 11;
+	static const int IsInputLoadingStackerUnlockCylinderUnlock = 12;
+
+	static const int StartMoveInputTrayTableZAxisToSingulationPosition = 13;
+	static const int IsMoveInputTrayTableZAxisToSingulationPositionDone = 14;
+	static const int StopMoveInputTrayTableZAxisToSingulationPosition = 15;
+	static const int IsStopMoveInputTrayTableZAxisToSingulationPositionDone = 16;
+
+	static const int InputLoadingStackerUnlockCylinderLock = 17;
+	static const int IsInputLoadingStackerUnlockCylinderLock = 18;
+
+	static const int StartMoveInputTrayTableZAxisToDownPosition = 19;
+	static const int IsMoveInputTrayTableZAxisToDownPositionDone = 20;
+	static const int IsStopMoveInputTrayTableZAxisToDownPositionAfterTrayNotPresent = 21;
+	static const int CheckIsTrayPresentOnInputTrayTableDuringDown = 22;
+	static const int StopMoveInputTrayTableZAxisToDownPosition = 23;
+	static const int IsStopMoveInputTrayTableZAxisToDownPositionDone = 24;
+#pragma endregion Loading
+
+
+	static const int IsSendVisionInputTrayNoDone = 2000;
+
+	static const int StartSendInputVisionRowAndColumnBeforeToFirstPosition = 80000;
+
+	static const int StartMoveInputTrayTableXYVisionZAxisToFirstPosition = 25;
+	static const int IsMoveInputTrayTableXYVisionZAxisToFirstPositionDone = 26;
+	static const int StopMoveInputTrayTableXYVisionZAxisToFirstPosition = 27;
+	static const int IsStopMoveInputTrayTableXYVisionZAxisToFirstPositionDone = 28;
+
+	static const int IsSendInputVisionRowAndColumnBeforeToFirstPositionDone = 80001;
+
+	static const int StartSetInputTableVacuumOff = 90002;
+	static const int IsSetInputTableVacuumOffDone = 90003;
+	////move to different first output position to check empty
+
+	static const int StartSendInputVisionRowAndColumn = 100;
+	static const int IsSendInputVisionRowAndColumnDone = 101;
+
+	//static const int IsInputVisionLearnUnit = 3000;
+	//static const int StartLearnInputVisionAtInputPosition = 3001;
+	//static const int IsLearnInputVisionAtInputPositionDone = 3002;
+	//static const int StartMoveInputTrayTableXYVisionZAxisToTeachVision = 3003;
+	//static const int IsMoveInputTrayTableXYVisionZAxisToTeachVisionDone = 3004;
+	//static const int StopMoveInputTrayTableXYVisionZAxisToTeachVision = 3005;
+	//static const int IsStopMoveInputTrayTableXYVisionZAxisToTeachVisionDone = 3006;
+
+	static const int StartInputVisionSOV = 102;
+	//static const int IsInputVisionStart = 103;
+	static const int IsInputVisionDone = 104;
+
+	static const int IsInputAdditionalRequiredMoveAndSnap = 1040;
+	static const int InputVisionReadyForAdditionalFocusPosition = 1041;
+	static const int StartMoveInputVisionZAxisToAdditionalPosition = 1042;
+	static const int IsMoveInputVisionZAxisToAdditionalPositionDone = 1043;
+	static const int StopMoveInputVisionAxisToAdditionalPosition = 1044;
+	static const int IsStopMoveInputVisionZAxisToAdditionalPositionDone = 1045;
+	static const int IsSendInputVisionRowAndColumnToAdditionalPositionDone = 1046;
+	static const int StartInputVisionAdditionalSOV = 1047;
+	static const int IsInputVisionAdditionalStart = 1048;
+	static const int IsInputVisionAdditionalGrabDone = 1049;
+	static const int IsInputVisionAdditionalEOVDone = 105;
+
+	static const int CheckInputUnitPresent = 106;
+
+	static const int AdjustOffsetInput = 1000;
+	static const int StartMoveOffsetInput = 1001;
+	static const int IsMoveOffsetInputDone = 1002;
+	static const int StopMoveOffsetInput = 1003;
+	static const int IsStopMoveOffsetInputDone = 1004;
+
+	static const int SetNextUnitInput = 1005;
+
+	static const int StartSendInputVisionRowAndColumnBeforeToNextPosition = 80004;
+
+	static const int StartMoveInputTrayTableXYAxisToNextPosition = 140;
+	static const int IsMoveInputTrayTableXYAxisToNextPositionDone = 141;
+	static const int StopMoveInputTrayTableXYAxisToNextPosition = 142;
+	static const int IsStopMoveInputTrayTableXYAxisToNextPositionDone = 143;
+
+	static const int IsSendInputVisionRowAndColumnBeforeToNextPositionDone = 80005;
+	static const int CheckEventToEnsurePickAndPlaceHaveMoveAway = 80007;
+	static const int CheckEnsureInputLightingCylinderExtend = 80008;
+	//Input tray sequence
+	static const int CheckTotalOutputUnitsDone = 80006;
+
+	//--Input tray sequence
+
+	static const int SetUnitReadyToBePicked = 137;
+	static const int WaitingUnitToBePicked = 138;
+
+	//static const int SetInputPreProductionPosition = 105;//loop to search first unit for input tray,  if empty goto  StartMoveTrayTableXYAxisToUnloadingPosition
+
+	//static const int IsPickAndPlaceModuleAway = 139;//goto StartVisionSOV
+
+	static const int StartSendInputVisionRowAndColumnBeforeToPreProductionPosition = 80002;
+	static const int StartMoveInputTrayTableXYAxisToPreProductionPosition = 106;
+	static const int IsMoveInputTrayTableXYAxisToPreProductionPositionDone = 107;
+	static const int StopMoveInputTrayTableXYAxisToPreProductionPosition = 108;
+	static const int IsStopMoveInputTrayTableXYAxisToPreProductionPositionDone = 109;
+	static const int IsSendInputVisionRowAndColumnBeforeToPreProductionPositionDone = 80003;
+
+
+#pragma region Unloading
+	static const int StartMoveInputTrayTableXYAxisToUnloadingPosition = 144;
+	static const int IsMoveInputTrayTableXYAxisToUnloadingPositionDone = 145;
+	static const int StopMoveInputTrayTableXYAxisToUnloadingPosition = 146;
+	static const int IsStopMoveInputTrayTableXYAxisToUnloadingPositionDone = 147;
+
+	static const int StartMoveInputTrayTableZAxisToSingulationPositionForUnloading = 148;
+	static const int IsMoveInputTrayTableZAxisToSingulationPositionForUnloadingDone = 149;
+	static const int StopMoveInputTrayTableZAxisToSingulationPositionForUnloading = 150;
+	static const int IsStopMoveInputTrayTableZAxisToSingulationPositionForUnloadingDone = 151;
+
+	static const int InputUnloadingStackerUnlockCylinderUnlockForUnloading = 152;
+	static const int IsInputUnloadingStackerUnlockCylinderUnlockForUnloading = 153;
+
+	static const int StartMoveInputTrayTableZAxisToUnloadingPosition = 154;
+	static const int IsMoveInputTrayTableZAxisToUnloadingPositionDone = 155;
+	static const int StopMoveInputTrayTableZAxisToUnloadingPosition = 156;
+	static const int IsStopMoveInputTrayTableZAxisToUnloadingPositionDone = 157;
+
+	static const int InputUnloadingStackerUnlockCylinderLockForUnloading = 158;
+	static const int IsInputUnloadingStackerUnlockCylinderLockForUnloading = 159;
+
+	static const int StartSetInputTableVacuumOffDuringUnloading = 90004;
+	static const int IsSetInputTableVacuumOffDuringUnloadingDone = 90005;
+
+	static const int StartMoveInputTrayTableZAxisToDownPositionAfterUnloading = 160;
+	static const int IsMoveInputTrayTableZAxisToDownPositionDoneAfterUnloading = 161;
+	static const int StopMoveInputTrayTableZAxisToDownPositionAfterUnloading = 162;
+	static const int IsStopMoveInputTrayTableZAxisToDownPositionDoneAfterUnloading = 163;
+#pragma endregion
+
+	//do unloading
+	static const int CheckCurrentInputLotDone = 19999;
+	static const int IsUpdateNewLoneDone = 20000;
+
+	
+	static const int IsSendVisionInputS2EndTrayDone=2001;
+
+	static const int IsInputLoadingStackerEmpty = 164;
+
+	static const int IsCurrentLotAllProcessed = 764332;
+
+	static const int IsUpdateMESLotDataDone = 764333;
+
+	static const int IsNewLotOrEndLot = 7654321;
+
+	static const int IsUpdateDataDone = 123456789;
+
+	static const int IsSendEndLotDone = 123456;
+
+	static const int IsSendVisionInputS2NewLot = 2002;
+
+	static const int IsSendOutputTrayNoDone = 2004;
+	static const int IsSendVisionInputS2EndTrayDoneDuringJobStop = 2003;
+	//Post production
+	//input
+	static const int SendVisionInputEndLotDuringJobStop = 10000;
+	static const int SendVisionInputEndTrayDuringJobStop = 10001;
+	static const int IsSendVisionInputEndTrayDuringJobStopDone = 10002;
+	static const int WaitPickAndPlaceToPlaceDuringPostProduction = 200;
+
+	static const int IsUnloadTrayOutOrRemainTray = 250;
+	static const int IsUnloadTrayOutOrRemainTrayDone = 251;
+
+	static const int StartMoveInputTrayTableXYAxisToLoadingPositionDuringPostProduction = 201;
+	static const int IsMoveInputTrayTableXYAxisToLoadingPositionDuringPostProductionDone = 202;
+	static const int StopMoveInputTrayTableXYAxisToLoadingPositionDuringPostProduction = 203;
+	static const int IsStopMoveInputTrayTableXYAxisToLoadingPositionDuringPostProductionDone = 204;
+
+	static const int EndOfSequence = 999;
+};
+
+/*class OutputTrayTableSequenceNo
+{
+public:
+	static const int WaitingToReceiveEventStartOutputAndRejectTrayTableSequence = 0;
+
+	static const int IsOutputTrayTableZAxisAtDownPosition = 1;
+
+	static const int IsOutputTrayTableReady = 2;//check present
+
+	static const int StartMoveOutputTrayTableXYAxisToLoadingPosition = 3;
+	static const int IsMoveOutputTrayTableXYAxisToLoadingPositionDone = 4;
+	static const int StopMoveOutputTrayTableXYAxisToLoadingPosition = 5;
+	static const int IsStopMoveOutputTrayTableXYAxisToLoadingPositionDone = 6;
+
+	static const int StartMoveOutputTrayTableZAxisToLoadingPosition = 7;
+	static const int IsMoveOutputTrayTableZAxisToLoadingPositionDone = 8;
+	static const int StopMoveOutputTrayTableZAxisToLoadingPosition = 9;
+	static const int IsStopMoveOutputTrayTableZAxisToLoadingPositionDone = 10;
+
+	static const int OutputLoadingStackerUnlockCylinderUnlock = 11;
+	static const int IsOutputLoadingStackerUnlockCylinderUnlock = 12;
+
+	static const int StartMoveOutputTrayTableZAxisToSingulationPosition = 13;
+	static const int IsMoveOutputTrayTableZAxisToSingulationPositionDone = 14;
+	static const int StopMoveOutputTrayTableZAxisToSingulationPosition = 15;
+	static const int IsStopMoveOutputTrayTableZAxisToSingulationPositionDone = 16;
+
+	static const int OutputLoadingStackerUnlockCylinderLock = 17;
+	static const int IsOutputLoadingStackerUnlockCylinderLock = 18;
+
+	static const int StartMoveOutputTrayTableZAxisToDownPosition = 19;
+	static const int IsMoveOutputTrayTableZAxisToDownPositionDone = 20;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionAfterTrayNotPresent = 21;
+	static const int CheckIsTrayPresentOnOutputTrayTableDuringDown = 22;
+	static const int StopMoveOutputTrayTableZAxisToDownPosition = 23;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionDone = 24;
+
+	static const int IsRejectTrayTableReady = 25;
+
+	static const int StartMoveRejectTrayTableXYAxisToManualLoadUnloadPosition = 26;
+	static const int IsMoveRejectTrayTableXYAxisToManualLoadUnloadPositionDone = 27;
+	static const int StopMoveRejectTrayTableXYAxisToManualLoadUnloadPosition = 28;
+	static const int IsStopMoveRejectTrayTableXYAxisToManualLoadUnloadPositionDone = 29;
+	static const int IsOperatorFillRejectTray = 30;
+
+	static const int StartMoveOutputTrayTableXYAxisToFirstPosition = 31;
+	static const int IsMoveOutputTrayTableXYAxisToFirstPositionDone = 32;
+	static const int StopMoveOutputTrayTableXYAxisToFirstPosition = 33;
+	static const int IsStopMoveOutputTrayTableXYAxisToFirstPositionDone = 34;
+
+	////move to different first output position to check empty
+
+	static const int StartSendOutputVisionOutputOrRejectRowAndColumn = 100;
+	static const int IsSendOutputVisionRowAndColumnDone = 101;
+
+	static const int StartOutputVisionSOV = 102;
+	static const int IsOutputVisionStart = 103;
+	static const int IsOutputVisionDone = 104;
+
+	static const int IsSendOutputVisionRejectRowAndColumnDone = 105;
+	static const int StartOutputVisionRejectSOV = 106;
+	static const int IsOutputVisionRejectStart = 107;
+	static const int IsOutputVisionRejectDone = 108;
+
+	static const int SetOutputPreProductionPosition = 109;//loop to search first empty for output tray and reject tray, if full goto StartMoveOutputTrayTableXYAxisToManualLoadUnloadPosition
+
+	static const int StartMoveOutputTrayTableXYAxisToPreProductionPosition = 110;
+	static const int IsMoveOutputTrayTableXYAxisToPreProductionPositionDone = 111;
+	static const int StopMoveOutputTrayTableXYAxisToPreProductionPosition = 112;
+	static const int IsStopMoveOutputTrayTableXYAxisToPreProductionPositionDone = 113;
+
+	static const int SetTableToBePlaced = 114;
+
+	static const int StartMoveOutputTrayTableXYAxisToTableToBePlacePosition = 115;
+	static const int IsMoveOutputTrayTableXYAxisToTableToBePlacePositionDone = 116;
+	static const int StopMoveOutputTrayTableXYAxisToTableToBePlacePosition = 117;
+	static const int IsStopMoveOutputTrayTableXYAxisToTableToBePlacePositionDone = 118;
+
+	static const int WaitingUnitToBePlaced = 119;
+	static const int IsPickAndPlaceModuleAwayAfterPlace = 120;
+	//Output tray sequence	
+	static const int StartSendPostVisionRC = 121;
+	static const int IsSendPostVisionRCDone = 122;
+	static const int StartPostVisionSOV = 123;
+	static const int IsPostVisionStart = 124;
+	static const int IsPostVisionDone = 125;
+	static const int CheckPostVisionResult = 126;
+
+	static const int SetOutputUnitReadyToBePickedForOffset = 127;
+	static const int WaitOutputUnitToBePlacedAfterOffset = 128;
+
+	static const int StartPostVisionInspectionSOV = 129;
+	static const int IsPostVisionInspectionStart = 130;
+	static const int IsPostVisionInspectionDone = 131;
+	static const int CheckPostVisionInspectionResult = 132;
+
+	static const int SetRejectUnitReadyToBePicked = 133;
+	static const int IsRejectUnitReadyPickedDone = 134;
+
+	static const int SetNextRejectUnitParameter = 135;
+
+	static const int StartMoveOutputTrayTableXYAxisToRejectPosition = 136;
+	static const int IsMoveOutputTrayTableXYAxisToRejectPositionDone = 137;
+	static const int StopMoveOutputTrayTableXYAxisToRejectPosition = 138;
+	static const int IsStopMoveOutputTrayTableXYAxisToRejectPositionDone = 139;
+
+	static const int SetRejectUnitReadyToBePlaced = 140;
+	static const int IsRejectUnitReadyPlacedDone = 141;
+	static const int IsPickAndPlaceAwayAfterPlacedRejectUnit = 142;
+
+	static const int StartSendPostVisionRejectRC = 143;
+	static const int IsSendPostVisionRejectRCDone = 144;
+	static const int StartPostVisionRejectSOV = 145;
+	static const int IsPostVisionRejectStart = 146;
+	static const int IsPostVisionRejectDone = 147;
+	static const int CheckPostVisionRejectResult = 148;
+
+	static const int SetRejectUnitToBePickedForOffset = 149;
+	static const int WaitRejectUnitToBePlacedAfterOffset = 150;
+	//--Output tray sequence
+
+	static const int SetNextRejectUnitParameterAfterRejectPlaced = 151;//if reject tray full goto StartMoveTrayTableXYAxisToManualLoadUnloadPosition, else SetNextUnitParameter
+	
+	//Output tray sequence
+	//if reject tray full
+	static const int StartMoveOutputTrayTableXYAxisToManualLoadUnloadPosition = 152;
+	static const int IsMoveOutputTrayTableXYAxisToManualLoadUnloadPositionDone = 153;
+	static const int StopMoveOutputTrayTableXYAxisToManualLoadUnloadPosition = 154;
+	static const int IsStopMoveOutputTrayTableXYAxisToManualLoadUnloadPositionDone = 155;
+	static const int IsOperatorReplaceRejectTrayTableDone = 156;
+
+	static const int SetNextRejectUnitParameterAfterReplaceTray = 157;
+	static const int StartMoveOutputTrayTableXYAxisToNextRejectPosition = 158;
+	static const int IsMoveOutputTrayTableXYAxisToNextRejectPositionDone = 159;
+	static const int StopMoveOutputTrayTableXYAxisToNextRejectPosition = 160;
+	static const int IsStopMoveOutputTrayTableXYAxisToNextRejectPositionDone = 161;
+
+	static const int StartSendPreVisionRejectRC = 162;
+	static const int IsSendPreVisionRejectRCDone = 163;
+	static const int StartPreVisionRejectSOV = 164;
+	static const int IsPreVisionRejectStart = 165;
+	static const int IsPreVisionRejectDone = 166;
+	static const int CheckPreVisionRejectResult = 167;
+
+	//Update output report
+	static const int SetEventToUpdateReport = 168;
+	static const int IsUpdateReportDOne = 169;
+	//--Output tray sequence
+
+	static const int SetNextUnitParameter = 170;
+
+	static const int StartMoveOutputTrayTableXYAxisToNextPosition = 171;
+	static const int IsMoveOutputTrayTableXYAxisToNextPositionDone = 172;
+	static const int StopMoveOutputTrayTableXYAxisToNextPosition = 173;
+	static const int IsStopMoveOutputTrayTableXYAxisToNextPositionDone = 174;
+
+	static const int StartSendPreVisionRowAndColumn = 175;
+	static const int IsSendPreVisionRowAndColumnDone = 176;
+	static const int StartPreVisionOutputSOV = 177;
+	static const int IsPreVisionOutputSOVStart = 178;
+	static const int IsPreVisionOutputSOVDone = 179;
+	static const int CheckPreVisionOutputResult = 180;
+
+	static const int SetOutputNextProductionPosition = 181;
+
+	static const int StartMoveOutputTrayTableXYAxisToNextProductionPosition = 182;
+	static const int IsMoveOutputTrayTableXYAxisToNextProductionPositionDone = 183;
+	static const int StopMoveOutputTrayTableXYAxisToNextProductionPosition = 184;
+	static const int IsStopMoveOutputTrayTableXYAxisToNextProductionPositionDone = 185;
+
+	//do unloading
+	static const int StartMoveOutputTrayTableXYAxisToUnloadingPosition = 186;
+	static const int IsMoveOutputTrayTableXYAxisToUnloadingPositionDone = 187;
+	static const int StopMoveOutputTrayTableXYAxisToUnloadingPosition = 188;
+	static const int IsStopMoveOutputTrayTableXYAxisToUnloadingPositionDone = 189;
+
+	static const int StartMoveOutputTrayTableZAxisToSingulationPositionForUnloading = 190;
+	static const int IsMoveOutputTrayTableZAxisToSingulationPositionForUnloadingDone = 191;
+	static const int StopMoveOutputTrayTableZAxisToSingulationPositionForUnloading = 192;
+	static const int IsStopMoveOutputTrayTableZAxisToSingulationPositionForUnloadingDone = 193;
+
+	static const int OutputUnloadingStackerUnlockCylinderUnlockForUnloading = 194;
+	static const int IsOutputUnloadingStackerUnlockCylinderUnlockForUnloading = 195;
+
+	static const int StartMoveOutputTrayTableZAxisToUnloadingPosition = 196;
+	static const int IsMoveOutputTrayTableZAxisToUnloadingPositionDone = 197;
+	static const int StopMoveOutputTrayTableZAxisToUnloadingPosition = 198;
+	static const int IsStopMoveOutputTrayTableZAxisToUnloadingPositionDone = 199;
+
+	static const int OutputUnloadingStackerUnlockCylinderLockForUnloading = 200;
+	static const int IsOutputUnloadingStackerUnlockCylinderLockForUnloading = 201;
+
+	static const int StartMoveOutputTrayTableZAxisToDownPositionAfterUnloading = 202;
+	static const int IsMoveOutputTrayTableZAxisToDownPositionDoneAfterUnloading = 203;
+	static const int StopMoveOutputTrayTableZAxisToDownPositionAfterUnloading = 204;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionDoneAfterUnloading = 205;//goto StartMoveOutputTrayTableXYAxisToLoadingPosition
+
+	//Post production
+
+	//output
+	static const int StartMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProduction = 500;
+	static const int IsMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProductionDone = 501;
+	static const int StopMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProduction = 502;
+	static const int IsStopMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProductionDone = 503;
+
+	static const int EndOfSequence = 999;
+};*/
+
+class OutputTrayTableSequenceNo
+{
+public:
+	static const int WaitingToReceiveEventStartOutputAndRejectTrayTableSequence = 0;
+	static const int IsOutputTrayTableZAxisAtDownPosition = 1;
+	static const int IsOutputTrayTableReady = 2;//check present
+	static const int IsSendVisionOutputTrayNoDone = 3;
+	static const int IsRejectTrayTableReady = 4;
+	static const int IsSendVisionRejectTrayNoDone = 5;
+
+#pragma region Loading
+	static const int IsSetOutputTableVacuumOnDoneBeforeLoadingPosition = 2000;
+	static const int StartMoveOutputTrayTableXYAxisToLoadingPosition = 20;
+	static const int IsMoveOutputTrayTableXYAxisToLoadingPositionDone = 21;
+	static const int StopMoveOutputTrayTableXYAxisToLoadingPosition = 22;
+	static const int IsStopMoveOutputTrayTableXYAxisToLoadingPositionDone = 23;
+
+	static const int StartMoveOutputTrayTableZAxisToLoadingPosition = 24;
+	static const int IsMoveOutputTrayTableZAxisToLoadingPositionDone = 25;
+	static const int StopMoveOutputTrayTableZAxisToLoadingPosition = 26;
+	static const int IsStopMoveOutputTrayTableZAxisToLoadingPositionDone = 27;
+
+	static const int OutputLoadingStackerUnlockCylinderUnlock = 28;
+	static const int IsOutputLoadingStackerUnlockCylinderUnlock = 29;
+
+	static const int StartMoveOutputTrayTableZAxisToSingulationPosition = 30;
+	static const int IsMoveOutputTrayTableZAxisToSingulationPositionDone = 31;
+	static const int StopMoveOutputTrayTableZAxisToSingulationPosition = 32;
+	static const int IsStopMoveOutputTrayTableZAxisToSingulationPositionDone = 33;
+
+	static const int OutputLoadingStackerUnlockCylinderLock = 34;
+	static const int IsOutputLoadingStackerUnlockCylinderLock = 35;
+
+	static const int StartMoveOutputTrayTableZAxisToDownPosition = 36;
+	static const int IsMoveOutputTrayTableZAxisToDownPositionDone = 37;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionAfterTrayNotPresent = 38;
+	static const int CheckIsTrayPresentOnOutputTrayTableDuringDown = 39;
+	static const int StopMoveOutputTrayTableZAxisToDownPosition = 40;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionDone = 41;
+#pragma endregion
+
+	static const int StartMoveOutputTrayTableXYAxisToCenterPosition = 50;
+	static const int IsMoveOutputTrayTableXYAxisToCenterPositionDone = 51;
+	static const int StopMoveOutputTrayTableXYAxisToCenterPosition = 52;
+	static const int IsStopMoveOutputTrayTableXYAxisToCenterPositionDone = 53;
+
+	static const int WaitForInputResultDone = 57;
+	static const int ReadTableToBePlaced = 54;
+	static const int IsReadTableToBePlacedDone = 55;
+	static const int CheckIsMissingUnit = 56;
+
+	static const int SetFirstPosition = 60;
+	static const int SetNextUnitOutput = 62;
+	static const int SetNextUnitReject = 63;
+
+	static const int StartSendOutputVisionOutputRowAndColumn = 70;
+	static const int IsSendOutputVisionOutputRowAndColumnDone = 71;
+
+	static const int StartMoveOutputTrayTableXYAxisToSetPosition = 75;
+	static const int IsMoveOutputTrayTableXYAxisToSetPositionDone = 76;
+	static const int DelayAfterMoveOutputTrayTableXYAxisToSetPositionDone = 76000;
+	static const int StopMoveOutputTrayTableXYAxisToSetPosition = 77;
+	static const int IsStopMoveOutputTrayTableXYAxisToSetPositionDone = 78;
+
+	static const int StartRetrySendOutputVisionOutputOrRejectRowAndColumn = 79;
+	static const int IsRetrySendOutputVisionRowAndColumnDone = 80;
+	static const int IsRetrySendOutputVisionRejectRowAndColumnDone = 81;
+
+	static const int DelayBeforeOutputVisionSOV = 89;
+	static const int StartOutputVisionSOV = 90;
+	static const int DelayAfterOutputVisionSOV = 91;
+	static const int IsOutputVisionDone = 92;
+
+	static const int DelayBeforeOutputVisionRejectSOV = 93;
+	static const int StartOutputVisionRejectSOV = 94;
+	static const int DelayAfterOutputVisionRejectSOV = 95;
+	static const int IsOutputVisionRejectDone = 96;
+
+	static const int AdjustReturnOffset = 800;
+	static const int StartMoveReturnOffset = 801;
+	static const int IsMoveReturnOffsetDone = 802;
+	static const int StopMoveReturnOffset = 803;
+	static const int IsStopMoveReturnOffsetDone = 804;
+
+	static const int AdjustOffset = 100;
+	static const int StartMoveOffset = 101;
+	static const int IsMoveOffsetDone = 102;
+	static const int StopMoveOffset = 103;
+	static const int IsStopMoveOffsetDone = 104;
+
+	static const int StartPreMove = 2001;
+	static const int IsPreMoveDone = 2002;
+	static const int StopPreMove = 2003;
+	static const int IsStopPreMoveDone = 2004;
+
+	static const int SetOutputPreProductionPosition = 109;//loop to search first empty for output tray and reject tray, if full goto StartMoveOutputTrayTableXYAxisToManualLoadUnloadPosition
+
+	static const int SetTableToBePlaced = 114;
+
+	static const int IsSetTableToBePlacedDone = 878787;
+
+	static const int WaitingUnitToBePlaced = 120;
+	static const int IsPickAndPlaceModuleAwayAfterPlace = 121;
+
+	static const int StartSendPostOutputVisionOutputOrRejectRowAndColumn = 130;
+	static const int IsSendPostOutputVisionRowAndColumnDone = 131;
+	static const int IsSendPostOutputVisionRejectRowAndColumnDone = 132;
+	static const int DelayBeforePostOutputVisionSOV = 133;
+	static const int StartPostOutputVisionSOV = 134;
+	static const int DelayAfterPostOutputVisionSOV = 135;
+	static const int IsPostOutputVisionDone = 136;
+	static const int DelayBeforePostOutputVisionRejectSOV = 137;
+	static const int StartPostOutputVisionRejectSOV = 138;
+	static const int DelayAfterPostOutputVisionRejectSOV = 139;
+	static const int IsPostOutputVisionRejectDone = 140;
+
+	static const int CheckPostVisionResult = 141;
+
+	//Update output report
+	static const int WaitOutputTakeInfoDone = 150;
+	static const int IsUpdateReportDOne = 151;
+
+#pragma region Unloading
+	static const int StartMoveOutputTrayTableXYAxisToUnloadingPosition = 168;
+	static const int IsMoveOutputTrayTableXYAxisToUnloadingPositionDone = 169;
+	static const int StopMoveOutputTrayTableXYAxisToUnloadingPosition = 170;
+	static const int IsStopMoveOutputTrayTableXYAxisToUnloadingPositionDone = 171;
+
+	static const int StartMoveOutputTrayTableZAxisToSingulationPositionForUnloading = 172;
+	static const int IsMoveOutputTrayTableZAxisToSingulationPositionForUnloadingDone = 173;
+	static const int StopMoveOutputTrayTableZAxisToSingulationPositionForUnloading = 174;
+	static const int IsStopMoveOutputTrayTableZAxisToSingulationPositionForUnloadingDone = 175;
+
+	static const int IsSetOutputTableVacuumOffnDoneBeforeUnloadingPosition = 1760;
+	static const int OutputUnloadingStackerUnlockCylinderUnlockForUnloading = 176;
+	static const int IsOutputUnloadingStackerUnlockCylinderUnlockForUnloading = 177;
+
+	static const int StartMoveOutputTrayTableZAxisToUnloadingPosition = 178;
+	static const int IsMoveOutputTrayTableZAxisToUnloadingPositionDone = 179;
+	static const int StopMoveOutputTrayTableZAxisToUnloadingPosition = 180;
+	static const int IsStopMoveOutputTrayTableZAxisToUnloadingPositionDone = 181;
+
+	static const int OutputUnloadingStackerUnlockCylinderLockForUnloading = 182;
+	static const int IsOutputUnloadingStackerUnlockCylinderLockForUnloading = 183;
+
+	static const int StartMoveOutputTrayTableZAxisToDownPositionAfterUnloading = 184;
+	static const int IsMoveOutputTrayTableZAxisToDownPositionDoneAfterUnloading = 185;
+	static const int StopMoveOutputTrayTableZAxisToDownPositionAfterUnloading = 186;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionDoneAfterUnloading = 187;
+#pragma endregion
+	static const int StartMoveRejectTrayTableXYAxisToManualLoadUnloadPosition = 200;
+	static const int IsMoveRejectTrayTableXYAxisToManualLoadUnloadPositionDone = 201;
+	static const int StopMoveRejectTrayTableXYAxisToManualLoadUnloadPosition = 202;
+	static const int IsStopMoveRejectTrayTableXYAxisToManualLoadUnloadPositionDone = 203;
+	static const int IsOperatorReplaceRejectTrayTableDone = 156;
+	static const int IsSendVisionRejectEndTrayDone = 206;
+
+	static const int IsOperatorFillRejectTray = 204;
+	static const int IsSendVisionRejectTrayNo1Done = 207;
+
+	static const int IsSendVisionOutputEndTrayDone = 250;
+	static const int IsOutputLoadingStackerEmpty = 251;
+
+	static const int StartMoveOutputTrayTableXYAxisToLoadingPositionDuringProduction = 252;
+	static const int IsMoveOutputTrayTableXYAxisToLoadingPositionDuringProductionDone = 253;
+	static const int StopMoveOutputTrayTableXYAxisToLoadingPositionDuringProduction = 254;
+	static const int IsStopMoveOutputTrayTableXYAxisToLoadingPositionDuringProductionDone = 255;
+
+	static const int StartMoveOutputTrayTableZAxisToLoadingPositionDuringProduction = 256;
+	static const int IsMoveOutputTrayTableZAxisToLoadingPositionDuringProductionDone = 257;
+	static const int StopMoveOutputTrayTableZAxisToLoadingPositionDuringProduction = 258;
+	static const int IsStopMoveOutputTrayTableZAxisToLoadingPositionDuringProductionDone = 259;
+
+	static const int OutputLoadingStackerUnlockCylinderUnlockDuringProduction = 260;
+	static const int IsOutputLoadingStackerUnlockCylinderUnlockDuringProduction = 261;
+
+	static const int StartMoveOutputTrayTableZAxisToSingulationPositionDuringProduction = 262;
+	static const int IsMoveOutputTrayTableZAxisToSingulationPositionDuringProductionDone = 263;
+	static const int StopMoveOutputTrayTableZAxisToSingulationPositionDuringProduction = 264;
+	static const int IsStopMoveOutputTrayTableZAxisToSingulationPositionDuringProductionDone = 265;
+
+	static const int OutputLoadingStackerUnlockCylinderLockDuringProduction = 266;
+	static const int IsOutputLoadingStackerUnlockCylinderLockDuringProduction = 267;
+
+	static const int StartMoveOutputTrayTableZAxisToDownPositionDuringProduction = 268;
+	static const int IsMoveOutputTrayTableZAxisToDownPositionDuringProductionDone = 269;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionAfterTrayNotPresentDuringProduction = 270;
+	static const int CheckIsTrayPresentOnOutputTrayTableDuringDownDuringProduction = 271;
+	static const int StopMoveOutputTrayTableZAxisToDownPositionDuringProduction = 272;
+	static const int IsStopMoveOutputTrayTableZAxisToDownPositionDuringProductionDone = 273;
+
+	static const int IsSendOutputVisionTrayNoDoneDuringProduction = 274;
+	static const int StartSendOutputVisionOutputOrRejectRowAndColumnBeforeToFirstPositionDuringProduction = 275;
+
+	static const int StartMoveOutputTrayTableXYAxisToFirstPositionDuringProduction = 276;
+	static const int IsMoveOutputTrayTableXYAxisToFirstPositionDuringProductionDone = 277;
+	static const int StopMoveOutputTrayTableXYAxisToFirstPositionDuringProduction = 278;
+	static const int IsStopMoveOutputTrayTableXYAxisToFirstPositionDuringProductionDone = 279;
+
+	static const int IsSendOutputVisionOutputOrRejectRowAndColumnBeforeToAssignedPositionDuringProductionDone = 280;
+
+	static const int StartOutputVisionSOVDuringProduction = 281;
+	static const int IsOutputVisionDuringProductionDone = 282;
+
+	static const int StartOutputVisionRejectSOVDuringProduction = 283;
+	static const int IsOutputVisionRejectDuringProductionDone = 284;
+	static const int SetOutputPreProductionPositionDuringProduction = 285;
+
+	//Post production
+
+	//output
+	static const int SendOutputVisionEndLotDuringJobStop = 10000;
+	static const int SendOutputVisionEndTrayDuringJobStop = 10001;
+	static const int IsSendOutputVisionEndTrayDuringJobStop = 10002;
+
+	static const int StartMoveOutputTrayTableXYAxisToUnloadingPositionDuringPostProduction = 10005;
+	static const int IsMoveOutputTrayTableXYAxisToUnloadingPositionDuringPostProductionDone = 10006;
+	static const int StopMoveOutputTrayTableXYAxisToUnloadingPositionDuringPostProduction = 10007;
+	static const int IsStopMoveOutputTrayTableXYAxisToUnloadingPositionDuringPostProductionDone = 10008;
+	static const int StartMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProduction = 500;
+	static const int IsMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProductionDone = 501;
+	static const int StopMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProduction = 502;
+	static const int IsStopMoveOutputTrayTableXYAxisToManualLoadUnloadPositionPostProductionDone = 503;
+	static const int IsRejectTrayRemovedPostProduction = 504;
+
+
+	//for manual seq
+
+	static const int StartMoveOutputTrayTableXYAxisToFirstPosition = 600;
+	static const int IsMoveOutputTrayTableXYAxisToFirstPositionDone = 601;
+	static const int StopMoveOutputTrayTableXYAxisToFirstPosition = 602;
+	static const int IsStopMoveOutputTrayTableXYAxisToFirstPositionDone = 603;
+
+	static const int StartSendOutputVisionOutputOrRejectRowAndColumnBeforeToNextPosition = 605;
+	static const int StartMoveOutputTrayTableXYAxisToNextPosition = 606;
+	static const int IsMoveOutputTrayTableXYAxisToNextPositionDone = 607;
+	static const int StopMoveOutputTrayTableXYAxisToNextPosition = 608;
+	static const int IsStopMoveOutputTrayTableXYAxisToNextPositionDone = 609;
+
+	static const int StartSendOutputVisionOutputOrRejectRowAndColumnBeforeToFirstPosition = 700;
+	static const int IsSendOutputVisionOutputOrRejectRowAndColumnBeforeToAssignedPositionDone = 701;
+	static const int StartSendOutputVisionOutputOrRejectRowAndColumn = 702;
+	static const int IsSendOutputVisionRowAndColumnDone = 703;
+
+
+
+	static const int EndOfSequence = 999;
+};
+
+class PickAndPlaceSequenceNo
+{
+public:
+	//PreProduction
+	static const int WaitingToReceiveEventStartPickAndPlaceSequence = 0;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToStandbyPosition = 1;
+	static const int SelectPickAndPlaceStandbyStation = 2;//h1 bottom/s3 and h2 s3/bottom, if disable go parking Pos
+
+	static const int CheckPickAndPlaceModuleSafeToMoveToStandbyPosition = 3;
+	static const int StartMovePickAndPlaceXYAxisToStandbyPosition = 4;
+	static const int IsMovePickAndPlaceXYAxisToStandbyPositionDone = 5;
+	static const int StopMovePickAndPlaceXYAxisToStandbyPosition = 6;
+	static const int IsStopMovePickAndPlaceXYAxisToStandbyPositionDone = 7;
+	//Disable Station
+	static const int IsMovePickAndPlaceYAxisToParkingPositionDone = 2000;
+	static const int StopMovePickAndPlaceYAxisToParkingPosition = 2001;
+	static const int IsStopMovePickAndPlaceYAxisToParkingPositionDone = 2002;
+	static const int StartMovePickAndPlaceXAxisToParkingPosition = 2003;
+	static const int IsMovePickAndPlaceXAxisToParkingPositionDone = 2004;
+	static const int StopMovePickAndPlaceXAxisToParkingPosition = 2005;
+	static const int IsStopMovePickAndPlaceXAxisToParkingPositionDone = 2006;
+	//Set event once PNP to standby done
+	static const int SetEventPickAndPlaceToStandbyPositionDone = 8;
+
+	//for output
+	static const int WaitingToReceiveEventStartPickAndPlaceToPickOrPlacePosition = 9;
+	static const int CheckPickAndPlaceModuleSafeToMoveToPickOrPlacePosition = 10;//h1 input and h2 output
+	static const int StartMovePickAndPlaceXYAxisToPickOrPlacePosition = 11;
+	static const int IsMovePickAndPlaceXYAxisToPickOrPlacePositionDone = 12;
+
+	static const int CheckIsPickAndPlaceYAxisReadyToMovePositionCurve = 5000;
+	static const int CheckIsPickAndPlaceYAxisMovePositionCurveForSnap = 5001;
+
+	static const int StopMovePickAndPlaceXYAxisToPickOrPlacePosition = 13;
+	static const int IsStopMovePickAndPlaceXYAxisToPickOrPlacePositionDone = 14;
+	static const int SetEventPickAndPlaceToPickOrPlacePositionDone = 15;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToPickPosition = 100;
+	static const int CheckPickAndPlaceModuleSafeToMoveToPickPosition = 101;
+	static const int StartMovePickAndPlaceXYAxisToPickPosition = 102;
+
+	static const int CheckIsPickAndPlaceYAxisReadyMoveToPickCurvePosition = 5020;
+
+	static const int MoveYToStanbyBeforeMoveXToInput = 5030;
+	static const int IsMoveYToStanbyBeforeMoveXToInputDone = 5031;
+	static const int StopMoveYToStanbyBeforeMoveXToInput = 5032;
+	static const int IsStopMoveYToStanbyBeforeMoveXToInputDone = 5033;
+
+	static const int MoveXAndThetaToInput = 5040;
+	static const int IsMoveXAndThetaToInputDone = 5041;
+	static const int StopMoveXAndThetaToInput = 5042;
+	static const int IsStopMoveXAndThetaToInputDone = 5043;
+
+	static const int MoveYToInputAfterMoveXToInput = 5050;
+	static const int CheckIsPickAndPlaceXAxisReadyMoveToPickCurvePositionForS2S3VisionInspection = 5051;
+	static const int IsMoveYToInputAfterMoveXToInputDone = 5052;
+	static const int StopMoveYToInputAfterMoveXToInput = 5053;
+	static const int IsStopMoveYToInputAfterMoveXToInputDone = 5054;
+	
+	static const int IsMovePickAndPlaceXYAxisToPickPositionDone = 103;
+	static const int StopMovePickAndPlaceXYAxisToPickPosition = 104;
+	static const int IsStopMovePickAndPlaceXYAxisToPickPositionDone = 105;
+
+	static const int StartMovePickAndPlaceZToPurgingPosition = 300000;
+	static const int IsMovePickAndPlaceZToPurgingPositionDone = 300001;
+	static const int StopMovePickAndPlaceZToPurgingPosition = 300002;
+	static const int IsStopMovePickAndPlaceZToPurgingPositionDone = 300003;
+
+	static const int IsInputRequirePurging = 300004;
+	static const int IsPickAndPlaceReleaseAndOffValveDone = 300005;
+	//static const int IsPickAndPlaceOffValveDone = 300002;
+
+	static const int StartMovePickAndPlaceYZToStandbyPositionAfterPurging = 300006;
+	static const int IsMovePickAndPlaceYZToStandbyPositionAfterPurgingDone = 300007;
+	static const int StopMovePickAndPlaceYZToStandbyPositionAfterPurging = 300008;
+	static const int IsStopMovePickAndPlaceYZToStandbyPositionAfterPurgingDone = 300009;
+
+	static const int IsPostProductionDone = 3000;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToOutputPositionToPick = 3001;
+	static const int CheckPickAndPlaceModuleSafeToMoveToOutputPositionToPick = 3002;
+	static const int StartMovePickAndPlaceYToStandbyPositionBeforeOutputPositionToPick = 50000;
+	static const int IsMovePickAndPlaceYToStandbyPositionBeforeOutputPositionToPickDone = 50001;
+	static const int StopMovePickAndPlaceYToStandbyPositionBeforeOutputPositionToPick = 50002;
+	static const int IsStopMovePickAndPlaceYToStandbyPositionBeforeOutputPositionToPickDone = 50003;
+	//after purging move z up before moving x, for safety purpose, if tested ok can remove
+	static const int StartMovePickAndPlaceYZToStandbyPositionBeforeOutputPositionToPick = 300010;
+	static const int IsMovePickAndPlaceYZToStandbyPositionBeforeOutputPositionToPickDone = 300011;
+	static const int StopMovePickAndPlaceYZToStandbyPositionBeforeOutputPositionToPick = 300012;
+	static const int IsStopMovePickAndPlaceYZToStandbyPositionBeforeOutputPositionToPickDone = 300013;
+
+	static const int StartMovePickAndPlaceXYZThetaAxisToOutputPositionToPick = 3003;//theta
+	static const int CheckIsPickAndPlaceYAxisReadyToMoveCurveOutputPositionToPick = 300300;//theta
+	static const int IsMovePickAndPlaceXYZThetaAxisToOutputPositionDoneToPick = 3004;
+	static const int StopMovePickAndPlaceXYZThetaAxisToOutputPositionToPick = 3005;
+	static const int IsStopMovePickAndPlaceXYZThetaAxisToOutputPositionDoneToPick = 3006;
+
+	static const int IsTrayTableReadyToPickAfterFail = 3007;
+
+	static const int StartMovePickAndPlaceZAxisToDownPlacePositionToPick = 3008;
+	static const int IsMovePickAndPlaceZAxisToDownPlacePositionDoneToPick = 3009;
+	static const int StopMovePickAndPlaceZAxisToDownPlacePositionToPick = 3010;
+	static const int IsStopMovePickAndPlaceZAxisToDownPlacePositionDoneToPick = 3011;
+	static const int IsPickAndPlaceZAxisPlaceUnitDoneToPick = 3012;
+
+	static const int StartPickAndPlaceZAxisOffVacuumForOutputPickFail = 3031;
+	static const int IsPickAndPlaceZAxisOffVacuumForOutputPickFailDone = 3032;
+	static const int StartPickAndPlaceZAxisValveOnForOutputPickFail = 3033;
+	static const int IsPickAndPlaceZAxisValveOnForOutputPickFailDone = 3034;
+	static const int IsDelayForPurgingReachedBeforeOffValveForOutputPickFail = 3037;
+	static const int IsPickAndPlaceZAxisValveOffForOutputPickFailDone = 3036;
+
+	static const int StartMovePickAndPlaceZAxisToUpPositionAfterPick = 3013;
+	static const int IsMovePickAndPlaceZAxisToUpPositionDoneAfterPick = 3014;
+	static const int StopMovePickAndPlaceZAxisToUpPositionAfterPick = 3015;
+	static const int IsStopMovePickAndPlaceZAxisToUpPositionDoneAfterPick = 3016;
+	static const int IsPickAndPlacePickZAxisAtUpPositionDoneAfterPick = 3017;
+	static const int IsUnitRemovedAfterFailPickForOutput = 900002;
+
+	static const int IsRejectTrayTableReadyToPlace = 3018;
+
+	static const int StartMovePickAndPlaceZAxisToRejectTrayDownPlacePosition = 3019;
+	static const int IsMovePickAndPlaceZAxisToRejectTrayDownPlacePositionDone = 3020;
+	static const int StopMovePickAndPlaceZAxisToRejectTrayDownPlacePosition = 3021;
+	static const int IsStopMovePickAndPlaceZAxisToRejectTrayDownPlacePositionDone = 3022;
+	static const int IsPickAndPlaceZAxisRejectTrayPlaceUnitDone = 3023;
+
+	static const int StartMovePickAndPlaceZAxisToRejectTrayUpPosition = 3024;
+	static const int IsMovePickAndPlaceZAxisToRejectTrayUpPositionDone = 3025;
+	static const int StopMovePickAndPlaceZAxisToRejectTrayUpPosition = 3026;
+	static const int IsStopMovePickAndPlaceZAxisToRejectTrayUpPositionDone = 3027;
+	static const int IsPickAndPlacePickZAxisAtRejectTrayUpPositionDone = 3028;
+
+	static const int SetEventPickAndPlacePickProcessDoneAfterPick = 3029;
+	static const int IsEventRejectTrayTableReady = 3030;//IsEventPickAndPlaceDisable
+
+	static const int IsTrayTableReadyToPick = 106;
+
+	static const int StartMovePickAndPlaceThetaAxisToDownPosition = 1070;
+	static const int IsMovePickAndPlaceThetaAxisToDownPositionDone = 1080;
+	static const int StopMovePickAndPlaceThetaAxisToDownPosition = 1090;
+	static const int IsStopMovePickAndPlaceThetaAxisToDownPositionDone = 1100;
+
+	static const int StartMovePickAndPlaceZAxisToDownPosition = 107;
+	static const int IsMovePickAndPlaceZAxisToDownPositionDone = 108;
+	static const int StopMovePickAndPlaceZAxisToDownPosition = 109;
+	static const int IsStopMovePickAndPlaceZAxisToDownPositionDone = 110;
+
+	static const int StartPickAndPlaceZAxisOffVacuumForPickFail = 13031;
+	static const int IsPickAndPlaceZAxisOffVacuumForPickFailDone = 13032;
+	static const int StartPickAndPlaceZAxisValveOnForPickFail = 13033;
+	static const int IsPickAndPlaceZAxisValveOnForPickFailDone = 13034;
+	static const int IsDelayForPurgingReachedBeforeOffValveForPickFail = 13037;
+	static const int IsPickAndPlaceZAxisValveOffForPickFailDone = 13036;
+
+	static const int IsPickAndPlacePickUnitDone = 111;
+
+	static const int StartMovePickAndPlaceZAxisToUpAndThetaToOrientationPosition = 112;//90+vision, need to rotation center offset ,will have rotation center for both pnp
+	static const int IsMovePickAndPlaceZAxisToUpAndThetaToOrientationPositionDone = 113;
+	static const int StopMovePickAndPlaceZAxisToUpAndThetaToOrientationPosition = 114;
+	static const int IsStopMovePickAndPlaceZAxisToUpAndThetaToOrientationPositionDone = 115;
+	static const int IsPickAndPlacePickUnitAtUpPositionDone = 116;
+	static const int IsUnitRemovedAfterPickFail = 900000;
+	static const int SetEventPickAndPlacePickProcessDone = 117;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToBottomAndS1Position = 200;
+	static const int CheckPickAndPlaceModuleSafeToMoveToBottomAndS1Position = 201;
+
+	static const int IsBottomS1VisionReady = 256;
+
+	static const int StartMovePickAndPlaceXYAxisToBottomPosition = 203;
+	static const int IsMovePickAndPlaceXYZThetaAxisToBottomPositionDone = 212;
+	static const int StopMovePickAndPlaceXYAxisToBottomPosition = 213;
+	static const int IsStopMovePickAndPlaceXYAxisToBottomPositionDone = 214;
+
+	static const int IsBottomVisionReceiveRCDone = 257;
+
+	static const int IsBottomVisionReadyForRetry = 258;
+	static const int StartBottomVisionSOV = 224;
+	static const int IsBottomVisionDone = 225;
+
+	static const int StartMoveOffsetByBottomResult = 2260;
+	static const int IsMoveOffsetByBottomResultDone = 2261;
+	static const int StopMoveOffsetByBottomResult = 2262;
+	static const int IsStopMoveOffsetByBottomResultDone = 2263;
+
+	static const int StartSendSetupRC = 2264;
+	static const int IsSendSetupRCDone = 2265;
+	static const int DelayBeforeSideWall1InspectionGetUnitHigh = 22660;
+	static const int StartSideWall1InspectionGetUnitHigh = 2266;
+	static const int IsSideWall1InspectionGetUnitHighDone = 2267;
+	static const int StartMovePickAndPlaceThetaAxisForS1Position = 22670;
+	static const int IsMovePickAndPlaceThetaAxisForS1PositionDone = 22671;
+	static const int StopMovePickAndPlaceThetaAxisForS1Position = 22672;
+	static const int IsStopMovePickAndPlaceThetaAxisForS1Position = 22673;
+
+	static const int StartSendS1RC = 2268;
+	static const int IsSendS1RCDone = 2269;
+	static const int DelayAfterS1AdditionalGrabDone= 22700;
+	static const int IsS1AdditionalRequiredMoveAndSnap = 2270;
+	static const int S1VisionReadyForAdditionalFocusPosition = 2271;
+	static const int StartMoveS1VisionThetaAxisToAdditionalPosition = 2272;
+	static const int IsMoveS1VisionThetaAxisToAdditionalPositionDone = 2273;
+	static const int StopMoveS1VisionThetaAxisToAdditionalPosition = 2274;
+	static const int IsStopMoveS1VisionThetaAxisToAdditionalPositionDone = 2275;
+	static const int StartS1SnapPositionNumber = 2276;
+	static const int IsS1SnapPositionNumberDone = 2277;
+	static const int DelayBeforeS1AdditionalInspectSOV = 22780;
+	static const int StartS1AdditionalInspectSOV = 2278;
+	static const int IsS1AdditionalInspectSOVDone = 2279;
+	static const int CheckS1GrabdoneAfterSOV = 2280;
+
+	static const int StartMoveOffsetBySetupOffset = 2300;
+	static const int IsMoveOffsetBySetupOffsetDone = 2301;
+	static const int StopMoveOffsetBySetupOffset = 2302;
+	static const int IsStopMoveOffsetBySetupOffsetDone = 2303;
+
+
+	static const int SetBottomEndTrayAfterProgress = 2500;
+	static const int IsBottomEndTrayAfterProgressDone = 2501;
+	static const int SetBottomNewTrayAfterProgress = 2502;
+	static const int IsBottomNewTrayAfterProgressDone = 2503;
+	static const int SetEventPickAndPlaceProcessAtBottomPositionDone = 253;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToS2S3Position = 300;
+	static const int CheckPickAndPlaceModuleSafeToMoveToS2S3Position = 301;
+
+	static const int IsS2S3VisionReady = 328;
+	static const int IsS2S3VisionRCDone = 3281;
+	static const int StartMovePickAndPlaceXYThetaAxisToS2S3Position = 302;//CCW 90
+	static const int IsMovePickAndPlaceXYThetaAxisToS2S3PositionDone = 303;
+	static const int StopMovePickAndPlaceXYThetaAxisToS2S3Position = 304;
+	static const int IsStopMovePickAndPlaceXYThetaAxisToS2S3PositionDone = 305;
+
+	static const int DelayBeforeSendS2FirstSnap = 3050;
+	static const int StartSendS2FirstSnap = 3051;
+	static const int IsSendS2FirstSnapProgress = 30510;
+	static const int IsSendS2FirstSnapDone = 3052;
+	static const int DelayBeforeSendS3FirstSnap = 3053;
+	static const int StartSendS3FirstSnap = 3054;
+	static const int IsSendS3FirstSnapProgress = 30550;
+	static const int IsSendS3FirstSnapDone = 3055;
+	static const int IsS3VisionRCDone = 3056;
+	static const int StartSendS2S3CheckingRC = 3057;
+	static const int IsSendS2S3CheckingRCDone = 3058;
+	static const int DelayAfterS2S3AdditionalGrabDone = 30590;
+	static const int IsS2S3AdditionalRequiredMoveAndSnap = 3059;
+
+	static const int StartMovePickAndPlaceThetaAxisToNextPosition = 3060;
+	static const int IsMovePickAndPlaceThetaAxisToNextPositionDone = 3061;
+	static const int StopMovePickAndPlaceThetaAxisToNextPosition = 3062;
+	static const int IsStopPickAndPlaceThetaAxisToNextPositionDone = 3063;
+	static const int StartS2S3SnapPositionNumber = 3064;
+	static const int IsS2S3SnapPositionNumberDone = 3065;
+	static const int DelayBeforeS2AdditionalInspectSOV = 3066;
+	static const int StartS2AdditionalInspectSOV = 3067;
+	static const int IsS2AdditionalInspectSOVProgress = 30670;
+	static const int IsS2AdditionalInspectSOVDone = 3068;
+	static const int DelayBeforeS3AdditionalInspectSOV = 3069;
+	static const int StartS3AdditionalInspectSOV = 3070;
+	static const int IsS3AdditionalInspectSOVProgress = 30710;
+	static const int IsS3AdditionalInspectSOVDone = 3071;
+	static const int IsS2S3VisionAdditionalEOVDone = 3072;
+	static const int IsS3VisionAditionRCDone = 3073;
+
+	static const int SetS2S3EndTrayAfterProgress = 3274;
+	static const int IsS2S3EndTrayAfterProgressDone = 3275;
+	static const int SetS2S3NewTrayAfterProgress = 3276;
+	static const int IsS2S3NewTrayAfterProgressDone = 3277;
+	static const int SetEventPickAndPlaceProcessAtS3PositionDone = 327;
+
+	static const int WaitingToReceiveEventStartPickAndPlaceToOutputPosition = 400;
+
+	static const int CheckPickAndPlaceModuleSafeToMoveToOutputPosition = 401;
+
+	static const int StartMovePickAndPlaceXYZThetaAxisToOutputPosition = 402;//theta
+	static const int IsMovePickAndPlaceXYZThetaAxisToOutputPositionDone = 403;
+	static const int StopMovePickAndPlaceXYZThetaAxisToOutputPosition = 404;
+	static const int IsStopMovePickAndPlaceXYZThetaAxisToOutputPositionDone = 405;
+
+	static const int IsTrayTableReadyToPlace = 406;
+
+	static const int StartMovePickAndPlaceZAxisToDownPlacePosition = 407;
+	static const int IsMovePickAndPlaceZAxisToDownPlacePositionDone = 408;
+	static const int StopMovePickAndPlaceZAxisToDownPlacePosition = 409;
+	static const int IsStopMovePickAndPlaceZAxisToDownPlacePositionDone = 410;
+	static const int IsPickAndPlaceZAxisPlaceUnitDone = 411;
+
+	static const int StartMovePickAndPlaceZAxisToUpPosition = 412;
+	static const int IsMovePickAndPlaceZAxisToUpPositionDone = 413;
+	static const int StopMovePickAndPlaceZAxisToUpPosition = 414;
+	static const int IsStopMovePickAndPlaceZAxisToUpPositionDone = 415;
+	static const int IsPickAndPlacePickZAxisAtUpPositionDone = 416;
+	static const int StartMovePickAndPlaceYAxisToStandbyPositionAfterPlace = 4161;
+	static const int IsMovePickAndPlaceYAxisToStandbyPositionAfterPlaceDone = 4162;
+	static const int IsUnitRemovedAfterPlaceFail = 900001;
+	static const int SetEventPickAndPlacePlaceProcessDone = 417;
+	static const int IsEventPickAndPlaceDisable = 418;
+
+	static const int StartMovePickAndPlaceYToStandbyPositionAfterOutputReplace = 50004;
+	static const int IsMovePickAndPlaceYToStandbyPositionAfterOutputReplaceDone = 50005;
+	static const int StopMovePickAndPlaceYToStandbyPositionAfterOutputReplace = 50006;
+	static const int IsStopMovePickAndPlaceYToStandbyPositionAfterOutputReplaceDone = 50007;
+
+	static const int CheckPickAndPlaceModuleSafeToMoveToParkingPosition = 500;
+	static const int StartMovePickAndPlaceYAxisToParkingPosition2 = 501;
+	static const int IsMovePickAndPlaceYAxisToParkingPositionDone2 = 502;
+	static const int StopMovePickAndPlaceYAxisToParkingPosition2 = 503;
+	static const int IsStopMovePickAndPlaceYAxisToParkingPositionDone2 = 504;
+	static const int StartMovePickAndPlaceXAxisToParkingPosition2 = 505;
+	static const int IsMovePickAndPlaceXAxisToParkingPositionDone2 = 506;
+	static const int StopMovePickAndPlaceXAxisToParkingPosition2 = 507;
+	static const int IsStopMovePickAndPlaceXAxisToParkingPositionDone2 = 508;
+	static const int SetEventPickAndPlaceToParkingPositionDone = 509;
+
+	//Post Production	
+	static const int WaitingToReceiveEventStartPickAndPlaceToStandbyStationPostProduction = 1000;//h1 bottom/s3/disable and h2 s3/bottom/disable
+	static const int SelectPickAndPlaceStandbyStationPostProduction = 1001;
+	static const int CheckPickAndPlaceModuleSafeToMoveToStandbyStationPostProduction = 1002;
+	static const int StartMovePickAndPlaceXYAxisToStandbyStationPostProduction = 1003;
+	static const int IsMovePickAndPlaceXYAxisToStandbyStationPostProductionDone = 1004;
+	static const int StopMovePickAndPlaceXYAxisToStandbyStationPostProduction = 1005;
+	static const int IsStopMovePickAndPlaceXYAxisToStandbyStationPostProductionDone = 1006;
+
+	static const int StartMovePickAndPlaceYAxisToStandbyStationPostProduction = 1007;
+	static const int IsMovePickAndPlaceYAxisToStandbyStationPostProductionDone = 1008;
+	static const int StopMovePickAndPlaceYAxisToStandbyStationPostProduction = 1009;
+	static const int IsStopMovePickAndPlaceYAxisToStandbyStationPostProductionDone = 1010;
+	static const int StartMovePickAndPlaceXAxisToStandbyStationPostProduction = 1011;
+	static const int IsMovePickAndPlaceXAxisToStandbyStationPostProductionDone = 1012;
+	static const int StopMovePickAndPlaceXAxisToStandbyStationPostProduction = 1013;
+	static const int IsStopMovePickAndPlaceXAxisToStandbyStationPostProductionDone = 1014;
+
+	static const int SetEventPickAndPlaceToStandbyStationPostProductionDone = 1015;
+
+	static const int EndOfSequence = 999;
+};
+
+
+class JobSequenceNo
+{
+public:
+	static const int WaitingToReceiveEventStartJobSequence = 0;
+
+	static const int SetEventStartInputAndOutputTableLoadingSequence = 1;//possible to block input and output vision if pnp1&2not at standby. need wait pnp standby only sov
+
+	static const int StartMoveAllSidewallVisionAxisToFocusAndAllPickAndPlaceToStandbyPosition = 2;//if pnp disable, move to disable position, else move pnp to nearest standby pos
+	static const int IsMoveAllSidewallVisionAxisToFocusAndAllPickAndPlaceToStandbyPositionDone = 3;
+	static const int StopMoveAllSidewallVisionAxisToFocusAndAllPickAndPlaceToStandbyPosition = 4;
+	static const int IsStopMoveAllSidewallVisionAxisToFocusAndAllPickAndPlaceToStandbyPositionDone = 5;
+
+	static const int IsEventInputVisionDone = 6;//probably input table loading sequence not yet complete, else can check whether input table loading sequence complete
+	static const int SetEventStartPickAndPlace1Or2ToPickStation = 7;
+
+	static const int IsEventOutputVisionDone = 8;//probably input table loading sequence not yet complete, else can check whether output table loading sequence complete
+	static const int SetEventStartPickAndPlace1Or2ToPlaceStation = 9;
+
+	static const int IsEventPickAndPlace1Or2ToPickStationDone = 10;//if p1 goto SetEventStartFirstPickAndPlace1ToPick, else goto IsPickAndPlace2Disable
+	static const int IsEventPickAndPlace1Or2ToPlaceStationDone = 11;
+
+	//repeat
+	static const int IsEventInputTrayTableReady = 100;
+	static const int SetEventStartPickAndPlace1ToPickStation = 101;
+	static const int IsEventPickAndPlace1AtPickStation = 102;
+
+	static const int IsEventPostVisionResultPassAfterPickAndPlace1Place = 103;
+	static const int SetEventStartOutputTrayTableMove = 112;//
+	static const int SetEventStartPickAndPlace1ToOutputPositionDueToPostVisionFail = 104;
+	static const int IsEventPickAndPlace1AtOutputPositionDueToPostVisionFail = 105;
+	static const int IsEventPickAndPlace1ProcessAtOuputStationDueToPostVisionFailDone = 188;
+	static const int SetEventStartRejectTrayTableMove = 106;
+	static const int IsEventRejectTrayTableReady = 107;
+	static const int SetEventStartPickAndPlace1ToRejectPositionDueToPostVisionFail = 108;
+	static const int IsEventPickAndPlace1AtRejectPositionDueToPostVisionFail = 109;//goto SetEventStartPickAndPlace1ToPick again
+	static const int SetEventStartPickAndPlace1ToPickStationAfterPostVisionFail = 110;
+	static const int IsEventPickAndPlace1AtPickStationPostVisionFail = 111;//goto IsEventPostVisionResultPassAfterPickAndPlace1Place	
+
+	static const int IsEventPickAndPlace1PickProcessDone = 113;
+	static const int IsEventBottomStationReady = 114;//setup vision ready?
+
+	static const int IsEventPickAndPlace2AtS3Station = 220;
+	static const int IsEventPickAndPlace2ProcessAtS3StationDone = 221;
+	static const int IsEventOutputTrayTableReady2 = 222;
+
+	static const int SetEventStartPickAndPlace1ToBottomStation = 115;
+	static const int SetEventStartPickAndPlace2ToOutputStation = 223;//goto IsEventPickAndPlace1PickProcessDone
+
+	//static const int IsEventPickAndPlace2AtS3Station = 220;
+	//static const int IsEventPickAndPlace2ProcessAtS3StationDone = 221;
+	//static const int IsEventOutputTrayTableReady2 = 222;
+	//static const int SetEventStartPickAndPlace2ToOutputStation = 223;//goto IsEventPickAndPlace1PickProcessDone
+	//static const int IsEventPickAndPlace1PickProcessDone = 113;
+	//static const int IsEventBottomStationReady = 114;//setup vision ready?
+	//static const int SetEventStartPickAndPlace1ToBottomStation = 115;
+
+	static const int IsEventPickAndPlace1AtBottomStation = 116;
+
+	static const int IsEventPickAndPlace1ProcessAtBottomStationDone = 117;
+	static const int IsEventS3StationReady = 118;
+
+	//need help to check retry?
+	static const int IsEventPickAndPlace2AtOutputStation = 224;
+	static const int IsEventPickAndPlace2PlaceProcessDone = 225;//need reset for first time
+
+	static const int SetEventStartPickAndPlace1ToS3Station = 119;
+
+	////need help to check retry?
+	//static const int IsEventPickAndPlace2AtOutputStation = 224;
+	//static const int IsEventPickAndPlace2PlaceProcessDone = 225;//need reset for first time
+	static const int IsPickAndPlace2Disable = 226;
+	static const int SetEventStartPickAndPlace2ToParkingStation = 227;
+	static const int IsEventPickAndPlace2AtParkingStationDone = 228;
+	static const int IsEventInputTrayTableReady2 = 200;
+	static const int SetEventStartPickAndPlace2ToPickStation = 201;
+	static const int IsEventPickAndPlace2AtPickStation = 202;
+	static const int IsEventPostVisionResultPassAfterPickAndPlace2Place = 203;
+	static const int SetEventStartOutputTrayTableMove2 = 212;
+	static const int SetEventStartPickAndPlace2ToOutputPositionDueToPostVisionFail = 204;
+	static const int IsEventPickAndPlace2AtOutputPositionDueToPostVisionFail = 205;
+	static const int IsEventPickAndPlace2ProcessAtOuputStationDueToPostVisionFailDone = 288;
+	static const int SetEventStartRejectTrayTableMove2 = 206;
+	static const int IsEventRejectTrayTableReady2 = 207;
+	static const int SetEventStartPickAndPlace2ToRejectPositionDueToPostVisionFail = 208;
+	static const int IsEventPickAndPlace2AtRejectPositionDueToPostVisionFail = 209;//goto SetEventStartPickAndPlace1ToPick again
+	static const int SetEventStartPickAndPlace2ToPickStationAfterPostVisionFail = 210;
+	static const int IsEventPickAndPlace2AtPickStationPostVisionFail = 211;//goto IsEventPostVisionResultPassAfterPickAndPlace1Place
+	//static const int IsEventPickAndPlace1ProcessAtBottomStationDone = 117;
+	//static const int IsEventS3StationReady = 118;
+	//static const int SetEventStartPickAndPlace1ToS3Station = 119;
+
+	static const int IsEventPickAndPlace1AtS3Station = 120;
+
+	static const int IsEventPickAndPlace1ProcessAtS3StationDone = 121;
+	static const int IsEventOutputTrayTableReady = 122;
+
+	static const int IsEventPickAndPlace2PickProcessDone = 213;//else if no unit or no need pick, skip pnp2
+	static const int IsEventBottomStationReady2 = 214;
+
+	static const int SetEventStartPickAndPlace1ToOutputStation = 123;
+
+	//static const int IsEventPickAndPlace2PickProcessDone = 213;//else if no unit or no need pick, skip pnp2
+	//static const int IsEventBottomStationReady2 = 214;
+	static const int SetEventStartPickAndPlace2ToBottomStation = 215;
+	//static const int IsEventPickAndPlace1ProcessAtS3StationDone = 121;
+	//static const int IsEventOutputTrayTableReady = 122;
+	//static const int SetEventStartPickAndPlace1ToOutputStation = 123;
+
+	static const int IsEventPickAndPlace1AtOutputStation = 124;
+
+	static const int IsEventPickAndPlace1PlaceProcessDone = 125;
+
+	static const int IsEventPickAndPlace2AtBottomStation = 216;
+	static const int IsEventPickAndPlace2ProcessAtBottomStationDone = 217;//else if no unit or no need pick, skip pnp2;if got unit, if h2 pos at input
+
+	static const int IsPickAndPlace1Disable = 126;
+	static const int SetEventStartPickAndPlace1ToParkingStation = 127;
+	static const int IsEventPickAndPlace1AtParkingStationDone = 128;//goto IsEventInputTrayTableReady
+
+	
+
+	static const int IsEventS3StationReady2 = 218;
+	static const int SetEventStartPickAndPlace2ToS3Station = 219;
+	//static const int IsEventPickAndPlace1PlaceProcessDone = 125;
+	//static const int IsPickAndPlace1Disable = 126;
+	//static const int SetEventStartPickAndPlace1ToParkingStation = 127;
+	//static const int IsEventPickAndPlace1AtParkingStationDone = 128;//goto IsEventInputTrayTableReady
+
+	//post sequence
+	//p2 remain s3, p1 from place pos, go pick pos and then go bottom
+	//p1 remain s3, p2 from place pos, go pick pos and then go bottom
+	static const int StartMoveAllPickAndPlaceToStandbyPosition = 300;//if pnp disable, move to disable position, else move pnp to nearest standby pos
+	static const int IsMoveAllPickAndPlaceToStandbyPositionDone = 301;
+	static const int StopMoveAllPickAndPlaceToStandbyPosition = 302;
+	static const int IsStopMoveAllPickAndPlaceToStandbyPositionDone = 304;
+
+	static const int SendVisionEndTrayDuringJobStop = 88000;
+	static const int IsSendVisionEndTrayDuringJobStopDone = 88001;
+	static const int SetInputAndOutputPostProduction = 88002;
+	static const int WaitingForPostProductionDone = 88003;
+	static const int IsEndLotOrAbort = 88004;
+	static const int IsEndLotOrAbort2 = 88005;
+	static const int IsPNP1PostProductionDone = 88006;
+	static const int IsPNP2PostProductionDone = 88007;
+
+	static const int EndOfSequence = 999;
+};
+
+class MaintenanceSequenceNo
+{
+public:
+	static const int StartMaintenanceSequence = 0;
+	static const int IsMachineReadyToHomeOrSetup = 1;
+	static const int IsDiffuserActuatorBackLightOff = 2;
+	static const int IsPNPVacuumOn = 3;
+	static const int IsLoadingCalibrationRecipeDone = 4;
+
+	static const int StartMovePNPYToStandbyPosition = 5;
+	static const int IsMovePNPYToStandbyPositionDone = 6;
+	static const int StopMovePNPYToStandbyPosition = 7;
+	static const int IsStopMovePNPYToStandbyPositionDone = 8;
+
+	static const int StartMovePNPXToStandbyOrParkingPosition = 9;
+	static const int IsMovePNPXToStandbyOrParkingPositionDone = 10;
+	static const int StopMovePNPXToStandbyOrParkingPosition = 11;
+	static const int IsStopMovePNPXToStandbyOrParkingPositionDone = 12;
+
+	static const int StartMovePNPYToPreRunPosition = 13;
+	static const int IsMovePNPYToPreRunPositionDone = 14;
+	static const int StopMovePNPYToPreRunPosition = 15;
+	static const int IsStopMovePNPYToPreRunPositionDone = 16;
+
+	static const int StartMovePNPZToUpPosition = 17;
+	static const int IsMovePNPZToUpPositionDone = 18;
+	static const int StopMovePNPZToUpPosition = 19;
+	static const int IsStopMovePNPZToUpPositionDone = 20;
+
+	static const int CheckTrayTableZPosition = 21;
+	static const int CheckStation = 22;
+
+	//Input Calibration
+	static const int StartMoveInputTrayTableToInputCalibrationPosition = 23;
+	static const int IsMoveInputTrayTableToInputCalibrationPositionDone = 24;
+	static const int StopMoveInputTrayTableToInputCalibrationPosition = 25;
+	static const int IsStopMoveInputTrayTableToInputCalibrationPositionDone = 26;
+
+	static const int StartInputVisionCalibration = 27;
+	static const int IsInputVisionCalibrationDone = 28;
+	//
+
+	//S1 Calibration
+	static const int StartMoveInputTrayTableToS1CalibrationPosition = 29;
+	static const int IsMoveInputTrayTableToS1CalibrationPositionDone = 30;
+	static const int StopMoveInputTrayTableToS1CalibrationPosition = 31;
+	static const int IsStopMoveInputTrayTableToS1CalibrationPositionDone = 32;
+
+	static const int StartS1VisionCalibration = 33;
+	static const int IsS1VisionCalibrationDone = 34;
+	//
+
+	//Output Calibration
+	static const int StartMoveOutputTrayTableToOutputCalibrationPosition = 35;
+	static const int IsMoveOutputTrayTableToOutputCalibrationPositionDone = 36;
+	static const int StopMoveOutputTrayTableToOutputCalibrationPosition = 37;
+	static const int IsStopMoveOutputTrayTableToOutputCalibrationPositionDone = 38;
+
+	static const int StartOutputVisionCalibration = 39;
+	static const int IsOutputVisionCalibrationDone = 40;
+	//
+
+	// S2 and S3 Calibration
+	static const int StartMoveInputTrayTableToS2S3CalibrationPosition = 41;
+	static const int IsMoveInputTrayTableToS2S3CalibrationPositionDone = 42;
+	static const int StopMoveInputTrayTableToS2S3CalibrationPosition = 43;
+	static const int IsStopMoveInputTrayTableToS2S3CalibrationPositionDone = 44;
+
+	static const int StartMovePNP1ToInputStationS2S3 = 45;
+	static const int IsMovePNP1ToInputStationS2S3Done = 46;
+	static const int StopMovePNP1ToInputStationS2S3 = 47;
+	static const int IsStopMovePNP1ToInputStationS2S3Done = 48;
+
+	static const int StartMovePNP1ToDownPositionForPickingS2S3 = 49;
+	static const int IsMovePNP1ToDownPositionForPickingS2S3Done = 50;
+	static const int StopMovePNP1ToDownPositionForPickingS2S3 = 51;
+	static const int IsStopMovePNP1ToDownPositionForPickingS2S3Done = 52;
+
+	static const int StartMovePNP1ToUpPositionForPickingS2S3 = 53;
+	static const int IsMovePNP1ToUpPositionForPickingS2S3Done = 54;
+	static const int StopMovePNP1ToUpPositionForPickingS2S3 = 55;
+	static const int IsStopMovePNP1ToUpPositionForPickingS2S3Done = 56;
+
+	static const int IsPickingS2S3Done = 57;
+
+	static const int StartMovePNP1ToS2S3Station = 58;
+	static const int IsMovePNP1ToS2S3StationDone = 59;
+	static const int StopMovePNP1ToS2S3Station = 60;
+	static const int IsStopMovePNP1ToS2S3StationDone = 61;
+
+	static const int StartS2S3VisionCalibration = 62;
+	static const int IsS2S3VisionCalibrationDone = 63;
+
+	static const int StartMovePNP1ToInputStationAfterS2S3Calibration = 64;
+	static const int IsMovePNP1ToInputStationAfterS2S3CalibrationDone = 65;
+	static const int StopMovePNP1ToInputStationAfterS2S3Calibration = 66;
+	static const int IsStopMovePNP1ToInputStationAfterS2S3CalibrationDone = 67;
+
+	static const int StartMovePNP1ToDownPositionForPlacingS2S3 = 68;
+	static const int IsMovePNP1ToDownPositionForPlacingS2S3Done = 69;
+	static const int StopMovePNP1ToDownPositionForPlacingS2S3 = 70;
+	static const int IsStopMovePNP1ToDownPositionForPlacingS2S3Done = 71;
+
+	static const int StartMovePNP1ToUpPositionForPlacingS2S3 = 72;
+	static const int IsMovePNP1ToUpPositionForPlacingS2S3Done = 73;
+	static const int StopMovePNP1ToUpPositionForPlacingS2S3 = 74;
+	static const int IsStopMovePNP1ToUpPositionForPlacingS2S3Done = 75;
+
+	static const int IsPlacingS2S3Done = 76;
+	//
+
+
+	static const int StartMovePNP1ToS1StandbyPosition = 113;
+	static const int IsMovePNP1ToS1StandbyPositionDone = 114;
+	static const int StopMovePNP1ToS1StandbyPosition = 115;
+	static const int IsStopMovePNP1ToS1StandbyPositionDone = 116;
+
+	// Post
+	static const int IsPickAndPlace1UnitPresent = 1000;
+	static const int StartMoveAllMotorToStandbyPosition = 1001;
+	static const int IsMoveAllMotorToStandbyPositionDone = 1002;
+	static const int StopMoveAllMotorToStandbyPosition = 1003;
+	static const int IsStopMoveAllMotorToStandbyPositionDone = 1004;
+	//
+};
+#endif
